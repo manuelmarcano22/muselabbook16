@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-03-10 23:40:41 +0100
+title:  "Cataclysmic Variables in NGC 6397"
+date:   2016-03-10 04:40:41
 categories: jekyll update
 ---
 
@@ -49,19 +49,24 @@ DPUSER> 3dspec(buffer2,229, 258,1, /sum)
 ## U21 (aka CV4)
 
 
+
+
+
 <figure>
-<img src="/images/grindlay95fig1.png" alt="Mountain View" style="width:304px;height:428px;">
- <figcaption>Figure 1 from [Grindlay95][@Grindlay95].</figcaption>
+<img src="{{ "/images/edmondscvsfig4.png" | prepend: site.baseurl }}" alt="Mountain View" style="width:404px;height:428px;">
+ <figcaption>Figure 4 from [Cohn10][@Cohn10].</figcaption>
 </figure>
 
 
 
 
 
+
 <figure>
-<img src="/images/grindlay95fig1.png" alt="Mountain View" style="width:304px;height:428px;">
+<img src="{{ "/images/grindlay95fig1.png" | prepend: site.baseurl }}" alt="Mountain View" style="width:304px;height:428px;">
  <figcaption>Figure 1 from [Grindlay95][@Grindlay95].</figcaption>
 </figure>
+
 
 
 
