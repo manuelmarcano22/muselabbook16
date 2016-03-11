@@ -13,6 +13,8 @@ categories: jekyll update
 
 ## The Spectra
 
+From the CUBEEXP#to#ZAPFINAL.fits
+
 They can be extracted from QFitsView typing in the DPUSER consle:
 
 ```bash
@@ -26,27 +28,121 @@ DPUSER> 3dspec(buffer2,229, 258,1, /sum)
 ```
 
 
-
 ## U23 (aka CV1)
 
 ### Location
 
 According to [Cohn10][@Cohn10]:
 
-R.A., Decl (J2000): 17:40:41.597 , 53:40:19.30
+**R.A., Decl (J2000):** 17:40:41.597 , 53:40:19.30
 
 
 ### Spectra
 
 For Spectra see Fig. below with CV1-3 from [Grindlay95][@Grindlay95]. 
 
-Obtained with the following command from the ZAP one:
 
 ```bash
 DPUSER> 3dspec(buffer2,229, 258,1, /sum)
 ```
 
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,236, 264,1, /sum)
+```
+
+
+
 ## U21 (aka CV4)
+
+
+```bash
+DPUSER> 3dspec(buffer2,220, 247,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,224, 245,1, /sum)
+```
+
+
+
+## U17 (aka CV3)
+
+
+```bash
+DPUSER> 3dspec(buffer2,183, 256,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,181, 252,1, /sum)
+```
+
+## U22 (aka CV3)
+
+Not so bright
+
+```bash
+DPUSER> 3dspec(buffer2,225, 209,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,230, 193,1, /sum)
+```
+
+
+## U19 (aka CV2)
+
+Insie a lot of stars so a lot of absoption but maybe I see an emission insise absoprtion
+
+
+```bash
+DPUSER> 3dspec(buffer2,194, 205,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,207, 201,1, /sum)
+```
+
+
+
+## U13 (aka CV8)
+
+Alone so negative flux in ZAP and very low in FINAL. Not even Hubble could see it. 
+
+```bash
+DPUSER> 3dspec(buffer1,117, 159,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,109, 160,1, /sum)
+```
+
+
+## U61 (aka CV12)
+
+
+
+```bash
+DPUSER> 3dspec(buffer1,117, 159,1, /sum)
+```
+
+and "empty" are with:
+
+```bash
+DPUSER> 3dspec(buffer2,109, 160,1, /sum)
+```
+
 
 
 
