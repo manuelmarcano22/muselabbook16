@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Cataclysmic Variables in NGC 6397"
-date:   2016-03-10 04:40:41
-categories: jekyll update
+tags: [CVS,dada, fdafa]
+categories: log
 ---
 
 # Known Cataclysmic Variables in NGC 6397
