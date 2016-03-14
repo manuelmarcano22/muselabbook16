@@ -7,7 +7,7 @@
 
 # Site settings
 description: > # this means to ignore newlines until "baseurl:"
-        This is the repository for the created code and documents as part of a research project done in Spring 2016 at [IRAP](http://www.irap.omp.eu/en) under the supervision of [Dr. Natalie Webb](http://userpages.irap.omp.eu/~nwebb/).
+        This is the repository for the created code and documents as part of a research project done in Spring 2016 at <a href="www.irap.omp.eu/en">IRAP</a> under the supervision of <a href="http://userpages.irap.omp.eu/~nwebb/">Dr. Natalie Webb</a>.
 baseurl: "/muselabbook16"
 #url: http://manuelpm.me/muselabbook16
 gems:
@@ -17,6 +17,7 @@ gems:
 
 # Build settings
 markdown: Pandoc
+highlighter: pygments
 pandoc:
   extensions: 
     - smart
