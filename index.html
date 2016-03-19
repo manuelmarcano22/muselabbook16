@@ -6,6 +6,7 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
+  <!-- Old one
   <ul class="post-list">
     {% for post in site.posts reversed%}
       <li>
@@ -17,6 +18,18 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  -->
+
+
+<table class="table table-condensed">
+    {% for post in site.posts reversed %}
+
+	<tr>
+	<td>{{ post.date | date_to_string }}</td>
+    <td><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+	</tr>
+{% endfor %}
+</table>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
