@@ -12,8 +12,20 @@ baseurl: "/muselabbook16"
 #url: http://manuelpm.me/muselabbook16
 gems:
   - jekyll-pandoc
+  - jekyll-archives
 
 
+jekyll-archives:
+  enabled: [categories,tags]
+  layout: 'tag_page'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name.html'
+
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 # Build settings
 markdown: Pandoc

@@ -25,7 +25,7 @@ echo $aa
 read -e layout
 echo ""
 
-echo "Date. Default is today."
+echo "Date. Default is today. YYYY-MM-DD"
 read -e datepost
 echo ""
 
@@ -69,7 +69,7 @@ fi
 # change to lower case and replace spaces with '-'
 fname=`echo $fname| tr "[:upper:]" "[:lower:]" | tr " " "-"`
 
-echo "Tags:"
+echo "Tags. Separated by commas:"
 read -e tags
 echo ""
 
@@ -82,7 +82,8 @@ then
     exit 1
 fi
 
-cat > $NAME << ENDOFFILE
+# Write to $NAME until ENDOFFILE
+cat > $NAME << ENDOFFILE  
 ---
 layout: $layout
 title: "$title"
