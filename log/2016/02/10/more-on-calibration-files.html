@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>More on Calibration files</title>
+  <meta name="description" content="Commits">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/02/10/more-on-calibration-files.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">More on Calibration files</h1>
+    <p class="post-meta"><time datetime="2016-02-10T00:00:00+01:00" itemprop="datePublished">Feb 10, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="commits">Commits</h2>
+<h3 id="wavelength-calibration">Wavelength calibration</h3>
+<p>I wasn’t able to get it done. The problem might have been two things, either that I didn’t have an ARC for each lamp or that I was using two different instrument modes.</p>
+<h3 id="instruments-mode-and-obs-name">Instruments Mode and OBS Name</h3>
+<p>In the data I downloaded for the day I had two different instrument mode as can be seen in the header. I had WFM-NOAA-E and WFM-NOAA-N. It stands for Wide Field Mode with no AO (NOAO) correction in Nominal or Extended. The object is in WFM-NOAA-N. Only keep calibration files with this mode.</p>
+<h3 id="flats">FLATS</h3>
+<p>I have two types of flats according to the OBS NAME tag in the header “Calibration” and “muocal_nightcalib”. I have 22 of one and 5 of the second. The “muocal_nightcalib” are the so called <strong>ILLUM</strong> in the manual and are the optional input flat for the muse_twilight recipe. According to Hayley use the one closes in temp and time to the SKYFLAT use for the twilight recipe.</p>
+<h3 id="more-on-flats-and-bias-from-hayley">More on FLATS and BIAS from Hayley</h3>
+<p>Pay attention to time stamp. ESO takes 11 at a time. Use those eleven for the master bias and also for the flats. Also look at the temperature difference is no more than 0.5 C for the skyflat and the optional ILLUM to use.</p>
+<h3 id="illum-for-recipe-muse-twilight.">ILLUM for recipe muse twilight.</h3>
+<p>See FLATS commit above.</p>
+<h3 id="arc-wave">ARC (WAVE)</h3>
+<p>They seem to be taken in groups of 15. So three exposures per lamp. I have one with 14 probably because it was taken at 11:59 so the next one is at a later day.</p>
+<h3 id="vim">vim</h3>
+<p>I installed vim in the home directory. It is in the folder vimlocal. The .vimrc is also in the home directory. But still haven’t been able to get vim with xterm_clipboard support.</p>
+<h3 id="bash">BASH</h3>
+<p>The .bashrc now have a line to include the path of the vim executable and to use xterm to be able to display colors. Also included the pythonstartup as was mentioned before.</p>
+<h2 id="questions">Questions</h2>
+<ul>
+<li>[x] <del>Do MASTER Flat with all flats of the night and BADPIXEL Table.</del> ~~but only with the “muocal_nightcalib” 5~. Wrong redo this.</li>
+<li>[x] <del>Do the wavelength calibration</del> It worked with three Arc one for each lamp.</li>
+<li>[x] <del>Python and see max value of flats to see if oversaturated.</del> All of them passed the tested. Weird?</li>
+<li>[x] <del>Do MASTER Flat with all flats of the night</del> Still don’t know if need all.</li>
+</ul>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/wavelenght.html'>wavelenght</a></li>
+
+<li><a href='/muselabbook16/tag/calibration.html'>calibration</a></li>
+
+<li><a href='/muselabbook16/tag/flats.html'>flats</a></li>
+
+<li><a href='/muselabbook16/tag/questions.html'>questions</a></li>
+
+<li><a href='/muselabbook16/tag/arc.html'>arc</a></li>
+
+<li><a href='/muselabbook16/tag/illum.html'>illum</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

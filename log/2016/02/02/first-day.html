@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>First Day</title>
+  <meta name="description" content="Commits">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/02/02/first-day.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">First Day</h1>
+    <p class="post-meta"><time datetime="2016-02-02T00:00:00+01:00" itemprop="datePublished">Feb 2, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="commits">Commits</h2>
+<h3 id="the-server">The server</h3>
+<p>The HP computer was set up so I can connect to the server via ssh to the computer <em>kerr.cesr.fr</em>.</p>
+<p>At first I will begin working with the computer of a previous Dr. Webb student. To connect use:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ssh</span> -X detoeuf@kerr.cesr.fr</code></pre>
+<p>The password was given by Dr. Webb.</p>
+<p>I added the files ~/.vimrc and ~/pythonrc and added the line <em>export PYTHONSTARTUP</em> to ~/.bashrc</p>
+<h3 id="the-github-repository">The GitHub Repository</h3>
+<p>I created a private git repository called <em>muse2016</em> (https://github.com/manuelmarcano22/muse2016).</p>
+<h3 id="data-download-from-eso">Data Download from ESO</h3>
+<p>I downloaded the observation of the Cluster <strong>NGC 6397</strong>. The observation day was <em>2014-08-02</em>. The data can be download from the website <a href="archive.eso.org/eso/eso_archive_main.html">ESO Archive</a> after creating an account. My username is <em>mmarcano22</em></p>
+<h3 id="my-irap-account">My IRAP account</h3>
+<p>My username is <code>mpichardo</code> and webmail is <code>mpichardo@irap.omp.eu</code></p>
+<h3 id="astropy">Astropy:</h3>
+<p>The server does have ipython and the module Astropy installed for python2, but not for python3. Useful commands:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> astropy.io <span class="ch">import</span> fits`</code></pre>
+<h3 id="to-read-the-header-from-a-fit">To read the header from a fit:</h3>
+<p>hdulist = fits.open(“name-of-file”) hduheado = hdulist[0].header</p>
+<h2 id="to-dos">To-Dos</h2>
+<ul>
+<li>[x] <del>Download data to start processing.</del> Downloaded data taken on 2014-08-02 for NGC 6397.</li>
+</ul>
+<h3 id="questions-and-problems">Questions and Problems:</h3>
+<ul>
+<li><p>[x] <del>How to get the type information from header. Can fit it on the header. How many BIAS are needed?</del> All in <em>HIERARCH ESO —</em>.</p></li>
+<li><p>[x] <del>MUSE cal bias and cal bias linearity?.</del> Only cal_bias in the same day. Can use cal_bias simply</p></li>
+<li><p>[x] <del>Problem merging Bias works with max of 10 and min of 3.. When 11 doesn’t work.</del> Wrong command to use it in parallel was missing the <code>taskset</code> described in Appendix C.</p></li>
+<li><p>[x] <del>No Darks that same day. 200 in total for MUSE. Which one to use?. Also different ExpTime for the darks from 1200 to 3600. Object is 60. In the Manual it says that the dark current is small so the dark is optional.</del> No darks for now.</p></li>
+<li><p>[x] <del>Many flats that day but only 3 with to that target RA and DEC. Only those 3?.</del> Downloaded all Flats of the night.</p></li>
+<li><p>[x] <del>Got problem <em>“unable to find recipe muse_bias”</em>.</del>. I created a new config file and included where all the libs where the path is: <code>/opt/reflex/install/lib/esopipes-plugins/muse-1.0.1</code></p></li>
+<li><p>[x] <del>Use muse_bias.rc?</del> Not for now.</p></li>
+<li><p>[x] <del>Appendix D Calibrations for Commissioning and Science Verification Data. Use those Geometry and Astrometric table and Solution?</del> Found them online.</p></li>
+<li><p>[x] <del>BADPIX_TABLE in flat? It is optional and says: “The use if a bad pixel table may actually degrade the tracing solution if it contains bad columns”</del>. Used the one in cal folder.</p></li>
+<li><p>[x] <del>Where to find DPR TYPE WAVE for the wavelength calibration. They should be in MUSE calibration template</del>. Will download it from online catalog.</p></li>
+</ul>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/server.html'>server</a></li>
+
+<li><a href='/muselabbook16/tag/github.html'>GitHub</a></li>
+
+<li><a href='/muselabbook16/tag/data.html'>data</a></li>
+
+<li><a href='/muselabbook16/tag/setup.html'>setup</a></li>
+
+<li><a href='/muselabbook16/tag/computer.html'>computer</a></li>
+
+<li><a href='/muselabbook16/tag/questions.html'>Questions</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

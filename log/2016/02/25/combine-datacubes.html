@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Combine Datacubes</title>
+  <meta name="description" content="Commits">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/02/25/combine-datacubes.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Combine Datacubes</h1>
+    <p class="post-meta"><time datetime="2016-02-25T00:00:00+01:00" itemprop="datePublished">Feb 25, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="commits">Commits</h2>
+<h3 id="combining-the-data-from-2014-07-27">Combining the data from 2014-07-27</h3>
+<p>The data from the first night of observation (2014-07-27) consist of 5 60 seconds exposures of 9 different central regions (except for the very central one. Only 4 exposures and an extra one of the NE region). This gives a total of 45 different exposures.</p>
+<p>The distribution goes like this:</p>
+<ul>
+<li>Central region exposures 1-4 (only 4 of this region)</li>
+<li>North of Central Region 20-24</li>
+<li>Sourh of Central Region 15-19</li>
+<li>East of Central Region 10-14</li>
+<li>West of Central Region 5-9</li>
+<li>NE of Central Region 40-45 (notice there are 6 of this region)</li>
+<li>NW of Central Region 30-34</li>
+<li>SE of Central Region 35-39</li>
+<li>SW of Central REgion 25-29</li>
+</ul>
+<p>To combine them Dr. Webb suggested, as a first try, to manually find the offsets (using ds9, for example) for a given group of 5. Then the combination can be done by setting the environment variables <code>MUSE_XCOMBINE_RA_OFFSETS</code> and <code>MUSE_XCOMBINE_DEC_OFFSETS</code> and using the recipe <em>muse_scipost</em> and the PIXTABLE_OBJECT or combining the <em>PIXTABLE_REDUCED</em> with the <em>muse_exp_combine</em> recipe. This is described in section 6.6 of the MUSE Pipeline User Manual Issue 9 Date 2015-04-28.</p>
+<p>From the manual about the offsets:</p>
+<blockquote>
+<p>The coordinate offsets are given by setting the environment variables MUSE_XCOMBINE_RA_OFFSETS and MUSE_XCOMBINE_DEC_OFFSETS. Each of these variables has to contain as many floating-point numbers, separated by commas, as exposures to combine are involved. Each number is the direct difference of the measured position to the reference position (no cosδ!), the values are interpreted in units of degrees: RA_OFFSET = RAmeasured − RAreference DEC_OFFSET = DECmeasured − DECreference It is important that the offsets are given in the order of increasing DATE-OBS of the exposures involved. If one of the exposures has been chosen as the reference the offsets of 0 for this exposure have to be explicitly given when setting the environment variables</p>
+</blockquote>
+<h3 id="second-night-of-observation-2014-07-28">Second night of observation (2014-07-28)</h3>
+<p>On the second night of observation (2014-07-28) they also observed the central region of the cluster (from the header “HIERARCH ESO OBS NAME = ‘NGC6397-center-cross_obs2’ / OB name”). There are 21 different Objects, and also no STD or ILLUM.</p>
+<h3 id="muse-pipeline-version-1.2.1">MUSE Pipeline Version 1.2.1</h3>
+<p>There is a new version of the Pipeline. This new version is will be installed locally in <code>detoeuf/musepipeline1.2.1</code>. The problem installing it was having to upgrade to a version of 6.6.1 for the <a href="https://www.eso.org/sci/software/cpl/">CPL</a>. The things to remember are the following:</p>
+<ul>
+<li><p>configure cpl with the flags <code>--with-wcs</code> and <code>with-fftw</code>. For this computer there were in <code>/usr/local</code> not in <code>/usr/include</code>. Only normal precision and not single.</p></li>
+<li><p>CPL was installed in <code>/usr/local/lib</code>. This is were the configure of muse-1.2.1 was looking first. We couldn’t configure the installation without installing the new version there, I don’t know why it was so picky.</p></li>
+<li><p>Need to rebuild <a href="http://www.eso.org/sci/software/cpl/esorex.html">EsoRex</a> after installing CPL. This is still a problem. For now I am using the one installed at <em>$HOME/musepipeline1.2.1</em></p></li>
+</ul>
+<h3 id="meeting-with-hayley-finley-omp-b144">Meeting with Hayley Finley OMP B144</h3>
+<p>Things to remember from the meeting:</p>
+<ul>
+<li><p>Use STD of the night when possible. There should be one every night and I should favor the use of it instead of the calibration one. This is not true for the SKY and Astrometry. At least for this data set were is a globular cluster.</p></li>
+<li><p>Use the ILLUM closest in temperature and time for the scipost OBJECT and scipost STD. There should be several per night taking as a protocol for the instrument. Maybe not necessary in the science verification run. For example the tag for the ILLUM is FLAT,LAMP but should be different according to the Manual (VLT-MAN-ESO-14670-6186).</p></li>
+<li><p>Based on her previous experience reducing the data the use of the optional fits from the calibration file “vignetting_mask” is very important. It is noticeable specially in the borders.</p></li>
+<li><p>Include filter list from the calibration.</p></li>
+</ul>
+<h3 id="how-to-do-the-combination">How to do the combination:</h3>
+<p>First, use the <em>align</em> recipe with all the images “IMAGE_FOV” from the same region you want to combine together. You can work with just the white one if that was one of the filters that was used as input for the recipe. The recipe <em>align</em> will produced a fits table called “OFFSET_LIST”. Then there are two ways to combine the data. One way is using the PIXTABLE_REDUCED produced by scipost and then with the recipe “muse_exp_combine” using the produced “OFFSET_LIST”. This approach is explain in more detail in section 7.3.3 “Working with Data Cubes” of the MUSE Pipeline Manual version 1.2.1 (ftp://ftp.eso.org/pub/dfs/pipelines/muse/muse-pipeline-manual-1.2.1.pdf)“. The basic idea is to create with <em>muse_exp_combine</em> different datacubes with different lambdamin and lambdamax and then merging them together using the too <em>muse_cube_combine</em>. It has to be done this way due to limited RAM memory.</p>
+<p>The first step after obtaining the offset list is to create with <em>exp_combine</em> an image with <strong>all</strong> the different exposures you want to combine and the offsetlist. This can be created by limiting the wavelength range. It is necessary to choose a small enough range using the options –lambdamax and –lambdamin to be able to process in memory all of them. The recipe will produce a DATACUBE and IMAGE_FOV. The datacube won’t be used for anything but the IMAGE_FOV created will be use as the “OUTPUT_WCS” input frame in subsequent calls to the recipe <em>exp_combine</em> to create all the datacubes in different wavelength that later will be combined. This is a recommendation from Dr. Hayley Finley to avoid getting a weird distorted incomplete final merged datacube.</p>
+<p>With our “OUTPUT_WCS” the next step is to create different datacubes with different range of wavelength (for example a BLUE and a RED one). It is important to remember that <strong>they need to overlap in at least about 2 wavelength</strong>. This is again done with the options –lambdamin and –lambdamax for the recipe “exp_combine”. The input files in the sof for each call of <em>exp_combine</em> will be:</p>
+<ol type="1">
+<li>All the PIXTABLE_REDUCED from the different exposures to merge.</li>
+<li>The OFFSET_LIST created by the <em>align</em> recipe.</li>
+<li>The filter list from the calibrations file</li>
+<li>The first IMAGE_FOV that was also created with <em>exp_combine</em>. This will be our shape and will have the tag “OUTPUT_WCS”. This seems a bit redundant but if this image with the tag “OUTPUT_WCS” is not provided in the sof, the default for the function <em>muse_cube_combine</em> is to use the first file of the list as our “shape”.</li>
+</ol>
+<p>The function will be called to created as many datacubes as needed in different wavelength overlapping in about 2 wavelenght. Then the combination is done calling the tool <em>muse_cube_combine</em>.</p>
+<pre><code>muse_cube_combine CUBE_COMBINED.fits CUBE_blue.fits CUBE_green.fits CUBE_red.fits </code></pre>
+<h2 id="questions">Questions</h2>
+<ul>
+<li>[x] <del>4 different channels of IMAGEFOV?</del> This are the 4 different filters I specified. This change depending on the filters I chose when running the recipe.</li>
+</ul>
+<h2 id="to-do">To-Do</h2>
+<ul>
+<li>[x] <del>Download data from the second observation of the center.</del> Downloaded all data from 2014-07-28 observation. Now have to create cleanmaster.txt</li>
+</ul>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/combine.html'>combine</a></li>
+
+<li><a href='/muselabbook16/tag/exp_combine.html'>exp_combine</a></li>
+
+<li><a href='/muselabbook16/tag/pipeline.html'>pipeline</a></li>
+
+<li><a href='/muselabbook16/tag/questions.html'>questions</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

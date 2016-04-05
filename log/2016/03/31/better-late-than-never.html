@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Better late than never</title>
+  <meta name="description" content="I have been slacking a bit writing here, but hopefully I will continue to write more often.">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/03/31/better-late-than-never.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Better late than never</h1>
+    <p class="post-meta"><time datetime="2016-03-31T00:00:00+02:00" itemprop="datePublished">Mar 31, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I have been slacking a bit writing here, but hopefully I will continue to write more often.</p>
+<h1 id="core-radius">Core Radius</h1>
+<p>When trying to get a value for the core radius of NGC 6397 I found two values. One from <a href="http://adsabs.harvard.edu/abs/1996AJ....112.1487H" title="Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H">Harris</a>. He gives a value of 3 arcsec, but in the section “previous analysis of NGC 6397” they cite work done with the Hubble Space Telescope they get a core collapse of around 5.5 arcsec.</p>
+<h1 id="proposal">Proposal</h1>
+<p>For the proposal to ask for observation time to observe the neutron star, U24. It is a LMXB. Dr. Sebastien ask me to get some pictures for the proposal.</p>
+<figure>
+<img src="/muselabbook16/images/fov.png" alt="MUSE FOV and the LMXB. The Green represents the core radio according to Martinazzi." /><figcaption>MUSE FOV and the LMXB. The Green represents the core radio according to <strong>Martinazzi</strong>.</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/sii.png" alt="MUSE view of the LMXB." /><figcaption>MUSE view of the LMXB.</figcaption>
+</figure>
+<h1 id="aligning-x-ray-and-muse-data">Aligning X-ray and MUSE data</h1>
+<p>The astrometry of the chandra image and MUSE data are not perfect, so they don’t match exactly. With a manually created catalog of the brightest X-ray sources in the image, I try to find it in the MUSE datacube and then iterate over them to try to get the optimal rotation and the best reference star. So far I only have the CVs in the center exposure and one U10 that is in Region 5 as defined by this image:</p>
+<p><img src="https://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.pn://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.png" alt="My number regions" />.</p>
+<p>The code is really slow and I should optimize it and try with ccmap to see if I get similar answers. The code and catalog is in the GitHub repo in the directory <code>scripts/misc/Xray</code>. There I include the manually done catalog for MUSE and Chandra and how to call the script from bash to iterate.</p>
+<h1 id="all-regions-combine">All regions combine</h1>
+<p>Using the RA and DEC in the header of the white images and with the scikit learn <a href="http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">K-means clusterin</a> I was able to cluster all the different expsures into regions. The result is the picure above. The code is in the autocombine folder of the scripts directory of the <a href="https://github.com/manuelmarcano22/muse2016/tree/master/scripts/autocombine/executables">GitHub repo</a>.</p>
+<p>For some reason the k-mean of scipy was giving me the wrong answer. I should have play more with the initial guess and number of iteration, but the scikit learn worked great.</p>
+<h1 id="python">Python</h1>
+<p>To ignore the error messages just called the script with <code>-W&quot;ignore&quot;</code>.</p>
+<p>To-Do</p>
+<ul>
+<li>[x] <del>Align X-ray data with MUSE.</del> Really slow since check all possibilities.<br /></li>
+<li>[x] <del>Try to figure out weird line in supposed place of the qLMXB U24.</del> Maybe noise. We calculated the flux in H <span class="math">\(alpha\)</span> and Dr. Sebastien wrote a proposal to ask for time in MUSE and study with more detail.<br /></li>
+<li>[x] Forget about the line and extract H<span class="math">\(alpha\)</span> emmision.</li>
+</ul>
+<h1 id="references">References</h1>
+<p>Martinazzi E, Pieres A, Kepler SO, Costa JES, Bonatto C, Bica E. Probing mass segregation in the globular cluster NGC 6397. Monthly Notices of the Royal Astronomical Society [Internet]. 2014 Aug 1 [cited 2016 Mar 29];442:3105–11. Available from: http://adsabs.harvard.edu/abs/2014MNRAS.442.3105M</p>
+<p>Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ….112.1487H</p>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/python.html'>python</a></li>
+
+<li><a href='/muselabbook16/tag/ngc6397.html'>NGC6397</a></li>
+
+<li><a href='/muselabbook16/tag/ccmap.html'>ccmap</a></li>
+
+<li><a href='/muselabbook16/tag/iraf.html'>iraf</a></li>
+
+<li><a href='/muselabbook16/tag/proposal.html'>proposal</a></li>
+
+<li><a href='/muselabbook16/tag/scipy.html'>scipy</a></li>
+
+<li><a href='/muselabbook16/tag/scikit.html'>scikit</a></li>
+
+<li><a href='/muselabbook16/tag/pip.html'>pip</a></li>
+
+<li><a href='/muselabbook16/tag/align.html'>align</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

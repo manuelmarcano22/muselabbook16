@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>U24</title>
+  <meta name="description" content="FLAT,SKY">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/03/14/u24.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">U24</h1>
+    <p class="post-meta"><time datetime="2016-03-14T00:00:00+01:00" itemprop="datePublished">Mar 14, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="flatsky">FLAT,SKY</h3>
+<p>For some observations night there are not SKYFLATs in the correct instrument mode (WFM-N). This is the case for 2014-07-29, 2014-07-31. So I had to do the following thing:</p>
+<ul>
+<li>Use SKYFLATS taking at 22h UT on 2014-07-27, for 2014-07-27, 2014-07-28 and 2014-07-30.</li>
+<li>Use SKYFLATS taking at 22h UT on 2014-08-02, for both 2014-07-31 and 2014-08-01.</li>
+</ul>
+<p>All the observations are taking around 1h to 2h UT.</p>
+<h3 id="u24-lmxb">U24 (LMXB)</h3>
+<p>To try to see if the emission line seen for U24 around 640.5 nm, I extracted the spectra around that area with QFitsView to the different datasets (First Night only, Second Night and both Nights), using different options (sum, average, median). This is done with DPUSER script to be run using QFitsView. The script is in the folder misc and with the extension<code>.dpuser</code>.</p>
+<p>It is hard to believe that the 640.5 nm line is the shifted H<span class="math">\(\alpha\)</span>, the next thing to do is to look at the possible H<span class="math">\(\alpha\)</span> emission from the source and look at the <a href="https://www.eso.org/observing/etc/bin/gen/form?INS.NAME=MUSE+INS.MODE=swspectr">MUSE Exposure Time Calculator</a>. Calculate it for a SNR of 3.</p>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/flat.html'>flat</a></li>
+
+<li><a href='/muselabbook16/tag/sky.html'>sky</a></li>
+
+<li><a href='/muselabbook16/tag/u25.html'>u25</a></li>
+
+<li><a href='/muselabbook16/tag/qlmxb.html'>qLMXB</a></li>
+
+<li><a href='/muselabbook16/tag/lmxb.html'>LMXB</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

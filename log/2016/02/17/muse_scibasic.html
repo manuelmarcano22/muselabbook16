@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>muse_scibasic</title>
+  <meta name="description" content="Feb-15-2016 Paul Sabatier">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/02/17/muse_scibasic.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">muse_scibasic</h1>
+    <p class="post-meta"><time datetime="2016-02-17T00:00:00+01:00" itemprop="datePublished">Feb 17, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="feb-15-2016-paul-sabatier">Feb-15-2016 Paul Sabatier</h3>
+<h2 id="journee-scientific">Journee Scientific</h2>
+<h3 id="muse-carfantan-galpack3d">MUSE carfantan Galpack3D</h3>
+<h3 id="feb-16-2016-paul-sabatier">Feb-16-2016 Paul Sabatier</h3>
+<h2 id="journee-scientific-1">Journee Scientific</h2>
+<h3 id="relevant-talk-for-muse">Relevant talk for MUSE</h3>
+<p>MUSE Carfantan and Nicholas Bouche talikng about Galpack3D</p>
+<h2 id="commits">Commits</h2>
+<h3 id="results-of-muse_scibasic">Results of muse_scibasic</h3>
+<p>Apparently I have 19 exposures. Produced also 19 OBJECT_RED. Each with Data, DQ and STAT. Data, Data quality and statistics. Need to search for the middle one.</p>
+<h4 id="questions">Questions</h4>
+<ul>
+<li>[x] <del>Take a look at Object Reds. Good or Bad?</del> I guess bad.~~ Have the same ugly feature that the final CUBE obtained.~~ It was ds9 displaying it. Works with QFitsViewer</li>
+</ul>
+<h3 id="creating-the-datacube">Creating the DataCube</h3>
+<p>I tried to created it but got a really bad ones with a lot of empty black spaces with ‘nan’. It might be due to the bad_pixel table. It will try to do it again without the bad pixel table from the calibration files. This was done only for the first exposure “0001”.</p>
+<p>In the article they say:</p>
+<blockquote>
+<p>To combine the pixtables from the individual exposures of each pointing into a single datacube, we had to account for the small offsets that occur during position angle changes, because the rotation centre is not perfectly aligned with the optical axis of the instrument (“derotator wobble”). We did so by creating a broadband image from each pixtable, measuring the coordinates of the brighter stars in the field of view, and feeding the measured average offsets to the pipeline when creating the final datacube for each pointing</p>
+</blockquote>
+<h4 id="questions-1">Questions</h4>
+<ul>
+<li>[x] <del>What does this mean?</del> Look at the Header “HIERARCH ESO INS DROT POSANG”. It changes from exposure to exposure. It seems to “wobble”. <a href="https://www.eso.org/sci/facilities/paranal/instruments/muse/inst.html">Derotator</a>. The derotator compensates for the field rotation happening at the VLT Nasmyth focus. It is a classical derotator based on two prisms: when rotated by an angle α, the image plane rotates by the angle 2α.</li>
+<li>[x] <del>Can see that in OBJECT_RED or where?</del> Can see it in IMAGEFOV for sure.</li>
+</ul>
+<h2 id="to-do">To-Do</h2>
+<ul>
+<li>[x] <del>Make a CUBE from the object using the astrometry_wcs solution and std given in the calibration file.</del> <del>Very bad quality one.</del> It was ds9. Display with QFits Viewer.</li>
+<li>[x] <del>Downloaded the data for another day.</del> This time 2014-July-27</li>
+</ul>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/scibasic.html'>scibasic</a></li>
+
+<li><a href='/muselabbook16/tag/datacube.html'>datacube</a></li>
+
+<li><a href='/muselabbook16/tag/conferences.html'>conferences</a></li>
+
+<li><a href='/muselabbook16/tag/talks.html'>talks</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

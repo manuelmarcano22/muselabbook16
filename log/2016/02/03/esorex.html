@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EsoRex First Week</title>
+  <meta name="description" content="Commits">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/02/03/esorex.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">EsoRex First Week</h1>
+    <p class="post-meta"><time datetime="2016-02-03T00:00:00+01:00" itemprop="datePublished">Feb 3, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="commits">Commits</h2>
+<h3 id="python">Python</h3>
+<p>Created a little script that writes the full path and frame tag of files. <em>seetype.py</em>.</p>
+<h3 id="bash">Bash</h3>
+<p>The file createbias creates the sof for the recipe muse_bias and then uses EsoRex to get the master bias.</p>
+<p>The same for the flats.</p>
+<h3 id="esorex">EsoRex</h3>
+<p>YOu can run esorex with a configuration file. with the flag <code>--config=</code> In the file be sure to put the output directory, logfile dir. If using EsoRex can use the .fz. In page 25 of Manual.</p>
+<p>Can work with up to 24 threads. Computer has 28. Found out that with <code>nproc</code>. So used <code>OMP_NUM_THREADS=24</code> before the esorex commands. Also need to use taskset.</p>
+<h3 id="bias">BIAS</h3>
+<p><del>It works with the first 10 BIAS or the last 10. The moment I go from 10 to 11 it doesn’t produced the final MASTER_BIAS.fits.</del>. I needed to use to use <code>taskset</code> with for example <code>-c 0-5</code> with <code>--nifu=-1</code> and process them in parallel.</p>
+<h2 id="to-dos">To-Dos</h2>
+<ul>
+<li>[x] <del>Bias download data.</del> Downloaded 22 Bias from the day 2014-08-01</li>
+<li>[x] <del>Do master BIAS file</del></li>
+<li>[x] <del>Find out what darks to use.</del> Dont need the darks. Really low Current.</li>
+<li>[x] <del>Find out what Flats to use.</del> All the LAMP Flats of that night.</li>
+<li>[x] <del>Do MASTER Flat.</del> <strong>Did it with only three flats.</strong></li>
+</ul>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/esorex.html'>EsoRex</a></li>
+
+<li><a href='/muselabbook16/tag/bias.html'>Bias</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

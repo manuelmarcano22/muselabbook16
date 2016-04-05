@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Halpha in CVs</title>
+  <meta name="description" content="The Cluster">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/04/04/halpha-in-cvs.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Halpha in CVs</h1>
+    <p class="post-meta"><time datetime="2016-04-04T00:00:00+02:00" itemprop="datePublished">Apr 4, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="the-cluster">The Cluster</h1>
+<p>According to <a href="http://adsabs.harvard.edu/abs/1996AJ....112.1487H" title="Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H">Harris</a> we have the following information for NGC 6397:</p>
+<ul>
+<li><span class="math">\(v_r\)</span> Heliocentric radial velocity (km/s)</li>
+<li><span class="math">\(\pm\)</span> Observational (internal) uncertainty in radial velocity</li>
+<li><span class="math">\(v_{LSR}\)</span> Radial velocity relative to Solar neighborhood LSR</li>
+<li><span class="math">\(\sigma_v\)</span> Central velocity dispersion (km/s)</li>
+<li><span class="math">\(\pm\)</span> Observational (internal) uncertainty in velocity dispersion</li>
+</ul>
+<div class="container">
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>
+Cluster
+</th>
+    <th>
+<span class="math">\(v_r\)</span>
+</th>      
+    <th>
+<span class="math">\(\pm\)</span>
+</th>
+    <th>
+<span class="math">\(v_{LSR}\)</span>
+</th>
+     <th>
+<span class="math">\(\sigma_v\)</span>
+</th>
+     <th>
+<span class="math">\(\pm\)</span>
+</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+NGC 6397
+</td>
+    <td>
+18.0
+</td>       
+    <td>
+0.1
+</td>
+    <td>
+20.3
+</td>
+     <td>
+4.5
+</td>
+     <td>
+0.2
+</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<p>With these velocities we have a shift of:</p>
+<p><span class="math">\[ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} \]</span></p>
+<p>For a velocity of 18 <span class="math">\(km/s\)</span> we get a shift of $</p>
+<h1 id="halpha-lines-in-cvs-in-ngc-6397">H<span class="math">\(\alpha\)</span> lines in CVs in NGC 6397</h1>
+<p><a href="http://adsabs.harvard.edu/abs/2016arXiv160308920C" title="Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C">Casares16</a> finds a correlation between the mass ratio q and the ratio of double peak separation to the full-width-half maximum of the H<span class="math">\(\alpha\)</span> emission. This is find for Black holes but his data also includes CVs.</p>
+<p>Fig 2 in <a href="http://adsabs.harvard.edu/abs/2016arXiv160308920C" title="Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C">Casares16</a> shows the correlation for the sampled CVs.</p>
+<figure>
+<img src="/muselabbook16/images/CVsCasares.png" alt="Fig 2 from Casares 16" /><figcaption>Fig 2 from Casares 16</figcaption>
+</figure>
+<h2 id="the-case-for-ngc-6397">The case for NGC 6397</h2>
+<h4 id="known-spectra">Known spectra</h4>
+<figure>
+<img src="/muselabbook16/images/grindlay95fig1.png" alt="Mountain View" style="width:304px;height:428px;">
+<figcaption>
+Figure 1 from <a href="http://adsabs.harvard.edu/abs/1995ApJ...455L..47G" title="Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ...455L..47G">Grindlay95</a>.
+</figcaption>
+</figure>
+
+<h3 id="the-method">The Method</h3>
+<p>Using Pyraf to analyze the spectra and QFitsView to extract the spectra from the processed MUSE data cube.</p>
+<p>They can be extracted from QFitsView typing in the DPUSER consle:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(<span class="kw">&lt;</span>Cube buffer<span class="kw">&gt;</span>,<span class="kw">&lt;</span>pixel x<span class="kw">&gt;</span>, <span class="kw">&lt;</span>pixel y<span class="kw">&gt;</span>, <span class="kw">&lt;</span>dimension of cross selector<span class="kw">&gt;</span>, <span class="kw">&lt;</span>operator<span class="kw">&gt;</span>)</code></pre>
+<p>For example:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,229, 258,1, /sum)</code></pre>
+<p>The location of the CVs are the following:</p>
+<p>ID RA (J2000) DEC (J2000) Xpixel Ypixel</p>
+<p>U21 17:40:42.006 -53:40:22.07 219 247</p>
+<p>U23 17:40:41.781 -53:40:19.87 229 258</p>
+<p>U17 17:40:42.839 -53:40:20.27 182 256</p>
+<p>U19 17:40:42.456 -53:40:29.87 196 211</p>
+<p>U22 17:40:41.871 -53:40:29.67 225 209</p>
+<p>U25 17:40:41.398 -53:40:26.67 246 224</p>
+<p>U13 17:40:44.235 -53:40:40.07 120 157</p>
+<p>U61 17:40:45.360 -53:40:29.07 70 212</p>
+<p>U10 17:40:49.171 -53:39:49.43 134 247</p>
+<p>The IDs are from <a href="http://adsabs.harvard.edu/abs/2010ApJ...722...20C" title="Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C">Cohn10</a></p>
+<p>To extrac the spectra was using the deblending as explain <a href="http://iraf.noao.edu/docs/splot/deblend.html">here</a></p>
+<h3 id="the-cvs">The CVs</h3>
+<h4 id="u21-cv4">U21 (CV4)</h4>
+<p><strong>The Spectra</strong></p>
+<p><code>splot spectra/U21_nozap.fits xmin=6400 xmax=6660</code></p>
+<figure>
+<img src="/muselabbook16/images/u21nosmooth.png" alt="The spectra" /><figcaption>The spectra</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u213smooth.png" alt="The spectra smooth 3" /><figcaption>The spectra smooth 3</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u21fitsmooth.png" alt="Fit smooth" /><figcaption>Fit smooth</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u21gaussfitsmooth.png" alt="Fit smooth one Gaussian" /><figcaption>Fit smooth one Gaussian</figcaption>
+</figure>
+<p>We get:</p>
+<ul>
+<li>For the Double Peak: Center at 6563.111 and eqw of 0.3598 Ångström.</li>
+<li>For the Gaussian fit:</li>
+</ul>
+<p>center cont flux eqw core gfwhm lfwhm</p>
+<p><strong>6565.22 2764.228 18434.7 -6.669 673.466 25.72 0.</strong></p>
+<h4 id="u23-cv1">U23 (CV1)</h4>
+<p><strong>The Spectra</strong></p>
+<p>splot spectra/U23_nozap.fits xmin=6400 xmax=6660</p>
+<figure>
+<img src="/muselabbook16/images/u23nosmooth.png" alt="The spectra" /><figcaption>The spectra</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u233smooth.png" alt="The spectra smooth 3" /><figcaption>The spectra smooth 3</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u23fitsmooth.png" alt="Fit smooth" /><figcaption>Fit smooth</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u23gaussfitsmooth.png" alt="Fit Gaussian smooth" /><figcaption>Fit Gaussian smooth</figcaption>
+</figure>
+<p>We get:</p>
+<ul>
+<li>For the Double Peak: Center at 6562.937 and eqw of 0.7193 Ångström.</li>
+<li>For the Gaussian fit:</li>
+</ul>
+<p>center cont flux eqw core gfwhm lfwhm</p>
+<p><strong>6560.626 5124.967 52784.1 -10.3 1854.63 26.74 0.</strong></p>
+<h4 id="u17-cv3">U17 (CV3)</h4>
+<p><strong>The Spectra</strong></p>
+<p>splot spectra/U17_nozap.fits xmin=6400 xmax=6660</p>
+<figure>
+<img src="/muselabbook16/images/u17nosmooth.png" alt="The spectra" /><figcaption>The spectra</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u173smooth.png" alt="The spectra smooth 3" /><figcaption>The spectra smooth 3</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u17fitsmooth.png" alt="Fit smooth" /><figcaption>Fit smooth</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u17gaussfitsmooth.png" alt="Fit Gaussian smooth" /><figcaption>Fit Gaussian smooth</figcaption>
+</figure>
+<p>We get:</p>
+<ul>
+<li>For the Double Peak: Center at 6562.247 and eqw of 0.1472 Ångström.</li>
+<li>For the Gaussian fit:</li>
+</ul>
+<p>center cont flux eqw core gfwhm lfwhm</p>
+<p><strong>6563.396 2040.292 28694.5 -14.06 1280.98 21.04 0.</strong></p>
+<h4 id="u19-cv2">U19 (CV2)</h4>
+<p>Check if it is CV. Is th line at 5895 He I line in absorption ?</p>
+<figure>
+<img src="/muselabbook16/images/u19nosmooth.png" alt="U19" /><figcaption>U19</figcaption>
+</figure>
+<h3 id="u22-cv5">U22 (CV5)</h3>
+<p>Check stars around U22.</p>
+<p>Is this emission and absorption?</p>
+<figure>
+<img src="/muselabbook16/images/u22nosmooth.png" alt="Fit No Smooth U22" /><figcaption>Fit No Smooth U22</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u22fitsmooth.png" alt="Fit U22" /><figcaption>Fit U22</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u22trygauss.png" alt="Try Fit U22" /><figcaption>Try Fit U22</figcaption>
+</figure>
+<p>We get:</p>
+<ul>
+<li>For the Double Peak: Center at 6563.422 and eqw of 1.4861 Ångström.</li>
+<li>For the Gaussian fit:</li>
+</ul>
+<p>center cont flux eqw core gfwhm lfwhm</p>
+<p><strong>6592.22 10826.1 -1136.66 0.105 -254.768 4.191 0.</strong></p>
+<h4 id="u25-cv13">U25 (CV13)</h4>
+<p>Only H<span class="math">\(alpha\)</span> absoption bit He II like the other one?</p>
+<figure>
+<img src="/muselabbook16/images/u25halpha.png" alt="Fit U25" /><figcaption>Fit U25</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u25hline.png" alt="Fit He line U25" /><figcaption>Fit He line U25</figcaption>
+</figure>
+<h4 id="u13-cv8">U13 (CV8)</h4>
+<p>Before Smooth</p>
+<figure>
+<img src="/muselabbook16/images/u13nosmooth.png" alt="No Smooth" /><figcaption>No Smooth</figcaption>
+</figure>
+<p>After Smooth</p>
+<figure>
+<img src="/muselabbook16/images/u133smooth.png" alt="Smooth" /><figcaption>Smooth</figcaption>
+</figure>
+<h4 id="u61-cv12">U61 (CV12)</h4>
+<p>I don’t really see much. Also see line at 5892 A.</p>
+<h4 id="u10-cv6">U10 (CV6)</h4>
+<figure>
+<img src="/muselabbook16/images/u10nosmooth.png" alt="Smooth" /><figcaption>Smooth</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u103smooth.png" alt="Smooth" /><figcaption>Smooth</figcaption>
+</figure>
+<figure>
+<img src="/muselabbook16/images/u10fitsmooth.png" alt="Fit smooth" /><figcaption>Fit smooth</figcaption>
+</figure>
+<h1 id="questions">Questions</h1>
+<ul>
+<li>[ ] Smooth or not?</li>
+<li>[ ] Their model is a 2-Gaussian of identical width and height. How?</li>
+<li>[ ] How to mask the He I line?</li>
+<li>[ ] U22 and U19, and U25, U61</li>
+</ul>
+<h1 id="references">References</h1>
+<p>Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C</p>
+<p>Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ…722…20C</p>
+<p>Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ…455L..47G</p>
+<p>Grindlay JE. High Resolution Studies of Compact Binaries in Globular Clusters with HST and ROSAT. In 1996 [cited 2016 Apr 3]. p. 171. Available from: http://adsabs.harvard.edu/abs/1996IAUS..174..171G</p>
+<p>Cool AM, Bolton AS. Blue Stars and Binary Stars in NGC 6397: Case Study of a Collapsed-Core Globular Cluster. In eprint: arXiv:astro-ph/0201166; 2002 [cited 2016 Apr 3]. p. 163. Available from: http://adsabs.harvard.edu/abs/2002ASPC..263..163C</p>
+<p>Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ….112.1487H</p>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/halpha.html'>Halpha</a></li>
+
+<li><a href='/muselabbook16/tag/iraf.html'>iraf</a></li>
+
+<li><a href='/muselabbook16/tag/questions.html'>Questions</a></li>
+
+<li><a href='/muselabbook16/tag/cvs.html'>CVs</a></li>
+
+<li><a href='/muselabbook16/tag/pyraf.html'>pyraf</a></li>
+
+<li><a href='/muselabbook16/tag/spectra.html'>spectra</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

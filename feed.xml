@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</title>
+    <description>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</description>
+    <link>/muselabbook16/</link>
+    <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 06 Apr 2016 00:07:59 +0200</pubDate>
+    <lastBuildDate>Wed, 06 Apr 2016 00:07:59 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Stellar Remnants at the Junction</title>
+        <description>&lt;h1 id=&quot;stellar-remnants-at-the-junction&quot;&gt;&lt;a href=&quot;https://sites.google.com/site/junction2016/&quot;&gt;Stellar Remnants at the Junction&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;There is a meeting on Comparing Accreating White Dwarfs, Neutron Stars, and Black Holes in the Junction, Texas, USA. Dr. Natalie Webb ask me to write a short abstract for the meeting.&lt;/p&gt;
+&lt;p&gt;Globular clusters are compact group of stars, probably remnants of early star formation from when our own galaxy was forming. Due to their age and the nature of the gravitational interaction dominating the dynamics of the members, they are predicted to have a significant fraction of binaries in them. Many of these binaries are known to be formed from compact objects, hosts of strong accretion disks. The formation and evolution of these kind of binaries is still not completely understood, but globular clusters constitute perfect nearby laboratories to try to better understand their nature.&lt;/p&gt;
+&lt;p&gt;Of special interest is the globular cluster NGC 6397. It constitutes the seconds closest globular cluster from Earth. This cluster have been extensively studied in different wavelengths with instruments like XMM, Chandra, Hubble Space telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE). Integral field spectrographs, like MUSE, has some advantages compare to traditional long slit spectroscopy. MUSE field of view allow us to acquire longer wavelength range of complete stellar populations within the cluster.&lt;/p&gt;
+&lt;p&gt;This work explores the possibility to analyze the obtained spectra by MUSE of the cataclysmic variables population in NGC 6397. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic in the cluster. We are particularly interest in studying in detail the signs of accretion in these spectra, e.g. H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; and He lines, to get further insight into the nature of the accretion disks present in this binary population. This way we hope to extent to CVs in globular cluster the know relation for fields CVs of the double peak H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; emission to mass ratio.&lt;/p&gt;
+&lt;h1 id=&quot;the-flight&quot;&gt;The flight&lt;/h1&gt;
+&lt;p&gt;Proposed flight:&lt;/p&gt;
+&lt;p&gt;https://www.kayak.fr/flights/PAR-SAT/2016-05-01/2016-05-07/f7d1a7597212dca19f0759f70e5056620&lt;/p&gt;
+&lt;p&gt;To arrive like Dr. Webb at San Antonio on Sunday and leave Saturday. 09h40 CDG 16h38 SAT 13h58 1 escale (ORD) 14h32 SAT 09h35 CDG 12h03 1 escale (DFW)&lt;/p&gt;
+&lt;p&gt;at &lt;span class=&quot;citation&quot; data-cites=&quot;edmonds_cataclysmic_1999&quot;&gt;(Edmonds et al. 1999)&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
+&lt;p&gt;I installed the plugin for chrome &lt;a href=&quot;https://github.com/volca/markdown-preview&quot;&gt;Markdown-preview&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;p&gt;Edmonds, Peter D., Jonathan E. Grindlay, Adrienne Cool, Haldan Cohn, Phyllis Lugger, and Charles Bailyn. 1999. “Cataclysmic Variables and a Candidate Helium White Dwarf in the Globular Cluster NGC 6397.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 516 (1): 250. doi:&lt;a href=&quot;http://dx.doi.org/10.1086/307106&quot;&gt;10.1086/307106&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</guid>
+        
+        <category>travel</category>
+        
+        <category>conference</category>
+        
+        <category>abstract</category>
+        
+        <category>poster</category>
+        
+        <category>markdown</category>
+        
+        <category>chrome</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Line Splitting and U31</title>
+        <description>&lt;h1 id=&quot;u13cv8&quot;&gt;U13(CV8)&lt;/h1&gt;
+&lt;p&gt;U13 is a very faint source. It is magnotude 24 in the red according to [Cool10]&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryU31.png&quot; alt=&quot;Attend to find U31 in MUSE data cube Region 4.&quot; /&gt;&lt;figcaption&gt;Attend to find U31 in MUSE data cube Region 4.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;halpha&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Maybe split due to close by star, that is why for example U22 with a very sharp decrease and maybe cause the assymetry in many CVs.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</guid>
+        
+        <category>He</category>
+        
+        <category>spectra</category>
+        
+        <category>CVs</category>
+        
+        <category>U31</category>
+        
+        <category>Halpha</category>
+        
+        <category>HeI</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Current To-Do</title>
+        <description>&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Using same SKYFLATS for two different days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; &lt;sub&gt;foo&lt;/sub&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled checked&gt; bar
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; baz
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Get&lt;/li&gt;
+&lt;li&gt;[ ] Do Optimal Extraction Algorithm in Python.&lt;/li&gt;
+&lt;li&gt;[ ] Process spectra in IRAF&lt;/li&gt;
+&lt;li&gt;[ ] Get the spectra of the CVs. So far only center and region 5.&lt;/li&gt;
+&lt;li&gt;[ ] Get spectra of the He WD. Specially of NF2 since I have one to compared with.&lt;/li&gt;
+&lt;li&gt;[ ] Find information about the white dwarfs in the cluster&lt;/li&gt;
+&lt;li&gt;[ ] Python routines to update productssof.txt and use this for routines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/current-to-do.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/current-to-do.html</guid>
+        
+        <category>To-Do</category>
+        
+        <category>questions</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Halpha in CVs</title>
+        <description>&lt;h1 id=&quot;the-cluster&quot;&gt;The Cluster&lt;/h1&gt;
+&lt;p&gt;According to &lt;a href=&quot;http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot; title=&quot;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot;&gt;Harris&lt;/a&gt; we have the following information for NGC 6397:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(v_r\)&lt;/span&gt; Heliocentric radial velocity (km/s)&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(\pm\)&lt;/span&gt; Observational (internal) uncertainty in radial velocity&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(v_{LSR}\)&lt;/span&gt; Radial velocity relative to Solar neighborhood LSR&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(\sigma_v\)&lt;/span&gt; Central velocity dispersion (km/s)&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;math&quot;&gt;\(\pm\)&lt;/span&gt; Observational (internal) uncertainty in velocity dispersion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+Cluster
+&lt;/th&gt;
+    &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(v_r\)&lt;/span&gt;
+&lt;/th&gt;      
+    &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(\pm\)&lt;/span&gt;
+&lt;/th&gt;
+    &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(v_{LSR}\)&lt;/span&gt;
+&lt;/th&gt;
+     &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(\sigma_v\)&lt;/span&gt;
+&lt;/th&gt;
+     &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(\pm\)&lt;/span&gt;
+&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+NGC 6397
+&lt;/td&gt;
+    &lt;td&gt;
+18.0
+&lt;/td&gt;       
+    &lt;td&gt;
+0.1
+&lt;/td&gt;
+    &lt;td&gt;
+20.3
+&lt;/td&gt;
+     &lt;td&gt;
+4.5
+&lt;/td&gt;
+     &lt;td&gt;
+0.2
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;With these velocities we have a shift of:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math&quot;&gt;\[ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For a velocity of 18 &lt;span class=&quot;math&quot;&gt;\(km/s\)&lt;/span&gt; we get a shift of $&lt;/p&gt;
+&lt;h1 id=&quot;halpha-lines-in-cvs-in-ngc-6397&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; lines in CVs in NGC 6397&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot; title=&quot;Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;Casares16&lt;/a&gt; finds a correlation between the mass ratio q and the ratio of double peak separation to the full-width-half maximum of the H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission. This is find for Black holes but his data also includes CVs.&lt;/p&gt;
+&lt;p&gt;Fig 2 in &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot; title=&quot;Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;Casares16&lt;/a&gt; shows the correlation for the sampled CVs.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/CVsCasares.png&quot; alt=&quot;Fig 2 from Casares 16&quot; /&gt;&lt;figcaption&gt;Fig 2 from Casares 16&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;the-case-for-ngc-6397&quot;&gt;The case for NGC 6397&lt;/h2&gt;
+&lt;h4 id=&quot;known-spectra&quot;&gt;Known spectra&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/grindlay95fig1.png&quot; alt=&quot;Mountain View&quot; style=&quot;width:304px;height:428px;&quot;&gt;
+&lt;figcaption&gt;
+Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G&quot; title=&quot;Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ...455L..47G&quot;&gt;Grindlay95&lt;/a&gt;.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;the-method&quot;&gt;The Method&lt;/h3&gt;
+&lt;p&gt;Using Pyraf to analyze the spectra and QFitsView to extract the spectra from the processed MUSE data cube.&lt;/p&gt;
+&lt;p&gt;They can be extracted from QFitsView typing in the DPUSER consle:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;DPUSER&amp;gt;&lt;/span&gt; 3dspec(&lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;Cube buffer&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;,&lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;pixel x&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;pixel y&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;dimension of cross selector&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;operator&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;DPUSER&amp;gt;&lt;/span&gt; 3dspec(buffer2,229, 258,1, /sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The location of the CVs are the following:&lt;/p&gt;
+&lt;p&gt;ID RA (J2000) DEC (J2000) Xpixel Ypixel&lt;/p&gt;
+&lt;p&gt;U21 17:40:42.006 -53:40:22.07 219 247&lt;/p&gt;
+&lt;p&gt;U23 17:40:41.781 -53:40:19.87 229 258&lt;/p&gt;
+&lt;p&gt;U17 17:40:42.839 -53:40:20.27 182 256&lt;/p&gt;
+&lt;p&gt;U19 17:40:42.456 -53:40:29.87 196 211&lt;/p&gt;
+&lt;p&gt;U22 17:40:41.871 -53:40:29.67 225 209&lt;/p&gt;
+&lt;p&gt;U25 17:40:41.398 -53:40:26.67 246 224&lt;/p&gt;
+&lt;p&gt;U13 17:40:44.235 -53:40:40.07 120 157&lt;/p&gt;
+&lt;p&gt;U61 17:40:45.360 -53:40:29.07 70 212&lt;/p&gt;
+&lt;p&gt;U10 17:40:49.171 -53:39:49.43 134 247&lt;/p&gt;
+&lt;p&gt;The IDs are from &lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot; title=&quot;Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot;&gt;Cohn10&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To extrac the spectra was using the deblending as explain &lt;a href=&quot;http://iraf.noao.edu/docs/splot/deblend.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-cvs&quot;&gt;The CVs&lt;/h3&gt;
+&lt;h4 id=&quot;u21-cv4&quot;&gt;U21 (CV4)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The Spectra&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;splot spectra/U21_nozap.fits xmin=6400 xmax=6660&lt;/code&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u21nosmooth.png&quot; alt=&quot;The spectra&quot; /&gt;&lt;figcaption&gt;The spectra&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u213smooth.png&quot; alt=&quot;The spectra smooth 3&quot; /&gt;&lt;figcaption&gt;The spectra smooth 3&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u21fitsmooth.png&quot; alt=&quot;Fit smooth&quot; /&gt;&lt;figcaption&gt;Fit smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u21gaussfitsmooth.png&quot; alt=&quot;Fit smooth one Gaussian&quot; /&gt;&lt;figcaption&gt;Fit smooth one Gaussian&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the Double Peak: Center at 6563.111 and eqw of 0.3598 Ångström.&lt;/li&gt;
+&lt;li&gt;For the Gaussian fit:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;center cont flux eqw core gfwhm lfwhm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6565.22 2764.228 18434.7 -6.669 673.466 25.72 0.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;u23-cv1&quot;&gt;U23 (CV1)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The Spectra&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;splot spectra/U23_nozap.fits xmin=6400 xmax=6660&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u23nosmooth.png&quot; alt=&quot;The spectra&quot; /&gt;&lt;figcaption&gt;The spectra&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u233smooth.png&quot; alt=&quot;The spectra smooth 3&quot; /&gt;&lt;figcaption&gt;The spectra smooth 3&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u23fitsmooth.png&quot; alt=&quot;Fit smooth&quot; /&gt;&lt;figcaption&gt;Fit smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u23gaussfitsmooth.png&quot; alt=&quot;Fit Gaussian smooth&quot; /&gt;&lt;figcaption&gt;Fit Gaussian smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the Double Peak: Center at 6562.937 and eqw of 0.7193 Ångström.&lt;/li&gt;
+&lt;li&gt;For the Gaussian fit:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;center cont flux eqw core gfwhm lfwhm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6560.626 5124.967 52784.1 -10.3 1854.63 26.74 0.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;u17-cv3&quot;&gt;U17 (CV3)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The Spectra&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;splot spectra/U17_nozap.fits xmin=6400 xmax=6660&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u17nosmooth.png&quot; alt=&quot;The spectra&quot; /&gt;&lt;figcaption&gt;The spectra&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u173smooth.png&quot; alt=&quot;The spectra smooth 3&quot; /&gt;&lt;figcaption&gt;The spectra smooth 3&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u17fitsmooth.png&quot; alt=&quot;Fit smooth&quot; /&gt;&lt;figcaption&gt;Fit smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u17gaussfitsmooth.png&quot; alt=&quot;Fit Gaussian smooth&quot; /&gt;&lt;figcaption&gt;Fit Gaussian smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the Double Peak: Center at 6562.247 and eqw of 0.1472 Ångström.&lt;/li&gt;
+&lt;li&gt;For the Gaussian fit:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;center cont flux eqw core gfwhm lfwhm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6563.396 2040.292 28694.5 -14.06 1280.98 21.04 0.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;u19-cv2&quot;&gt;U19 (CV2)&lt;/h4&gt;
+&lt;p&gt;Check if it is CV. Is th line at 5895 He I line in absorption ?&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u19nosmooth.png&quot; alt=&quot;U19&quot; /&gt;&lt;figcaption&gt;U19&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&quot;u22-cv5&quot;&gt;U22 (CV5)&lt;/h3&gt;
+&lt;p&gt;Check stars around U22.&lt;/p&gt;
+&lt;p&gt;Is this emission and absorption?&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u22nosmooth.png&quot; alt=&quot;Fit No Smooth U22&quot; /&gt;&lt;figcaption&gt;Fit No Smooth U22&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u22fitsmooth.png&quot; alt=&quot;Fit U22&quot; /&gt;&lt;figcaption&gt;Fit U22&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u22trygauss.png&quot; alt=&quot;Try Fit U22&quot; /&gt;&lt;figcaption&gt;Try Fit U22&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the Double Peak: Center at 6563.422 and eqw of 1.4861 Ångström.&lt;/li&gt;
+&lt;li&gt;For the Gaussian fit:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;center cont flux eqw core gfwhm lfwhm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6592.22 10826.1 -1136.66 0.105 -254.768 4.191 0.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;u25-cv13&quot;&gt;U25 (CV13)&lt;/h4&gt;
+&lt;p&gt;Only H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; absoption bit He II like the other one?&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u25halpha.png&quot; alt=&quot;Fit U25&quot; /&gt;&lt;figcaption&gt;Fit U25&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u25hline.png&quot; alt=&quot;Fit He line U25&quot; /&gt;&lt;figcaption&gt;Fit He line U25&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&quot;u13-cv8&quot;&gt;U13 (CV8)&lt;/h4&gt;
+&lt;p&gt;Before Smooth&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u13nosmooth.png&quot; alt=&quot;No Smooth&quot; /&gt;&lt;figcaption&gt;No Smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;After Smooth&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u133smooth.png&quot; alt=&quot;Smooth&quot; /&gt;&lt;figcaption&gt;Smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&quot;u61-cv12&quot;&gt;U61 (CV12)&lt;/h4&gt;
+&lt;p&gt;I don’t really see much. Also see line at 5892 A.&lt;/p&gt;
+&lt;h4 id=&quot;u10-cv6&quot;&gt;U10 (CV6)&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u10nosmooth.png&quot; alt=&quot;Smooth&quot; /&gt;&lt;figcaption&gt;Smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u103smooth.png&quot; alt=&quot;Smooth&quot; /&gt;&lt;figcaption&gt;Smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u10fitsmooth.png&quot; alt=&quot;Fit smooth&quot; /&gt;&lt;figcaption&gt;Fit smooth&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;questions&quot;&gt;Questions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Smooth or not?&lt;/li&gt;
+&lt;li&gt;[ ] Their model is a 2-Gaussian of identical width and height. How?&lt;/li&gt;
+&lt;li&gt;[ ] How to mask the He I line?&lt;/li&gt;
+&lt;li&gt;[ ] U22 and U19, and U25, U61&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+&lt;p&gt;Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C&lt;/p&gt;
+&lt;p&gt;Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ…722…20C&lt;/p&gt;
+&lt;p&gt;Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ…455L..47G&lt;/p&gt;
+&lt;p&gt;Grindlay JE. High Resolution Studies of Compact Binaries in Globular Clusters with HST and ROSAT. In 1996 [cited 2016 Apr 3]. p. 171. Available from: http://adsabs.harvard.edu/abs/1996IAUS..174..171G&lt;/p&gt;
+&lt;p&gt;Cool AM, Bolton AS. Blue Stars and Binary Stars in NGC 6397: Case Study of a Collapsed-Core Globular Cluster. In eprint: arXiv:astro-ph/0201166; 2002 [cited 2016 Apr 3]. p. 163. Available from: http://adsabs.harvard.edu/abs/2002ASPC..263..163C&lt;/p&gt;
+&lt;p&gt;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ….112.1487H&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 04 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/04/halpha-in-cvs.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/04/halpha-in-cvs.html</guid>
+        
+        <category>Halpha</category>
+        
+        <category>iraf</category>
+        
+        <category>Questions</category>
+        
+        <category>CVs</category>
+        
+        <category>pyraf</category>
+        
+        <category>spectra</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Better late than never</title>
+        <description>&lt;p&gt;I have been slacking a bit writing here, but hopefully I will continue to write more often.&lt;/p&gt;
+&lt;h1 id=&quot;core-radius&quot;&gt;Core Radius&lt;/h1&gt;
+&lt;p&gt;When trying to get a value for the core radius of NGC 6397 I found two values. One from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot; title=&quot;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot;&gt;Harris&lt;/a&gt;. He gives a value of 3 arcsec, but in the section “previous analysis of NGC 6397” they cite work done with the Hubble Space Telescope they get a core collapse of around 5.5 arcsec.&lt;/p&gt;
+&lt;h1 id=&quot;proposal&quot;&gt;Proposal&lt;/h1&gt;
+&lt;p&gt;For the proposal to ask for observation time to observe the neutron star, U24. It is a LMXB. Dr. Sebastien ask me to get some pictures for the proposal.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/fov.png&quot; alt=&quot;MUSE FOV and the LMXB. The Green represents the core radio according to Martinazzi.&quot; /&gt;&lt;figcaption&gt;MUSE FOV and the LMXB. The Green represents the core radio according to &lt;strong&gt;Martinazzi&lt;/strong&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/sii.png&quot; alt=&quot;MUSE view of the LMXB.&quot; /&gt;&lt;figcaption&gt;MUSE view of the LMXB.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;aligning-x-ray-and-muse-data&quot;&gt;Aligning X-ray and MUSE data&lt;/h1&gt;
+&lt;p&gt;The astrometry of the chandra image and MUSE data are not perfect, so they don’t match exactly. With a manually created catalog of the brightest X-ray sources in the image, I try to find it in the MUSE datacube and then iterate over them to try to get the optimal rotation and the best reference star. So far I only have the CVs in the center exposure and one U10 that is in Region 5 as defined by this image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.pn://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.png&quot; alt=&quot;My number regions&quot; /&gt;.&lt;/p&gt;
+&lt;p&gt;The code is really slow and I should optimize it and try with ccmap to see if I get similar answers. The code and catalog is in the GitHub repo in the directory &lt;code&gt;scripts/misc/Xray&lt;/code&gt;. There I include the manually done catalog for MUSE and Chandra and how to call the script from bash to iterate.&lt;/p&gt;
+&lt;h1 id=&quot;all-regions-combine&quot;&gt;All regions combine&lt;/h1&gt;
+&lt;p&gt;Using the RA and DEC in the header of the white images and with the scikit learn &lt;a href=&quot;http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html&quot;&gt;K-means clusterin&lt;/a&gt; I was able to cluster all the different expsures into regions. The result is the picure above. The code is in the autocombine folder of the scripts directory of the &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016/tree/master/scripts/autocombine/executables&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For some reason the k-mean of scipy was giving me the wrong answer. I should have play more with the initial guess and number of iteration, but the scikit learn worked great.&lt;/p&gt;
+&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
+&lt;p&gt;To ignore the error messages just called the script with &lt;code&gt;-W&amp;quot;ignore&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To-Do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] &lt;del&gt;Align X-ray data with MUSE.&lt;/del&gt; Really slow since check all possibilities.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;[x] &lt;del&gt;Try to figure out weird line in supposed place of the qLMXB U24.&lt;/del&gt; Maybe noise. We calculated the flux in H &lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; and Dr. Sebastien wrote a proposal to ask for time in MUSE and study with more detail.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;[x] Forget about the line and extract H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; emmision.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+&lt;p&gt;Martinazzi E, Pieres A, Kepler SO, Costa JES, Bonatto C, Bica E. Probing mass segregation in the globular cluster NGC 6397. Monthly Notices of the Royal Astronomical Society [Internet]. 2014 Aug 1 [cited 2016 Mar 29];442:3105–11. Available from: http://adsabs.harvard.edu/abs/2014MNRAS.442.3105M&lt;/p&gt;
+&lt;p&gt;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ….112.1487H&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/03/31/better-late-than-never.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/31/better-late-than-never.html</guid>
+        
+        <category>python</category>
+        
+        <category>NGC6397</category>
+        
+        <category>ccmap</category>
+        
+        <category>iraf</category>
+        
+        <category>proposal</category>
+        
+        <category>scipy</category>
+        
+        <category>scikit</category>
+        
+        <category>pip</category>
+        
+        <category>align</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Deblending in QFitsView</title>
+        <description>&lt;h1 id=&quot;qfits-view-to-fit-spectra&quot;&gt;QFits View to fit spectra&lt;/h1&gt;
+&lt;p&gt;Like in IRAF you can press d to start deblending spectra.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 24 Mar 2016 00:00:00 +0100</pubDate>
+        <link>/muselabbook16/log/2016/03/24/deblending-in-qfitsview.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/24/deblending-in-qfitsview.html</guid>
+        
+        <category>QFitsView</category>
+        
+        <category>deblending</category>
+        
+        <category>spectra</category>
+        
+        <category>fit</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Chandra Data</title>
+        <description>&lt;h3 id=&quot;x-ray-chandra-data&quot;&gt;X-Ray Chandra Data&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.astro.puc.cl/~sguillot/&quot;&gt;Dr. Sebastien Guillot&lt;/a&gt; gave me two fits of the Chandra X-Ray data taken of NGC6397. They are in the hard drive.&lt;/p&gt;
+&lt;h3 id=&quot;ds9&quot;&gt;ds9&lt;/h3&gt;
+&lt;h4 id=&quot;mosaic&quot;&gt;Mosaic&lt;/h4&gt;
+&lt;p&gt;Open a mosaic in ds9 do:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;ds9&lt;/span&gt; -mosaic&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;regions&quot;&gt;Regions&lt;/h4&gt;
+&lt;p&gt;I can manually select regions in the X-ray data, then export it as a .reg. This way they can be easily displayed overlaying them in an image.&lt;/p&gt;
+&lt;h4 id=&quot;contours&quot;&gt;Contours&lt;/h4&gt;
+&lt;p&gt;I can export the contour from the X-Ray and then overlay the contour in the IMAGE_FOV of the MUSE data.&lt;/p&gt;
+&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] &lt;del&gt;Download data for all days to search CVs outside Core-Radius&lt;/del&gt;. I downloaded all the data and now is procesced. Need to combine them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 17 Mar 2016 00:00:00 +0100</pubDate>
+        <link>/muselabbook16/log/2016/03/17/chandra-data.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/17/chandra-data.html</guid>
+        
+        <category>x-ray</category>
+        
+        <category>Chandra</category>
+        
+        <category>ds9</category>
+        
+        <category>contours</category>
+        
+        <category>regions</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Pyraf</title>
+        <description>&lt;h3 id=&quot;pyraf-to-extract-equivalent-width&quot;&gt;Pyraf to extract Equivalent Width&lt;/h3&gt;
+&lt;p&gt;There are several ways to do this. One is using &lt;code&gt;splot&lt;/code&gt;, then the option &lt;strong&gt;e&lt;/strong&gt;. This &lt;em&gt;measure equivalent width by marking two continuum points around the line to be measured&lt;/em&gt;. I should take the two of them. One at continuum and the other from where it starts. This is since maybe we will have emission inside an absorption line.&lt;/p&gt;
+&lt;p&gt;Also can fit a single line profile with &lt;code&gt;k + (g, l or v)&lt;/code&gt;. Need to mark two continuum points and select the profile. Do this for the continuum and inside absorption line.&lt;/p&gt;
+&lt;p&gt;Also can do it with d, then g. I cant since it is very low signal. Something like this:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;splot&lt;/span&gt; U24_minusbackground_circ_1_.fits  xmin=6500 xmax=6700 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;horne-optimal-spectra-extraction&quot;&gt;Horne Optimal Spectra Extraction&lt;/h3&gt;
+&lt;p&gt;There is a method mention in [Horne86]&lt;span class=&quot;citation&quot; data-cites=&quot;SpectraHorne86&quot;&gt;(&lt;span class=&quot;citeproc-not-found&quot; data-reference-id=&quot;SpectraHorne86&quot;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt;, the idea is to try to do it with Python. There is an example code in (http://www.lpl.arizona.edu/~ianc/python/_modules/spec.html#optimalExtract)&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 00:00:00 +0100</pubDate>
+        <link>/muselabbook16/log/2016/03/16/pyraf.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/16/pyraf.html</guid>
+        
+        <category>pyraf</category>
+        
+        <category>equivalent width</category>
+        
+        <category>horne</category>
+        
+        <category>spectra</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Mosaic</title>
+        <description>&lt;h3 id=&quot;building-an-image-mosaic&quot;&gt;Building an Image Mosaic&lt;/h3&gt;
+&lt;p&gt;I finally reduced all the nights and have all the IMAGE_FOV for all the data taken for the Globular Cluster.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/manuelmarcano22/muse2016/master/Documents/images/AllImage.jpeg&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;The next step would be to combine all the different exposures of the same field together.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 15 Mar 2016 00:00:00 +0100</pubDate>
+        <link>/muselabbook16/log/2016/03/15/mosaic.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/15/mosaic.html</guid>
+        
+        <category>mosaic</category>
+        
+        <category>combine</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>U24</title>
+        <description>&lt;h3 id=&quot;flatsky&quot;&gt;FLAT,SKY&lt;/h3&gt;
+&lt;p&gt;For some observations night there are not SKYFLATs in the correct instrument mode (WFM-N). This is the case for 2014-07-29, 2014-07-31. So I had to do the following thing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use SKYFLATS taking at 22h UT on 2014-07-27, for 2014-07-27, 2014-07-28 and 2014-07-30.&lt;/li&gt;
+&lt;li&gt;Use SKYFLATS taking at 22h UT on 2014-08-02, for both 2014-07-31 and 2014-08-01.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All the observations are taking around 1h to 2h UT.&lt;/p&gt;
+&lt;h3 id=&quot;u24-lmxb&quot;&gt;U24 (LMXB)&lt;/h3&gt;
+&lt;p&gt;To try to see if the emission line seen for U24 around 640.5 nm, I extracted the spectra around that area with QFitsView to the different datasets (First Night only, Second Night and both Nights), using different options (sum, average, median). This is done with DPUSER script to be run using QFitsView. The script is in the folder misc and with the extension&lt;code&gt;.dpuser&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It is hard to believe that the 640.5 nm line is the shifted H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;, the next thing to do is to look at the possible H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission from the source and look at the &lt;a href=&quot;https://www.eso.org/observing/etc/bin/gen/form?INS.NAME=MUSE+INS.MODE=swspectr&quot;&gt;MUSE Exposure Time Calculator&lt;/a&gt;. Calculate it for a SNR of 3.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 14 Mar 2016 00:00:00 +0100</pubDate>
+        <link>/muselabbook16/log/2016/03/14/u24.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/03/14/u24.html</guid>
+        
+        <category>flat</category>
+        
+        <category>sky</category>
+        
+        <category>u25</category>
+        
+        <category>qLMXB</category>
+        
+        <category>LMXB</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+  </channel>
+</rss>

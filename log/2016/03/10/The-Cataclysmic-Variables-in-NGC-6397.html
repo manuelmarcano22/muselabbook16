@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cataclysmic Variables in NGC 6397</title>
+  <meta name="description" content="Known Cataclysmic Variables in NGC 6397">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/03/10/The-Cataclysmic-Variables-in-NGC-6397.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Cataclysmic Variables in NGC 6397</h1>
+    <p class="post-meta"><time datetime="2016-03-10T00:00:00+01:00" itemprop="datePublished">Mar 10, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="known-cataclysmic-variables-in-ngc-6397">Known Cataclysmic Variables in NGC 6397</h1>
+<h2 id="the-cvs">The CVS</h2>
+<h2 id="the-spectra">The Spectra</h2>
+<p>From the CUBEEXP#to#ZAPFINAL.fits</p>
+<p>They can be extracted from QFitsView typing in the DPUSER consle:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(<span class="kw">&lt;</span>Cube buffer<span class="kw">&gt;</span>,<span class="kw">&lt;</span>pixel x<span class="kw">&gt;</span>, <span class="kw">&lt;</span>pixel y<span class="kw">&gt;</span>, <span class="kw">&lt;</span>dimension of cross selector<span class="kw">&gt;</span>, <span class="kw">&lt;</span>operator<span class="kw">&gt;</span>)</code></pre>
+<p>For example:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,229, 258,1, /sum)</code></pre>
+<h2 id="u23-aka-cv1">U23 (aka CV1)</h2>
+<h3 id="location">Location</h3>
+<p>According to <a href="http://adsabs.harvard.edu/abs/2010ApJ...722...20C" title="Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C">Cohn10</a>:</p>
+<p><strong>R.A., Decl (J2000):</strong> 17:40:41.597 , 53:40:19.30</p>
+<h3 id="spectra">Spectra</h3>
+<p>For Spectra see Fig. below with CV1-3 from <a href="http://adsabs.harvard.edu/abs/1995ApJ...455L..47G" title="Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ...455L..47G">Grindlay95</a>.</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,229, 258,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,236, 264,1, /sum)</code></pre>
+<h2 id="u21-aka-cv4">U21 (aka CV4)</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,220, 247,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,224, 245,1, /sum)</code></pre>
+<h2 id="u17-aka-cv3">U17 (aka CV3)</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,183, 256,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,181, 252,1, /sum)</code></pre>
+<h2 id="u22-aka-cv3">U22 (aka CV3)</h2>
+<p>Not so bright</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,225, 209,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,230, 193,1, /sum)</code></pre>
+<h2 id="u19-aka-cv2">U19 (aka CV2)</h2>
+<p>Insie a lot of stars so a lot of absoption but maybe I see an emission insise absoprtion</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,194, 205,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,207, 201,1, /sum)</code></pre>
+<h2 id="u13-aka-cv8">U13 (aka CV8)</h2>
+<p>Alone so negative flux in ZAP and very low in FINAL. Not even Hubble could see it.</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer1,117, 159,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,109, 160,1, /sum)</code></pre>
+<h2 id="u61-aka-cv12">U61 (aka CV12)</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer1,117, 159,1, /sum)</code></pre>
+<p>and “empty” are with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,109, 160,1, /sum)</code></pre>
+<figure>
+<img src="/muselabbook16/images/edmondscvsfig4.png" alt="Mountain View" style="width:404px;height:428px;">
+<figcaption>
+Figure 4 from <a href="http://adsabs.harvard.edu/abs/2010ApJ...722...20C" title="Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C">Cohn10</a>.
+</figcaption>
+</figure>
+
+
+
+
+
+
+<figure>
+<img src="/muselabbook16/images/grindlay95fig1.png" alt="Mountain View" style="width:304px;height:428px;">
+<figcaption>
+Figure 1 from <a href="http://adsabs.harvard.edu/abs/1995ApJ...455L..47G" title="Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ...455L..47G">Grindlay95</a>.
+</figcaption>
+</figure>
+
+
+
+
+<h1 id="references">References</h1>
+<p>1. Grindlay JE, Cool AM, Callanan PJ, Bailyn CD, Cohn HN, Lugger PM. Spectroscopic Identification of Probable Cataclysmic Variables in the Globular Cluster NGC 6397. The Astrophysical Journal Letters [Internet]. 1995 Dec 1 [cited 2016 Mar 10];455:L47. Available from: http://adsabs.harvard.edu/abs/1995ApJ…455L..47G</p>
+<p>2. Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ…722…20C</p>
+<p>3. Edmonds PD, Grindlay JE, Cool A, Cohn H, Lugger P, Bailyn C. Cataclysmic Variables and a Candidate Helium White Dwarf in the Globular Cluster NGC 6397. ApJ [Internet]. 1999 [cited 2016 Feb 23];516(1):250. Available from: http://stacks.iop.org/0004-637X/516/i=1/a=250</p>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/cvs.html'>CVS</a></li>
+
+<li><a href='/muselabbook16/tag/dada.html'>dada</a></li>
+
+<li><a href='/muselabbook16/tag/fdafa.html'>fdafa</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>
