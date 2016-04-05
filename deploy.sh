@@ -10,7 +10,7 @@ git remote add origin git@github.com:manuelmarcano22/muselabbook16.git
 git checkout -b gh-pages
 git add -A
 git commit -am "Build"
-git push origin gh-pages
+git push -f origin gh-pages
 
 #From http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200
 
