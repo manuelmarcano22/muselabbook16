@@ -5,13 +5,56 @@ categories: [log]
 tags: [Halpha, iraf, Questions,CVs,pyraf, spectra]
 ---
 
+# The Cluster 
+
+According to [Harris] we have the following information for NGC 6397:
+
+- $v_r$ Heliocentric radial velocity (km/s)
+- $\pm$ Observational (internal) uncertainty in radial velocity
+- $v_{LSR}$ Radial velocity relative to Solar neighborhood LSR
+-  $\sigma_v$ Central velocity dispersion (km/s)
+- $\pm$ Observational (internal) uncertainty in velocity dispersion
+
+
+<div class="container">
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>Cluster</th>
+    <th>$v_r$</th>		
+    <th>$\pm$</th>
+    <th>$v_{LSR}$</th>
+     <th>$\sigma_v$</th>
+     <th>$\pm$</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>NGC 6397</td>
+    <td>18.0</td>		
+    <td>0.1</td>
+    <td>20.3</td>
+     <td>4.5</td>
+     <td>0.2</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+
+With these velocities we have a shift of:
+
+$$ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} $$
+
+For a velocity of 18 $km/s$ we get a shift of $
+
+
 # H$\alpha$ lines in CVs in NGC 6397
 
 
 [Casares16] finds a correlation between the mass ratio q and the ratio of double peak separation to the full-width-half maximum of the H$\alpha$ emission. This is find for Black holes but his data also includes CVs. 
 
 Fig 2 in  [Casares16] shows the correlation for the sampled CVs.
-
 
 ![Fig 2 from Casares 16]({{site.baseurl}}/images/CVsCasares.png)
 
@@ -73,7 +116,7 @@ To extrac the spectra was using the deblending as explain [here](http://iraf.noa
 
 **The Spectra**
 
-`splot spectra/U21_nozap.fits xmin=6500 xmax=6600`
+`splot spectra/U21_nozap.fits xmin=6400 xmax=6660`
 
 
 ![The spectra]({{site.baseurl}}/images/u21nosmooth.png)
@@ -84,6 +127,8 @@ To extrac the spectra was using the deblending as explain [here](http://iraf.noa
 ![Fit smooth]({{site.baseurl}}/images/u21fitsmooth.png)
 
 
+![Fit smooth one Gaussian]({{site.baseurl}}/images/u21gaussfitsmooth.png)
+
 We get:
 
 - For the Double Peak: Center at 6563.111  and eqw of 0.3598 Ångström. 
@@ -91,22 +136,13 @@ We get:
 
 center       cont       flux       eqw      core     gfwhm     lfwhm
 
-  6329.256  2790.931   3663.67    -1.313   20.3319     169.3        0.
-
-  6559.511   2736.99   17460.5    -6.379   1313.62     12.49        0.
-
-  6563.003  2736.172  -14544.2     5.316  -1135.08     12.04        0.
-
-  6567.947  2735.014   11320.1    -4.139     1148.     9.263        0.
-
-  6437.187  2765.647   14898.5    -5.387    36.845     379.9        0.
-
+**6565.22  2764.228   18434.7    -6.669   673.466     25.72        0.**
 
 #### U23 (CV1)
 
 **The Spectra**
 
-splot spectra/U23_nozap.fits xmin=6500 xmax=6600
+splot spectra/U23_nozap.fits xmin=6400 xmax=6660
 
 
 ![The spectra]({{site.baseurl}}/images/u23nosmooth.png)
@@ -117,6 +153,9 @@ splot spectra/U23_nozap.fits xmin=6500 xmax=6600
 ![Fit smooth]({{site.baseurl}}/images/u23fitsmooth.png)
 
 
+![Fit Gaussian smooth]({{site.baseurl}}/images/u23gaussfitsmooth.png)
+
+
 We get:
 
 - For the Double Peak: Center at 6562.937  and eqw of 0.7193 Ångström. 
@@ -124,16 +163,7 @@ We get:
 
 center      cont      flux       eqw      core     gfwhm     lfwhm 
 
-  6544.739  5139.907   3869.93   -0.7529   341.835     10.64        0.
-
-  6556.504   5137.27   27326.5    -5.319   2359.52     10.88        0.
-
-  6564.063  5135.576  -8712.99     1.697  -782.512     10.46        0.
-
-  6568.366  5134.612   22993.6    -4.478   2039.45     10.59        0.
-
-    6579.5  5132.117   3467.04   -0.6756    202.82     16.06        0.
-
+**6560.626  5124.967   52784.1     -10.3   1854.63     26.74        0.**
 
 
 
@@ -141,7 +171,7 @@ center      cont      flux       eqw      core     gfwhm     lfwhm
 
 **The Spectra**
 
-splot spectra/U17_nozap.fits xmin=6500 xmax=6600
+splot spectra/U17_nozap.fits xmin=6400 xmax=6660
 
 
 ![The spectra]({{site.baseurl}}/images/u17nosmooth.png)
@@ -152,22 +182,17 @@ splot spectra/U17_nozap.fits xmin=6500 xmax=6600
 ![Fit smooth]({{site.baseurl}}/images/u17fitsmooth.png)
 
 
+![Fit Gaussian smooth]({{site.baseurl}}/images/u17gaussfitsmooth.png)
+
+
 We get:
 
 - For the Double Peak: Center at 6562.247  and eqw of 0.1472 Ångström. 
 - For the Gaussian fit:
 
 center      cont      flux       eqw      core     gfwhm     lfwhm 
-  6535.249  2047.437  -662.289    0.3235  -104.728     5.941        0.
 
-  6558.919  2046.865   31516.3     -15.4   1687.63     17.54        0.
-
-  **6561.349  2046.807  -34373.4     16.79  -1870.53     17.26        0.**
-
-  6565.278  2046.712   31053.8    -15.17   1715.47     17.01        0.
-
-  6606.885  2045.707  -1590.03    0.7772  -115.055     12.98        0.
-
+**6563.396  2040.292   28694.5    -14.06   1280.98     21.04        0.**
 
 
 #### U19 (CV2)
@@ -179,14 +204,16 @@ Check if it is CV. Is th line at 5895 He I line in absorption ?
 
 ### U22 (CV5)
 
+Check stars around U22. 
+
 Is this emission and absorption?
 
-<figure>
-<img src={{site.baseurl}}/images/u22nosmooth.png" alt="Mountain View" style="width:504px;height:428px;">
- <figcaption>U22</figcaption>
-</figure>
+![Fit No Smooth U22]({{site.baseurl}}/images/u22nosmooth.png)
 
 ![Fit U22]({{site.baseurl}}/images/u22fitsmooth.png)
+
+
+![Try Fit U22]({{site.baseurl}}/images/u22trygauss.png)
 
 We get:
 
@@ -194,20 +221,20 @@ We get:
 - For the Gaussian fit:
 
 center      cont      flux       eqw      core     gfwhm     lfwhm
-  
-  7732.821  9581.964 -2.0404E7     2129.  -2208.76     8678.        0.
-  
-  **6553.814  10867.99   8110.25   -0.7463   702.896     10.84        0.**
-  
-  6563.689  10857.22  -11461.1     1.056  -2222.29     4.845        0.
-  
- **6570.003  10850.33   10478.3   -0.9657   870.674     11.31        0.**
-  
-  6592.22   10826.1  -1136.66     0.105  -254.768     4.191        0.
+
+**6592.22   10826.1  -1136.66     0.105  -254.768     4.191        0.**
+
 
 
 
 #### U25 (CV13)
+
+Only H$alpha$ absoption bit He II like the other one?
+
+![Fit U25]({{site.baseurl}}/images/u25halpha.png)
+
+
+![Fit He line U25]({{site.baseurl}}/images/u25hline.png)
 
 
 #### U13 (CV8)
@@ -272,3 +299,9 @@ Grindlay JE. High Resolution Studies of Compact Binaries in Globular Clusters wi
 
 Cool AM, Bolton AS. Blue Stars and Binary Stars in NGC 6397: Case Study of a Collapsed-Core Globular Cluster. In eprint: arXiv:astro-ph/0201166; 2002 [cited 2016 Apr 3]. p. 163. Available from: http://adsabs.harvard.edu/abs/2002ASPC..263..163C
 
+
+
+Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H
+
+
+[Harris]: http://adsabs.harvard.edu/abs/1996AJ....112.1487H "Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H"

@@ -43,6 +43,12 @@ For some reason the k-mean of scipy was giving me the wrong answer. I should hav
 To ignore the error messages just called the script with `-W"ignore"`.
 
 
+To-Do
+
+- [x] ~~Align X-ray data with MUSE.~~ Really slow since check all possibilities.  
+- [x] ~~Try to figure out weird line in supposed place of the qLMXB U24.~~ Maybe noise. We calculated the flux in H $alpha$ and Dr. Sebastien wrote a proposal to ask for time in MUSE and study with more detail.  
+- [x] Forget about the line and extract H$alpha$ emmision.
+
 # References
 
 Martinazzi E, Pieres A, Kepler SO, Costa JES, Bonatto C, Bica E. Probing mass segregation in the globular cluster NGC 6397. Monthly Notices of the Royal Astronomical Society [Internet]. 2014 Aug 1 [cited 2016 Mar 29];442:3105–11. Available from: http://adsabs.harvard.edu/abs/2014MNRAS.442.3105M
