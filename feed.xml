@@ -6,126 +6,9 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2016 00:10:15 +0200</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2016 00:10:15 +0200</lastBuildDate>
+    <pubDate>Wed, 06 Apr 2016 14:46:04 +0200</pubDate>
+    <lastBuildDate>Wed, 06 Apr 2016 14:46:04 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
-    
-      <item>
-        <title>Stellar Remnants at the Junction</title>
-        <description>&lt;h1 id=&quot;stellar-remnants-at-the-junction&quot;&gt;&lt;a href=&quot;https://sites.google.com/site/junction2016/&quot;&gt;Stellar Remnants at the Junction&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;There is a meeting on Comparing Accreating White Dwarfs, Neutron Stars, and Black Holes in the Junction, Texas, USA. Dr. Natalie Webb ask me to write a short abstract for the meeting.&lt;/p&gt;
-&lt;p&gt;Globular clusters are compact group of stars, probably remnants of early star formation from when our own galaxy was forming. Due to their age and the nature of the gravitational interaction dominating the dynamics of the members, they are predicted to have a significant fraction of binaries in them. Many of these binaries are known to be formed from compact objects, hosts of strong accretion disks. The formation and evolution of these kind of binaries is still not completely understood, but globular clusters constitute perfect nearby laboratories to try to better understand their nature.&lt;/p&gt;
-&lt;p&gt;Of special interest is the globular cluster NGC 6397. It constitutes the seconds closest globular cluster from Earth. This cluster have been extensively studied in different wavelengths with instruments like XMM, Chandra, Hubble Space telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE). Integral field spectrographs, like MUSE, has some advantages compare to traditional long slit spectroscopy. MUSE field of view allow us to acquire longer wavelength range of complete stellar populations within the cluster.&lt;/p&gt;
-&lt;p&gt;This work explores the possibility to analyze the obtained spectra by MUSE of the cataclysmic variables population in NGC 6397. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic in the cluster. We are particularly interest in studying in detail the signs of accretion in these spectra, e.g. H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; and He lines, to get further insight into the nature of the accretion disks present in this binary population. This way we hope to extent to CVs in globular cluster the know relation for fields CVs of the double peak H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission to mass ratio.&lt;/p&gt;
-&lt;h1 id=&quot;the-flight&quot;&gt;The flight&lt;/h1&gt;
-&lt;p&gt;Proposed flight:&lt;/p&gt;
-&lt;p&gt;https://www.kayak.fr/flights/PAR-SAT/2016-05-01/2016-05-07/f7d1a7597212dca19f0759f70e5056620&lt;/p&gt;
-&lt;p&gt;To arrive like Dr. Webb at San Antonio on Sunday and leave Saturday. 09h40 CDG 16h38 SAT 13h58 1 escale (ORD) 14h32 SAT 09h35 CDG 12h03 1 escale (DFW)&lt;/p&gt;
-&lt;p&gt;at &lt;span class=&quot;citation&quot; data-cites=&quot;edmonds_cataclysmic_1999&quot;&gt;(Edmonds et al. 1999)&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
-&lt;p&gt;I installed the plugin for chrome &lt;a href=&quot;https://github.com/volca/markdown-preview&quot;&gt;Markdown-preview&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-&lt;p&gt;Edmonds, Peter D., Jonathan E. Grindlay, Adrienne Cool, Haldan Cohn, Phyllis Lugger, and Charles Bailyn. 1999. “Cataclysmic Variables and a Candidate Helium White Dwarf in the Globular Cluster NGC 6397.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 516 (1): 250. doi:&lt;a href=&quot;http://dx.doi.org/10.1086/307106&quot;&gt;10.1086/307106&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</guid>
-        
-        <category>travel</category>
-        
-        <category>conference</category>
-        
-        <category>abstract</category>
-        
-        <category>poster</category>
-        
-        <category>markdown</category>
-        
-        <category>chrome</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Line Splitting and U31</title>
-        <description>&lt;h1 id=&quot;u13cv8&quot;&gt;U13(CV8)&lt;/h1&gt;
-&lt;p&gt;U13 is a very faint source. It is magnotude 24 in the red according to [Cool10]&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/tryU31.png&quot; alt=&quot;Attend to find U31 in MUSE data cube Region 4.&quot; /&gt;&lt;figcaption&gt;Attend to find U31 in MUSE data cube Region 4.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;halpha&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;Maybe split due to close by star, that is why for example U22 with a very sharp decrease and maybe cause the assymetry in many CVs.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</guid>
-        
-        <category>He</category>
-        
-        <category>spectra</category>
-        
-        <category>CVs</category>
-        
-        <category>U31</category>
-        
-        <category>Halpha</category>
-        
-        <category>HeI</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Current To-Do</title>
-        <description>&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Using same SKYFLATS for two different days.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled&gt; &lt;sub&gt;foo&lt;/sub&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled checked&gt; bar
-&lt;/li&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled&gt; baz
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Get&lt;/li&gt;
-&lt;li&gt;[ ] Do Optimal Extraction Algorithm in Python.&lt;/li&gt;
-&lt;li&gt;[ ] Process spectra in IRAF&lt;/li&gt;
-&lt;li&gt;[ ] Get the spectra of the CVs. So far only center and region 5.&lt;/li&gt;
-&lt;li&gt;[ ] Get spectra of the He WD. Specially of NF2 since I have one to compared with.&lt;/li&gt;
-&lt;li&gt;[ ] Find information about the white dwarfs in the cluster&lt;/li&gt;
-&lt;li&gt;[ ] Python routines to update productssof.txt and use this for routines.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/current-to-do.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/current-to-do.html</guid>
-        
-        <category>To-Do</category>
-        
-        <category>questions</category>
-        
-        
-        <category>log</category>
-        
-      </item>
     
       <item>
         <title>Halpha in CVs</title>
@@ -188,7 +71,7 @@ NGC 6397
 &lt;/div&gt;
 &lt;p&gt;With these velocities we have a shift of:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;math&quot;&gt;\[ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;For a velocity of 18 &lt;span class=&quot;math&quot;&gt;\(km/s\)&lt;/span&gt; we get a shift of $&lt;/p&gt;
+&lt;p&gt;For a velocity of 18 &lt;span class=&quot;math&quot;&gt;\(km/s\)&lt;/span&gt; and waveleght of 5875 (He I) we get a shift of &lt;span class=&quot;math&quot;&gt;\(0.3 \, \unicode{x212B}.\)&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;halpha-lines-in-cvs-in-ngc-6397&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; lines in CVs in NGC 6397&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot; title=&quot;Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;Casares16&lt;/a&gt; finds a correlation between the mass ratio q and the ratio of double peak separation to the full-width-half maximum of the H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission. This is find for Black holes but his data also includes CVs.&lt;/p&gt;
 &lt;p&gt;Fig 2 in &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot; title=&quot;Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;Casares16&lt;/a&gt; shows the correlation for the sampled CVs.&lt;/p&gt;
@@ -204,9 +87,14 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
+
+&lt;h4 id=&quot;high-resolution-spectra-from-grindlay_high_1996&quot;&gt;High resolution Spectra from [grindlay_high_1996]&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/grindlayspectra96.png&quot; alt=&quot;Spectra of CV in NGC 6397&quot; /&gt;&lt;figcaption&gt;Spectra of CV in NGC 6397&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;h3 id=&quot;the-method&quot;&gt;The Method&lt;/h3&gt;
 &lt;p&gt;Using Pyraf to analyze the spectra and QFitsView to extract the spectra from the processed MUSE data cube.&lt;/p&gt;
-&lt;p&gt;They can be extracted from QFitsView typing in the DPUSER consle:&lt;/p&gt;
+&lt;p&gt;They can be extracted from the datacube with QFitsView typing in the DPUSER console:&lt;/p&gt;
 &lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;DPUSER&amp;gt;&lt;/span&gt; 3dspec(&lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;Cube buffer&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;,&lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;pixel x&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;pixel y&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;dimension of cross selector&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;operator&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;DPUSER&amp;gt;&lt;/span&gt; 3dspec(buffer2,229, 258,1, /sum)&lt;/code&gt;&lt;/pre&gt;
@@ -223,8 +111,14 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
 &lt;p&gt;U10 17:40:49.171 -53:39:49.43 134 247&lt;/p&gt;
 &lt;p&gt;The IDs are from &lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot; title=&quot;Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot;&gt;Cohn10&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To extrac the spectra was using the deblending as explain &lt;a href=&quot;http://iraf.noao.edu/docs/splot/deblend.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;the-cvs&quot;&gt;The CVs&lt;/h3&gt;
-&lt;h4 id=&quot;u21-cv4&quot;&gt;U21 (CV4)&lt;/h4&gt;
+&lt;h2 id=&quot;the-cvs&quot;&gt;The CVs&lt;/h2&gt;
+&lt;p&gt;Below I present the spectra extracted for the source and an screen shot of the region as seen by MUSE. The screenshot is taken of the average of all wavelenght.&lt;/p&gt;
+&lt;h3 id=&quot;u21-cv4&quot;&gt;U21 (CV4)&lt;/h3&gt;
+&lt;h4 id=&quot;muse-white-image&quot;&gt;MUSE white image&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/u21fov.png&quot; alt=&quot;U21&quot; /&gt;&lt;figcaption&gt;U21&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&quot;the-spectra-and-halpha-line&quot;&gt;The Spectra and H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; line&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;The Spectra&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;splot spectra/U21_nozap.fits xmin=6400 xmax=6660&lt;/code&gt;&lt;/p&gt;
 &lt;figure&gt;
@@ -361,9 +255,9 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
 
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 04 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/04/halpha-in-cvs.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/04/halpha-in-cvs.html</guid>
+        <pubDate>Wed, 06 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/06/halpha-in-cvs.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/06/halpha-in-cvs.html</guid>
         
         <category>Halpha</category>
         
@@ -376,6 +270,126 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
         <category>pyraf</category>
         
         <category>spectra</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Stellar Remnants at the Junction</title>
+        <description>&lt;h1 id=&quot;stellar-remnants-at-the-junction&quot;&gt;&lt;a href=&quot;https://sites.google.com/site/junction2016/&quot;&gt;Stellar Remnants at the Junction&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;There is a meeting on Comparing Accreating White Dwarfs, Neutron Stars, and Black Holes in the Junction, Texas, USA. Dr. Natalie Webb ask me to write a short abstract for the meeting.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Globular clusters are compact group of stars, probably remnants of early star formation from when our own galaxy was forming. Due to their age and the nature of the gravitational interaction dominating the dynamics of the members, they are predicted to have a significant fraction of binaries in them. Many of these binaries are known to be formed from compact objects, hosts of strong accretion disks. The formation and evolution of these kind of binaries is still not completely understood, but globular clusters constitute perfect nearby laboratories to try to better understand their nature.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Of special interest is the globular cluster NGC 6397. It constitutes the seconds closest globular cluster from Earth. This cluster have been extensively studied in different wavelengths with instruments like XMM, Chandra, Hubble Space telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE). Integral field spectrographs, like MUSE, has some advantages compare to traditional long slit spectroscopy. MUSE field of view allow us to acquire longer wavelength range of complete stellar populations within the cluster.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This work explores the possibility to analyze the obtained spectra by MUSE of the cataclysmic variables population in NGC 6397. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic in the cluster. We are particularly interest in studying in detail the signs of accretion in these spectra, e.g. H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; and He lines, to get further insight into the nature of the accretion disks present in this binary population. This way we hope to extent to CVs in globular cluster the know relation for fields CVs of the double peak H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission to mass ratio.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;After a word with Dr. Webb:&lt;/p&gt;
+&lt;p&gt;Globular clusters are very old groups of stars. Due to their age and the gravitational interactions dominating the dynamics of the clusters, they are home to a significant fraction of compact binaries. The formation and evolution of these kinds of binaries is still not completely understood.&lt;/p&gt;
+&lt;p&gt;Of special interest is the globular cluster NGC 6397 as it is the closest core collapsed cluster and has therefore been extensively studied with instruments like XMM, Chandra, Hubble Space Telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE), installed on the Very Large Telescope (VLT). Integral field spectrographs, like MUSE, have many advantages compared to traditional long slit spectroscopy, as spectra are obtained for every pixel and thus every object in the large field of view (1’ x 1’).&lt;/p&gt;
+&lt;p&gt;Here we present analysis of the compact binary population in NGC 6397 taken with MUSE. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic variables in the cluster, which have been suggested to be of primordial and dynamically formed origin. Spectral analysis will allow us to examine the origin of these two populations.&lt;/p&gt;
+&lt;h1 id=&quot;the-flight&quot;&gt;The flight&lt;/h1&gt;
+&lt;p&gt;Proposed flight:&lt;/p&gt;
+&lt;p&gt;https://www.kayak.fr/flights/PAR-SAT/2016-05-01/2016-05-07/f7d1a7597212dca19f0759f70e5056620&lt;/p&gt;
+&lt;p&gt;To arrive like Dr. Webb at San Antonio on Sunday and leave Saturday. 09h40 CDG 16h38 SAT 13h58 1 escale (ORD) 14h32 SAT 09h35 CDG 12h03 1 escale (DFW)&lt;/p&gt;
+&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
+&lt;p&gt;I installed the plugin for chrome &lt;a href=&quot;https://github.com/volca/markdown-preview&quot;&gt;Markdown-preview&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</guid>
+        
+        <category>travel</category>
+        
+        <category>conference</category>
+        
+        <category>abstract</category>
+        
+        <category>poster</category>
+        
+        <category>markdown</category>
+        
+        <category>chrome</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Line Splitting and U31</title>
+        <description>&lt;h1 id=&quot;u13cv8&quot;&gt;U13(CV8)&lt;/h1&gt;
+&lt;p&gt;U13 is a very faint source. It is magnotude 24 in the red according to [Cool10]&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryU31.png&quot; alt=&quot;Attend to find U31 in MUSE data cube Region 4.&quot; /&gt;&lt;figcaption&gt;Attend to find U31 in MUSE data cube Region 4.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;halpha&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Maybe split due to close by star, that is why for example U22 with a very sharp decrease and maybe cause the assymetry in many CVs.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</guid>
+        
+        <category>He</category>
+        
+        <category>spectra</category>
+        
+        <category>CVs</category>
+        
+        <category>U31</category>
+        
+        <category>Halpha</category>
+        
+        <category>HeI</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Current To-Do</title>
+        <description>&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Using same SKYFLATS for two different days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; &lt;sub&gt;foo&lt;/sub&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled checked&gt; bar
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; baz
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Get&lt;/li&gt;
+&lt;li&gt;[ ] Do Optimal Extraction Algorithm in Python.&lt;/li&gt;
+&lt;li&gt;[ ] Process spectra in IRAF&lt;/li&gt;
+&lt;li&gt;[ ] Get the spectra of the CVs. So far only center and region 5.&lt;/li&gt;
+&lt;li&gt;[ ] Get spectra of the He WD. Specially of NF2 since I have one to compared with.&lt;/li&gt;
+&lt;li&gt;[ ] Find information about the white dwarfs in the cluster&lt;/li&gt;
+&lt;li&gt;[ ] Python routines to update productssof.txt and use this for routines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/05/current-to-do.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/current-to-do.html</guid>
+        
+        <category>To-Do</category>
+        
+        <category>questions</category>
         
         
         <category>log</category>

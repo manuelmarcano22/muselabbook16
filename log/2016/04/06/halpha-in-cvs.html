@@ -9,7 +9,7 @@
   <meta name="description" content="The Cluster">
   <link rel="stylesheet" href="/muselabbook16/css/main.css">
   <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
-  <link rel="canonical" href="/muselabbook16/log/2016/04/04/halpha-in-cvs.html">
+  <link rel="canonical" href="/muselabbook16/log/2016/04/06/halpha-in-cvs.html">
   <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
   <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
   <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
@@ -61,7 +61,7 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Halpha in CVs</h1>
-    <p class="post-meta"><time datetime="2016-04-04T00:00:00+02:00" itemprop="datePublished">Apr 4, 2016</time></p>
+    <p class="post-meta"><time datetime="2016-04-06T00:00:00+02:00" itemprop="datePublished">Apr 6, 2016</time></p>
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
@@ -128,7 +128,7 @@ NGC 6397
 </div>
 <p>With these velocities we have a shift of:</p>
 <p><span class="math">\[ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} \]</span></p>
-<p>For a velocity of 18 <span class="math">\(km/s\)</span> we get a shift of $</p>
+<p>For a velocity of 18 <span class="math">\(km/s\)</span> and waveleght of 5875 (He I) we get a shift of <span class="math">\(0.3 \, \unicode{x212B}.\)</span></p>
 <h1 id="halpha-lines-in-cvs-in-ngc-6397">H<span class="math">\(\alpha\)</span> lines in CVs in NGC 6397</h1>
 <p><a href="http://adsabs.harvard.edu/abs/2016arXiv160308920C" title="Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C">Casares16</a> finds a correlation between the mass ratio q and the ratio of double peak separation to the full-width-half maximum of the H<span class="math">\(\alpha\)</span> emission. This is find for Black holes but his data also includes CVs.</p>
 <p>Fig 2 in <a href="http://adsabs.harvard.edu/abs/2016arXiv160308920C" title="Casares J. Mass ratio determination from Halpha lines in Black-Hole X-ray transients. ArXiv e-prints [Internet]. 2016 Mar 1 [cited 2016 Apr 1];1603:arXiv:1603.08920. Available from: http://adsabs.harvard.edu/abs/2016arXiv160308920C">Casares16</a> shows the correlation for the sampled CVs.</p>
@@ -144,9 +144,14 @@ Figure 1 from <a href="http://adsabs.harvard.edu/abs/1995ApJ...455L..47G" title=
 </figcaption>
 </figure>
 
+
+<h4 id="high-resolution-spectra-from-grindlay_high_1996">High resolution Spectra from [grindlay_high_1996]</h4>
+<figure>
+<img src="/muselabbook16/images/grindlayspectra96.png" alt="Spectra of CV in NGC 6397" /><figcaption>Spectra of CV in NGC 6397</figcaption>
+</figure>
 <h3 id="the-method">The Method</h3>
 <p>Using Pyraf to analyze the spectra and QFitsView to extract the spectra from the processed MUSE data cube.</p>
-<p>They can be extracted from QFitsView typing in the DPUSER consle:</p>
+<p>They can be extracted from the datacube with QFitsView typing in the DPUSER console:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(<span class="kw">&lt;</span>Cube buffer<span class="kw">&gt;</span>,<span class="kw">&lt;</span>pixel x<span class="kw">&gt;</span>, <span class="kw">&lt;</span>pixel y<span class="kw">&gt;</span>, <span class="kw">&lt;</span>dimension of cross selector<span class="kw">&gt;</span>, <span class="kw">&lt;</span>operator<span class="kw">&gt;</span>)</code></pre>
 <p>For example:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">DPUSER&gt;</span> 3dspec(buffer2,229, 258,1, /sum)</code></pre>
@@ -163,8 +168,14 @@ Figure 1 from <a href="http://adsabs.harvard.edu/abs/1995ApJ...455L..47G" title=
 <p>U10 17:40:49.171 -53:39:49.43 134 247</p>
 <p>The IDs are from <a href="http://adsabs.harvard.edu/abs/2010ApJ...722...20C" title="Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C">Cohn10</a></p>
 <p>To extrac the spectra was using the deblending as explain <a href="http://iraf.noao.edu/docs/splot/deblend.html">here</a></p>
-<h3 id="the-cvs">The CVs</h3>
-<h4 id="u21-cv4">U21 (CV4)</h4>
+<h2 id="the-cvs">The CVs</h2>
+<p>Below I present the spectra extracted for the source and an screen shot of the region as seen by MUSE. The screenshot is taken of the average of all wavelenght.</p>
+<h3 id="u21-cv4">U21 (CV4)</h3>
+<h4 id="muse-white-image">MUSE white image</h4>
+<figure>
+<img src="/muselabbook16/images/u21fov.png" alt="U21" /><figcaption>U21</figcaption>
+</figure>
+<h4 id="the-spectra-and-halpha-line">The Spectra and H<span class="math">\(alpha\)</span> line</h4>
 <p><strong>The Spectra</strong></p>
 <p><code>splot spectra/U21_nozap.fits xmin=6400 xmax=6660</code></p>
 <figure>
