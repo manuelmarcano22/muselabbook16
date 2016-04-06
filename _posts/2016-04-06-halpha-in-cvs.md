@@ -46,7 +46,7 @@ With these velocities we have a shift of:
 
 $$ \text{shift}  (\unicode{x212B}) = \text{rest wavelenght} (\unicode{x212B}) \times \frac{\text{radial velocity}}{c} $$
 
-For a velocity of 18 $km/s$ we get a shift of $
+For a velocity of 18 $km/s$  and waveleght of 5875 (He I) we get a shift of $0.3 \, \unicode{x212B}.$
 
 
 # H$\alpha$ lines in CVs in NGC 6397
@@ -67,11 +67,17 @@ Fig 2 in  [Casares16] shows the correlation for the sampled CVs.
  <figcaption>Figure 1 from [Grindlay95].</figcaption>
 </figure>
 
+
+#### High resolution Spectra from [grindlay_high_1996]
+
+![Spectra of CV in NGC 6397]({{site.baseurl}}/images/grindlayspectra96.png)
+
+
 ### The Method
 
 Using Pyraf to analyze the spectra and QFitsView to extract the spectra from the processed MUSE data cube. 
 
-They can be extracted from QFitsView typing in the DPUSER consle:
+They can be extracted from the datacube with QFitsView typing in the DPUSER console:
 
 ```bash
 DPUSER> 3dspec(<Cube buffer>,<pixel x>, <pixel y>, <dimension of cross selector>, <operator>)
@@ -110,9 +116,17 @@ The IDs are from [Cohn10]
 
 To extrac the spectra was using the deblending as explain [here](http://iraf.noao.edu/docs/splot/deblend.html)
 
-###  The CVs
+##  The CVs
 
-#### U21 (CV4)
+Below I present the spectra extracted for the source and an screen shot of the region as seen by MUSE. The screenshot is taken of the average of all wavelenght. 
+
+### U21 (CV4)
+
+#### MUSE white image
+
+![U21]({{site.baseurl}}/images/u21fov.png)
+
+#### The Spectra and H$alpha$ line
 
 **The Spectra**
 
