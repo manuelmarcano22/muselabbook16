@@ -2,7 +2,7 @@
 layout: post
 title: "Better late than never"
 categories: [log]
-tags: [python, NGC6397, ccmap, iraf, proposal, scipy, scikit, pip, align]
+tags: [python, NGC6397, ccmap, iraf, proposal, scipy, scikit, pip, align, clustering, cluster, mosaic]
 ---
 
 
