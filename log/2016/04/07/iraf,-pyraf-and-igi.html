@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IRAF, Pyraf and igi</title>
+  <meta name="description" content="Plotting Spectra with IRAF">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">IRAF, Pyraf and igi</h1>
+    <p class="post-meta"><time datetime="2016-04-07T00:00:00+02:00" itemprop="datePublished">Apr 7, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="plotting-spectra-with-iraf">Plotting Spectra with IRAF</h1>
+<p>I don’t like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The [Space Telescope Science Institute)(http://www.stsci.edu/institute/software_hardware) has a lot of good software for this. They have the <strong>Space Telescope Science Data Analysis System (STSDAS)</strong>. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi <span class="citation" data-cites="igiiraf">(<span>Levay</span> 1992)</span>. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.</p>
+<h2 id="the-installation">The installation:</h2>
+<p>I am currently using pyraf for Python2. I installed a while ago with the <a href="http://ssb.stsci.edu/ureka/">Ureka</a> also from the Space Telescope Science Institute. I don’t know if Ureka dies come with the STSDAS packages but this was actually surprisingly easy to install following <a href="http://www.stsci.edu/institute/software_hardware/stsdas/download-stsdas">these instructions</a>.</p>
+<h2 id="wspectext">wspectext</h2>
+<p>Converting to text file before I can use igi for some reason. I need to convert it without the header.</p>
+<p>wspectext</p>
+<h2 id="using-igi">Using igi</h2>
+<p>Work on progress …</p>
+<p>Manual is good here: http://stsdas.stsci.edu/download/docs/IGIManual.pdf</p>
+<p>I want to try something like explain in the FAQ Can I automate igi graphics using a native python script? <a href="http://www.stsci.edu/institute/software_hardware/pyraf/pyraf_faq">here</a>.</p>
+<p>It is in stsdas.graphics.stplot</p>
+<p>remember to be in xgterm as defined in my .bashrc</p>
+<h2 id="splot-fitting">splot fitting</h2>
+<p>http://iraf.noao.edu/iraf/ftp/iraf/docs/script.pdf</p>
+<p>the cursor script and calling from python. Generates 3 eps.</p>
+<p>Maybe not optical. Maybe normalize and then fit. How colors and thing. Better screen shot.</p>
+<p>in iraf with the <code>.snap eps</code> and <code>.gflush</code>.</p>
+<p>In Python:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyraf <span class="ch">import</span> iraf</code></pre>
+<div class="references">
+<h1>References</h1>
+<p><span>Levay</span>, Z. G. 1992. “Interactive Graphics Interpreter: igi.” In <em>Astronomical Data Analysis Software and Systems I</em>, edited by D. M. <span>Worrall</span>, C. <span>Biemesderfer</span>, and J. <span>Barnes</span>, 25:337. Astronomical Society of the Pacific Conference Series.</p>
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/iraf.html'>iraf</a></li>
+
+<li><a href='/muselabbook16/tag/pyraf.html'>pyraf</a></li>
+
+<li><a href='/muselabbook16/tag/igi.html'>igi</a></li>
+
+<li><a href='/muselabbook16/tag/stsdas.html'>stsdas</a></li>
+
+<li><a href='/muselabbook16/tag/spectra.html'>spectra</a></li>
+
+<li><a href='/muselabbook16/tag/plot.html'>plot</a></li>
+
+<li><a href='/muselabbook16/tag/python.html'>python</a></li>
+
+<li><a href='/muselabbook16/tag/splot.html'>splot</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

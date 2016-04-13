@@ -6,9 +6,116 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2016 14:46:04 +0200</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2016 14:46:04 +0200</lastBuildDate>
+    <pubDate>Wed, 13 Apr 2016 09:15:54 +0200</pubDate>
+    <lastBuildDate>Wed, 13 Apr 2016 09:15:54 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>IRAF, Pyraf and igi</title>
+        <description>&lt;h1 id=&quot;plotting-spectra-with-iraf&quot;&gt;Plotting Spectra with IRAF&lt;/h1&gt;
+&lt;p&gt;I don’t like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The [Space Telescope Science Institute)(http://www.stsci.edu/institute/software_hardware) has a lot of good software for this. They have the &lt;strong&gt;Space Telescope Science Data Analysis System (STSDAS)&lt;/strong&gt;. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi &lt;span class=&quot;citation&quot; data-cites=&quot;igiiraf&quot;&gt;(&lt;span&gt;Levay&lt;/span&gt; 1992)&lt;/span&gt;. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.&lt;/p&gt;
+&lt;h2 id=&quot;the-installation&quot;&gt;The installation:&lt;/h2&gt;
+&lt;p&gt;I am currently using pyraf for Python2. I installed a while ago with the &lt;a href=&quot;http://ssb.stsci.edu/ureka/&quot;&gt;Ureka&lt;/a&gt; also from the Space Telescope Science Institute. I don’t know if Ureka dies come with the STSDAS packages but this was actually surprisingly easy to install following &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware/stsdas/download-stsdas&quot;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;wspectext&quot;&gt;wspectext&lt;/h2&gt;
+&lt;p&gt;Converting to text file before I can use igi for some reason. I need to convert it without the header.&lt;/p&gt;
+&lt;p&gt;wspectext&lt;/p&gt;
+&lt;h2 id=&quot;using-igi&quot;&gt;Using igi&lt;/h2&gt;
+&lt;p&gt;Work on progress …&lt;/p&gt;
+&lt;p&gt;Manual is good here: http://stsdas.stsci.edu/download/docs/IGIManual.pdf&lt;/p&gt;
+&lt;p&gt;I want to try something like explain in the FAQ Can I automate igi graphics using a native python script? &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware/pyraf/pyraf_faq&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is in stsdas.graphics.stplot&lt;/p&gt;
+&lt;p&gt;remember to be in xgterm as defined in my .bashrc&lt;/p&gt;
+&lt;h2 id=&quot;splot-fitting&quot;&gt;splot fitting&lt;/h2&gt;
+&lt;p&gt;http://iraf.noao.edu/iraf/ftp/iraf/docs/script.pdf&lt;/p&gt;
+&lt;p&gt;the cursor script and calling from python. Generates 3 eps.&lt;/p&gt;
+&lt;p&gt;Maybe not optical. Maybe normalize and then fit. How colors and thing. Better screen shot.&lt;/p&gt;
+&lt;p&gt;in iraf with the &lt;code&gt;.snap eps&lt;/code&gt; and &lt;code&gt;.gflush&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In Python:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;from&lt;/span&gt; pyraf &lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; iraf&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;&lt;span&gt;Levay&lt;/span&gt;, Z. G. 1992. “Interactive Graphics Interpreter: igi.” In &lt;em&gt;Astronomical Data Analysis Software and Systems I&lt;/em&gt;, edited by D. M. &lt;span&gt;Worrall&lt;/span&gt;, C. &lt;span&gt;Biemesderfer&lt;/span&gt;, and J. &lt;span&gt;Barnes&lt;/span&gt;, 25:337. Astronomical Society of the Pacific Conference Series.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 07 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html</guid>
+        
+        <category>iraf</category>
+        
+        <category>pyraf</category>
+        
+        <category>igi</category>
+        
+        <category>stsdas</category>
+        
+        <category>spectra</category>
+        
+        <category>plot</category>
+        
+        <category>python</category>
+        
+        <category>splot</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Trying to Understand CVs and spectra</title>
+        <description>&lt;h1 id=&quot;pertinent-interacting-binaries&quot;&gt;Pertinent Interacting binaries:&lt;/h1&gt;
+&lt;p&gt;From a slide from Paula Szody from the event &lt;a href=&quot;https://www.noao.edu/meetings/eventful-universe/&quot;&gt;The Eventful Universe&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/typesbinaries.png&quot; /&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;more-on-type-of-stars-from&quot;&gt;More on type of stars from&lt;/h1&gt;
+&lt;h1 id=&quot;some-spectra-and-lines&quot;&gt;Some spectra and lines:&lt;/h1&gt;
+&lt;p&gt;From &lt;span class=&quot;citation&quot; data-cites=&quot;carter_am_2014&quot;&gt;(Carter et al. 2014)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;1RXS J062518.2+733433: A new intermediate polar with He lines&lt;/p&gt;
+&lt;h1 id=&quot;space-telescope-science-data-analysis-system-stsdas&quot;&gt;Space Telescope Science Data Analysis System (STSDAS)&lt;/h1&gt;
+&lt;p&gt;I installed the Space Telescope Science Data Analysis System as part of iraf to try to plot the spectra. Also a reminder to use IRAF in python or ipython do:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;from&lt;/span&gt; pyraf &lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; iraf
+iraf.&amp;lt;routine&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;iraf-label-pictures&quot;&gt;IRAF label pictures&lt;/h1&gt;
+&lt;p&gt;It can be done with the option l with the specplot in noao.onedspec.&lt;/p&gt;
+&lt;p&gt;To save use implot:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;implot&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;fits&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt; dev=eps &lt;span class=&quot;kw&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;gflush&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Carter, P. J., D. Steeghs, T. R. Marsh, T. Kupfer, C. M. Copperwheat, P. J. Groot, and G. Nelemans. 2014. “The AM Canum Venaticorum Binary SDSS J173047.59+554518.5.” &lt;em&gt;Monthly Notices of the Royal Astronomical Society&lt;/em&gt; 437 (3): 2894–2900. doi:&lt;a href=&quot;http://dx.doi.org/10.1093/mnras/stt2103&quot;&gt;10.1093/mnras/stt2103&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 06 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/06/trying-to-understand-cvs-and-spectra.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/06/trying-to-understand-cvs-and-spectra.html</guid>
+        
+        <category>CVs</category>
+        
+        <category>CV</category>
+        
+        <category>spectra</category>
+        
+        <category>WD</category>
+        
+        <category>accretion disks</category>
+        
+        <category>Halpha</category>
+        
+        <category>He</category>
+        
+        <category>He lines</category>
+        
+        <category>Questions</category>
+        
+        <category>pyraf</category>
+        
+        <category>stsdas</category>
+        
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>Halpha in CVs</title>
@@ -99,17 +206,17 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;DPUSER&amp;gt;&lt;/span&gt; 3dspec(buffer2,229, 258,1, /sum)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The location of the CVs are the following:&lt;/p&gt;
-&lt;p&gt;ID RA (J2000) DEC (J2000) Xpixel Ypixel&lt;/p&gt;
-&lt;p&gt;U21 17:40:42.006 -53:40:22.07 219 247&lt;/p&gt;
-&lt;p&gt;U23 17:40:41.781 -53:40:19.87 229 258&lt;/p&gt;
-&lt;p&gt;U17 17:40:42.839 -53:40:20.27 182 256&lt;/p&gt;
-&lt;p&gt;U19 17:40:42.456 -53:40:29.87 196 211&lt;/p&gt;
-&lt;p&gt;U22 17:40:41.871 -53:40:29.67 225 209&lt;/p&gt;
-&lt;p&gt;U25 17:40:41.398 -53:40:26.67 246 224&lt;/p&gt;
-&lt;p&gt;U13 17:40:44.235 -53:40:40.07 120 157&lt;/p&gt;
-&lt;p&gt;U61 17:40:45.360 -53:40:29.07 70 212&lt;/p&gt;
-&lt;p&gt;U10 17:40:49.171 -53:39:49.43 134 247&lt;/p&gt;
-&lt;p&gt;The IDs are from &lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot; title=&quot;Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot;&gt;Cohn10&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ID RA (J2000) DEC (J2000) Xpixel Ypixel Mag in R&lt;/p&gt;
+&lt;p&gt;U21 17:40:42.006 -53:40:22.07 219 247 19.82&lt;/p&gt;
+&lt;p&gt;U23 17:40:41.781 -53:40:19.87 229 258 17.88&lt;/p&gt;
+&lt;p&gt;U17 17:40:42.839 -53:40:20.27 182 256 18.52&lt;/p&gt;
+&lt;p&gt;U19 17:40:42.456 -53:40:29.87 196 211 18.87&lt;/p&gt;
+&lt;p&gt;U22 17:40:41.871 -53:40:29.67 225 209 20.15&lt;/p&gt;
+&lt;p&gt;U25 17:40:41.398 -53:40:26.67 246 224 23.48&lt;/p&gt;
+&lt;p&gt;U13 17:40:44.235 -53:40:40.07 120 157 24.0&lt;/p&gt;
+&lt;p&gt;U61 17:40:45.360 -53:40:29.07 70 212 22.08&lt;/p&gt;
+&lt;p&gt;U10 17:40:49.171 -53:39:49.43 134 247 19.14&lt;/p&gt;
+&lt;p&gt;The IDs and magnitudes are from &lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot; title=&quot;Cohn HN, Lugger PM, Couch SM, Anderson J, Cool AM, van den Berg M, et al. Identification of Faint Chandra X-ray Sources in the Core-collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population. The Astrophysical Journal [Internet]. 2010 Oct 1 [cited 2016 Mar 4];722:20–32. Available from: http://adsabs.harvard.edu/abs/2010ApJ...722...20C&quot;&gt;Cohn10&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To extrac the spectra was using the deblending as explain &lt;a href=&quot;http://iraf.noao.edu/docs/splot/deblend.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;the-cvs&quot;&gt;The CVs&lt;/h2&gt;
 &lt;p&gt;Below I present the spectra extracted for the source and an screen shot of the region as seen by MUSE. The screenshot is taken of the average of all wavelenght.&lt;/p&gt;
@@ -453,6 +560,12 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
         
         <category>align</category>
         
+        <category>clustering</category>
+        
+        <category>cluster</category>
+        
+        <category>mosaic</category>
+        
         
         <category>log</category>
         
@@ -546,66 +659,6 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
         <category>horne</category>
         
         <category>spectra</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Mosaic</title>
-        <description>&lt;h3 id=&quot;building-an-image-mosaic&quot;&gt;Building an Image Mosaic&lt;/h3&gt;
-&lt;p&gt;I finally reduced all the nights and have all the IMAGE_FOV for all the data taken for the Globular Cluster.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/manuelmarcano22/muse2016/master/Documents/images/AllImage.jpeg&quot; /&gt;
-&lt;/figure&gt;
-&lt;p&gt;The next step would be to combine all the different exposures of the same field together.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 15 Mar 2016 00:00:00 +0100</pubDate>
-        <link>/muselabbook16/log/2016/03/15/mosaic.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/03/15/mosaic.html</guid>
-        
-        <category>mosaic</category>
-        
-        <category>combine</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>U24</title>
-        <description>&lt;h3 id=&quot;flatsky&quot;&gt;FLAT,SKY&lt;/h3&gt;
-&lt;p&gt;For some observations night there are not SKYFLATs in the correct instrument mode (WFM-N). This is the case for 2014-07-29, 2014-07-31. So I had to do the following thing:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Use SKYFLATS taking at 22h UT on 2014-07-27, for 2014-07-27, 2014-07-28 and 2014-07-30.&lt;/li&gt;
-&lt;li&gt;Use SKYFLATS taking at 22h UT on 2014-08-02, for both 2014-07-31 and 2014-08-01.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All the observations are taking around 1h to 2h UT.&lt;/p&gt;
-&lt;h3 id=&quot;u24-lmxb&quot;&gt;U24 (LMXB)&lt;/h3&gt;
-&lt;p&gt;To try to see if the emission line seen for U24 around 640.5 nm, I extracted the spectra around that area with QFitsView to the different datasets (First Night only, Second Night and both Nights), using different options (sum, average, median). This is done with DPUSER script to be run using QFitsView. The script is in the folder misc and with the extension&lt;code&gt;.dpuser&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;It is hard to believe that the 640.5 nm line is the shifted H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;, the next thing to do is to look at the possible H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission from the source and look at the &lt;a href=&quot;https://www.eso.org/observing/etc/bin/gen/form?INS.NAME=MUSE+INS.MODE=swspectr&quot;&gt;MUSE Exposure Time Calculator&lt;/a&gt;. Calculate it for a SNR of 3.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 14 Mar 2016 00:00:00 +0100</pubDate>
-        <link>/muselabbook16/log/2016/03/14/u24.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/03/14/u24.html</guid>
-        
-        <category>flat</category>
-        
-        <category>sky</category>
-        
-        <category>u25</category>
-        
-        <category>qLMXB</category>
-        
-        <category>LMXB</category>
         
         
         <category>log</category>
