@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Poster, a report and meeting</title>
+  <meta name="description" content="The Report">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/04/15/a-poster,-a-report-and-meeting.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">A Poster, a report and meeting</h1>
+    <p class="post-meta"><time datetime="2016-04-15T00:00:00+02:00" itemprop="datePublished">Apr 15, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="the-report">The Report</h2>
+<p>Information about the requirements is in the website for the master (http://ezomp2.omp.obs-mip.fr/asep/index.php/stages). Some important points to have in mind:</p>
+<ul>
+<li>No more than 30 pages including the references. This is a must.</li>
+<li><strong>Need to be done by the beginning of June</strong> and <strong>Start Now</strong>.</li>
+<li>Presentation is on the 16 of June.</li>
+</ul>
+<p>Dr. Webb suggested the following tentative skeleton:</p>
+<ul>
+<li>Abstract: Max of 20 lines.</li>
+<li>Intro: <span class="math">\(\approx 10\)</span> pages.</li>
+<li>Observation and Methods:
+<ul>
+<li>This includes tables, code and reduction of the data</li>
+<li>Approx 4-5 pages</li>
+</ul></li>
+<li>Results: Approx 5-8 pages</li>
+<li>Discussion:
+<ul>
+<li>Why it matters</li>
+</ul></li>
+<li>Conclusion: 1/2 - 1 page</li>
+<li>Future Work:
+<ul>
+<li>Include for example Neutron Star</li>
+</ul></li>
+</ul>
+<h2 id="the-poster">The Poster</h2>
+<p><strong>Start Now</strong></p>
+<p>I will probably do it in PowerPoint but a col option would be LaTeX. I found this template that looks good: <a href="http://www.latextemplates.com/template/jacobs-landscape-poster">Jacobs Landscape Poster</a>.</p>
+<h4 id="casares_mass_2016-mass-ration-and-halpha."><span class="citation" data-cites="casares_mass_2016">(Casares 2016)</span> Mass Ration and H<span class="math">\(\alpha\)</span>.</h4>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> f(q):
+    <span class="kw">return</span> (<span class="fl">0.49</span>*(<span class="dv">1</span>+q)**(-<span class="dv">1</span>))/(<span class="fl">0.6</span>+q**(<span class="dv">2</span>/<span class="dv">3</span>.)*np.log(<span class="dv">1</span>+q**(-<span class="dv">1</span>/<span class="dv">3</span>.)))
+
+
+<span class="kw">def</span> ratiodp(q,alpha,beta):
+    <span class="kw">return</span> <span class="dv">3</span>**(<span class="dv">1</span>/<span class="dv">3</span>.)*(<span class="dv">1</span>+q)**(<span class="dv">2</span>/<span class="dv">3</span>.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(<span class="fl">0.001</span>,<span class="fl">0.8</span>, <span class="fl">0.01</span>)
+ydata = ratiodp(xdata,<span class="fl">0.42</span>, <span class="fl">0.83</span>)
+plt.plot(xdata, ydata)
+plt.ylim(<span class="fl">0.5</span>,<span class="fl">0.7</span>)
+plt.show()</code></pre>
+<figure>
+<img src="/muselabbook16/images/pythonmassratio.svg" />
+</figure>
+<div class="references">
+<h1>References</h1>
+<p>Casares, Jorge. 2016. “Mass Ratio Determination from Halpha Lines in Black-Hole X-Ray Transients.” <em>ArXiv E-Prints</em> 1603 (March): arXiv:1603.08920. <a href="http://adsabs.harvard.edu/abs/2016arXiv160308920C">http://adsabs.harvard.edu/abs/2016arXiv160308920C</a>.</p>
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/poster.html'>poster</a></li>
+
+<li><a href='/muselabbook16/tag/meeting.html'>meeting</a></li>
+
+<li><a href='/muselabbook16/tag/report.html'>report</a></li>
+
+<li><a href='/muselabbook16/tag/to-do.html'>to-do</a></li>
+
+<li><a href='/muselabbook16/tag/latex.html'>latex</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>

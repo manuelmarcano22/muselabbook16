@@ -6,9 +6,194 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Apr 2016 09:22:41 +0200</pubDate>
-    <lastBuildDate>Fri, 15 Apr 2016 09:22:41 +0200</lastBuildDate>
+    <pubDate>Fri, 15 Apr 2016 18:26:07 +0200</pubDate>
+    <lastBuildDate>Fri, 15 Apr 2016 18:26:07 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Finding the Us: U11, U5, U7, U60, U80</title>
+        <description>&lt;h1 id=&quot;u11&quot;&gt;U11&lt;/h1&gt;
+&lt;p&gt;It turns out that U11 is in both Region 11 and Region 0. This is a screen shot of region 0:&lt;/p&gt;
+&lt;h4 id=&quot;region-0&quot;&gt;Region 0&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryfindU11.png&quot; alt=&quot;Region 0 and U11&quot; /&gt;&lt;figcaption&gt;Region 0 and U11&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&quot;in-region-11&quot;&gt;In Region 11:&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryfindU11_2.png&quot; alt=&quot;Region 11 and U11&quot; /&gt;&lt;figcaption&gt;Region 11 and U11&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Now I will try to combine both regions. I have the following exposure time per region:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Region 0: 325 seconds&lt;/li&gt;
+&lt;li&gt;Region 11: 340 seconds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;u5&quot;&gt;U5&lt;/h1&gt;
+&lt;p&gt;Looking for U7 (CV10), I tried to locate the nearby sources. CV7 is not in the data but just in case here is where I think U5 is.&lt;/p&gt;
+&lt;p&gt;In &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; it classify as a possible AB with &lt;span class=&quot;math&quot;&gt;\(H\alpha\)&lt;/span&gt; magnitude of 19.23, but Outside of R field.&lt;/p&gt;
+&lt;h4 id=&quot;region-17&quot;&gt;Region 17&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Region 17: 125. seconds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryfindU5.png&quot; alt=&quot;Region 17 and U5&quot; /&gt;&lt;figcaption&gt;Region 17 and U5&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;u60&quot;&gt;U60&lt;/h1&gt;
+&lt;p&gt;Should be in region 0 as well as U11.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Region 0: 325 seconds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/tryfindU60.png&quot; alt=&quot;Region 0 and U60&quot; /&gt;&lt;figcaption&gt;Region 0 and U60&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h1 id=&quot;u80&quot;&gt;U80&lt;/h1&gt;
+&lt;p&gt;Should be around region 22&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 722 (October): 20–32. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/722/1/20&quot;&gt;10.1088/0004-637X/722/1/20&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/15/locating-u11.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/15/locating-u11.html</guid>
+        
+        <category>spectra</category>
+        
+        <category>U11</category>
+        
+        <category>CVs</category>
+        
+        <category>CV</category>
+        
+        <category>U5</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Current To-Do</title>
+        <description>&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Using same SKYFLATS for two different days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt;Look for photometric limit of Host star for CVs in NGC 6397
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; If no estimate, use max estimate from turn off mass of the cluster
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt;Look for X-Ray counter part. For example U61 doesn’t have X Ray but it is a CV.
+&lt;/li&gt;
+Get limiting flux in R band. Get the flux from the datacube and convert to magnitude.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt; Get the spectra of the CVs. So far only center and region 5.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt;Get spectra of the He WD. Specially of NF2 since I have one to compared with.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt;Find information about the white dwarfs in the cluster
+&lt;/li&gt;
+&lt;li&gt;
+&lt;input type=&quot;checkbox&quot; disabled&gt;Python routines to update productssof.txt and use this for routines.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/15/current-to-do.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/15/current-to-do.html</guid>
+        
+        <category>To-Do</category>
+        
+        <category>questions</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>A Poster, a report and meeting</title>
+        <description>&lt;h2 id=&quot;the-report&quot;&gt;The Report&lt;/h2&gt;
+&lt;p&gt;Information about the requirements is in the website for the master (http://ezomp2.omp.obs-mip.fr/asep/index.php/stages). Some important points to have in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No more than 30 pages including the references. This is a must.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Need to be done by the beginning of June&lt;/strong&gt; and &lt;strong&gt;Start Now&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Presentation is on the 16 of June.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dr. Webb suggested the following tentative skeleton:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract: Max of 20 lines.&lt;/li&gt;
+&lt;li&gt;Intro: &lt;span class=&quot;math&quot;&gt;\(\approx 10\)&lt;/span&gt; pages.&lt;/li&gt;
+&lt;li&gt;Observation and Methods:
+&lt;ul&gt;
+&lt;li&gt;This includes tables, code and reduction of the data&lt;/li&gt;
+&lt;li&gt;Approx 4-5 pages&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Results: Approx 5-8 pages&lt;/li&gt;
+&lt;li&gt;Discussion:
+&lt;ul&gt;
+&lt;li&gt;Why it matters&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Conclusion: 1/2 - 1 page&lt;/li&gt;
+&lt;li&gt;Future Work:
+&lt;ul&gt;
+&lt;li&gt;Include for example Neutron Star&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-poster&quot;&gt;The Poster&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Start Now&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I will probably do it in PowerPoint but a col option would be LaTeX. I found this template that looks good: &lt;a href=&quot;http://www.latextemplates.com/template/jacobs-landscape-poster&quot;&gt;Jacobs Landscape Poster&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;casares_mass_2016-mass-ration-and-halpha.&quot;&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;casares_mass_2016&quot;&gt;(Casares 2016)&lt;/span&gt; Mass Ration and H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;.&lt;/h4&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; f(q):
+    &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; (&lt;span class=&quot;fl&quot;&gt;0.49&lt;/span&gt;*(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q)**(-&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;))/(&lt;span class=&quot;fl&quot;&gt;0.6&lt;/span&gt;+q**(&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*np.log(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q**(-&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)))
+
+
+&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; ratiodp(q,alpha,beta):
+    &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;**(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q)**(&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(&lt;span class=&quot;fl&quot;&gt;0.001&lt;/span&gt;,&lt;span class=&quot;fl&quot;&gt;0.8&lt;/span&gt;, &lt;span class=&quot;fl&quot;&gt;0.01&lt;/span&gt;)
+ydata = ratiodp(xdata,&lt;span class=&quot;fl&quot;&gt;0.42&lt;/span&gt;, &lt;span class=&quot;fl&quot;&gt;0.83&lt;/span&gt;)
+plt.plot(xdata, ydata)
+plt.ylim(&lt;span class=&quot;fl&quot;&gt;0.5&lt;/span&gt;,&lt;span class=&quot;fl&quot;&gt;0.7&lt;/span&gt;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/pythonmassratio.svg&quot; /&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Casares, Jorge. 2016. “Mass Ratio Determination from Halpha Lines in Black-Hole X-Ray Transients.” &lt;em&gt;ArXiv E-Prints&lt;/em&gt; 1603 (March): arXiv:1603.08920. &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;http://adsabs.harvard.edu/abs/2016arXiv160308920C&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/15/a-poster,-a-report-and-meeting.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/15/a-poster,-a-report-and-meeting.html</guid>
+        
+        <category>poster</category>
+        
+        <category>meeting</category>
+        
+        <category>report</category>
+        
+        <category>to-do</category>
+        
+        <category>latex</category>
+        
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>Halpha in CVs</title>
@@ -624,50 +809,6 @@ iraf.&amp;lt;routine&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       </item>
     
       <item>
-        <title>Current To-Do</title>
-        <description>&lt;h2 id=&quot;questions&quot;&gt;Questions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Using same SKYFLATS for two different days.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled&gt; &lt;sub&gt;foo&lt;/sub&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled checked&gt; bar
-&lt;/li&gt;
-&lt;li&gt;
-&lt;input type=&quot;checkbox&quot; disabled&gt; baz
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Get&lt;/li&gt;
-&lt;li&gt;[ ] Do Optimal Extraction Algorithm in Python.&lt;/li&gt;
-&lt;li&gt;[ ] Process spectra in IRAF&lt;/li&gt;
-&lt;li&gt;[ ] Get the spectra of the CVs. So far only center and region 5.&lt;/li&gt;
-&lt;li&gt;[ ] Get spectra of the He WD. Specially of NF2 since I have one to compared with.&lt;/li&gt;
-&lt;li&gt;[ ] Find information about the white dwarfs in the cluster&lt;/li&gt;
-&lt;li&gt;[ ] Python routines to update productssof.txt and use this for routines.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/current-to-do.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/current-to-do.html</guid>
-        
-        <category>To-Do</category>
-        
-        <category>questions</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
         <title>Better late than never</title>
         <description>&lt;p&gt;I have been slacking a bit writing here, but hopefully I will continue to write more often.&lt;/p&gt;
 &lt;h1 id=&quot;core-radius&quot;&gt;Core Radius&lt;/h1&gt;
@@ -729,70 +870,6 @@ iraf.&amp;lt;routine&amp;gt;&lt;/code&gt;&lt;/pre&gt;
         <category>cluster</category>
         
         <category>mosaic</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Deblending in QFitsView</title>
-        <description>&lt;h1 id=&quot;qfits-view-to-fit-spectra&quot;&gt;QFits View to fit spectra&lt;/h1&gt;
-&lt;p&gt;Like in IRAF you can press d to start deblending spectra.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 24 Mar 2016 00:00:00 +0100</pubDate>
-        <link>/muselabbook16/log/2016/03/24/deblending-in-qfitsview.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/03/24/deblending-in-qfitsview.html</guid>
-        
-        <category>QFitsView</category>
-        
-        <category>deblending</category>
-        
-        <category>spectra</category>
-        
-        <category>fit</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Chandra Data</title>
-        <description>&lt;h3 id=&quot;x-ray-chandra-data&quot;&gt;X-Ray Chandra Data&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.astro.puc.cl/~sguillot/&quot;&gt;Dr. Sebastien Guillot&lt;/a&gt; gave me two fits of the Chandra X-Ray data taken of NGC6397. They are in the hard drive.&lt;/p&gt;
-&lt;h3 id=&quot;ds9&quot;&gt;ds9&lt;/h3&gt;
-&lt;h4 id=&quot;mosaic&quot;&gt;Mosaic&lt;/h4&gt;
-&lt;p&gt;Open a mosaic in ds9 do:&lt;/p&gt;
-&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;ds9&lt;/span&gt; -mosaic&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;regions&quot;&gt;Regions&lt;/h4&gt;
-&lt;p&gt;I can manually select regions in the X-ray data, then export it as a .reg. This way they can be easily displayed overlaying them in an image.&lt;/p&gt;
-&lt;h4 id=&quot;contours&quot;&gt;Contours&lt;/h4&gt;
-&lt;p&gt;I can export the contour from the X-Ray and then overlay the contour in the IMAGE_FOV of the MUSE data.&lt;/p&gt;
-&lt;h2 id=&quot;to-do&quot;&gt;To-Do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[x] &lt;del&gt;Download data for all days to search CVs outside Core-Radius&lt;/del&gt;. I downloaded all the data and now is procesced. Need to combine them.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0100</pubDate>
-        <link>/muselabbook16/log/2016/03/17/chandra-data.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/03/17/chandra-data.html</guid>
-        
-        <category>x-ray</category>
-        
-        <category>Chandra</category>
-        
-        <category>ds9</category>
-        
-        <category>contours</category>
-        
-        <category>regions</category>
         
         
         <category>log</category>
