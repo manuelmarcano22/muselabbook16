@@ -70,12 +70,12 @@
 
   <div class="post-content" itemprop="articleBody">
     <h1 id="plotting-spectra-with-iraf">Plotting Spectra with IRAF</h1>
-<p>I don’t like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The [Space Telescope Science Institute)(http://www.stsci.edu/institute/software_hardware) has a lot of good software for this. They have the <strong>Space Telescope Science Data Analysis System (STSDAS)</strong>. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi <span class="citation" data-cites="igiiraf">(<span>Levay</span> 1992)</span>. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.</p>
+<p>I don’t like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The <a href="http://www.stsci.edu/institute/software_hardware">Space Telescope Science Institute</a> has a lot of good software for this. They have the <strong>Space Telescope Science Data Analysis System (STSDAS)</strong>. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi <span class="citation" data-cites="igiiraf">(<span>Levay</span> 1992)</span>. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.</p>
 <h2 id="the-installation">The installation:</h2>
 <p>I am currently using pyraf for Python2. I installed a while ago with the <a href="http://ssb.stsci.edu/ureka/">Ureka</a> also from the Space Telescope Science Institute. I don’t know if Ureka dies come with the STSDAS packages but this was actually surprisingly easy to install following <a href="http://www.stsci.edu/institute/software_hardware/stsdas/download-stsdas">these instructions</a>.</p>
 <h2 id="wspectext">wspectext</h2>
-<p>Converting to text file before I can use igi for some reason. I need to convert it without the header.</p>
-<p>wspectext</p>
+<p>Converting to text file before I can use igi for some reason. I need to convert it without the header. In Python importing from pyraf iraf</p>
+<pre><code>iraf.onedspec.wspectext(filename, output=source+&#39;spectra.txt&#39;, header=False)</code></pre>
 <h2 id="using-igi">Using igi</h2>
 <p>Work on progress …</p>
 <p>Manual is good here: http://stsdas.stsci.edu/download/docs/IGIManual.pdf</p>
@@ -84,9 +84,8 @@
 <p>remember to be in xgterm as defined in my .bashrc</p>
 <h2 id="splot-fitting">splot fitting</h2>
 <p>http://iraf.noao.edu/iraf/ftp/iraf/docs/script.pdf</p>
-<p>the cursor script and calling from python. Generates 3 eps.</p>
-<p>Maybe not optical. Maybe normalize and then fit. How colors and thing. Better screen shot.</p>
-<p>in iraf with the <code>.snap eps</code> and <code>.gflush</code>.</p>
+<p>See the post on <strong>Semi-Auto Fitting with IRAF</strong>.</p>
+<p>To save images in iraf with the <code>.snap eps</code> and <code>.gflush</code>.</p>
 <p>In Python:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyraf <span class="ch">import</span> iraf</code></pre>
 <div class="references">

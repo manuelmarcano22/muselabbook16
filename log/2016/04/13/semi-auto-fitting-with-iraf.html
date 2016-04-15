@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Semi-Auto Fitting with IRAF</title>
+  <meta name="description" content="The Method">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/04/13/semi-auto-fitting-with-iraf.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Semi-Auto Fitting with IRAF</h1>
+    <p class="post-meta"><time datetime="2016-04-13T00:00:00+02:00" itemprop="datePublished">Apr 13, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="the-method">The Method</h2>
+<p>First, we normalize with the <a href="http://stsdas.stsci.edu/cgi-bin/gethelp.cgi?continuum">Continuum</a> task from the stsdas package.</p>
+<p>Then we select the points where to fit the gaussian.</p>
+<pre><code>continuum ../*_* @norm.txt</code></pre>
+<p>Then I call a Python script and do the fit using pyraf. The script can be found in the GitHub Repo <a href="https://github.com/manuelmarcano22/muse2016">MUSE Data Reduction 2016</a>. In the folder <a href="https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/fitting">misc/Spectra/fitting</a>.</p>
+<h2 id="the-spectra-and-halpha-line">The Spectra and H<span class="math">\(\alpha\)</span> line</h2>
+<h2 id="all-of-them">All of them:</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">specplot</span> U*.fits xmin=6000 xmax=7000  label=imname graphics=<span class="st">&#39;eps&#39;</span></code></pre>
+<p>This is converted to svg with:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">epstopdf</span> <span class="kw">&lt;</span>file.eps<span class="kw">&gt;</span>
+<span class="kw">pdf2svg</span> <span class="kw">&lt;</span>file.pdf<span class="kw">&gt;</span> <span class="kw">&lt;</span>out.svg<span class="kw">&gt;</span></code></pre>
+<p>From (http://superuser.com/questions/198460/converting-from-eps-to-svg-format)</p>
+<figure>
+<img src="/muselabbook16/images/stackspectra.svg" />
+</figure>
+<h1 id="individual-spectra">Individual Spectra</h1>
+<p>ID RA (J2000) DEC (J2000) Xpixel Ypixel Mag in R</p>
+<p><del>U21 17:40:42.006 -53:40:22.07 219 247 19.82</del></p>
+<p><del>U23 17:40:41.781 -53:40:19.87 229 258 17.88</del></p>
+<p><del>U17 17:40:42.839 -53:40:20.27 182 256 18.52</del></p>
+<p><del>U19 17:40:42.456 -53:40:29.87 196 211 18.87</del></p>
+<p><del>U22 17:40:41.871 -53:40:29.67 225 209 20.15</del></p>
+<p><del>U25 17:40:41.398 -53:40:26.67 246 224 23.48</del></p>
+<p>U13 17:40:44.235 -53:40:40.07 120 157 24.0</p>
+<p>U61 17:40:45.360 -53:40:29.07 70 212 22.08</p>
+<p><del>U10 17:40:49.171 -53:39:49.43 134 247 19.14</del></p>
+<h2 id="u21-cv4">U21 (CV4)</h2>
+<h3 id="muse-white-image">MUSE White Image</h3>
+<figure>
+<img src="/muselabbook16/images/u21fov.png" />
+</figure>
+<h4 id="single-fit">Single Fit</h4>
+<ul>
+<li><code>./llamar.py U21_nozap_normalized.fits 6563.7 --log U21single --name single</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/single_U21_2.svg" />
+</figure>
+<h4 id="double-fit">Double Fit</h4>
+<ul>
+<li><code>./llamar.py U21_nozap_normalized.fits 6558.34 6568.731 --log u21double --name double</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/double_U21_2.svg" />
+</figure>
+<h1 id="u23">U23</h1>
+<h3 id="muse-white-image-1">MUSE white image</h3>
+<figure>
+<img src="/muselabbook16/images/u23fov.png" />
+</figure>
+<h3 id="single-gaussian">Single Gaussian</h3>
+<ul>
+<li><code>./llamar.py U23_nozap_normalized.fits 6563.4 --log U23single --name single</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/single_U23_2.svg" />
+</figure>
+<h3 id="double-gaussian">Double Gaussian</h3>
+<ul>
+<li><code>./llamar.py U23_nozap_normalized.fits 6556.2 6569.683  --log U23double --name doub le</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/double_U23_2.svg" />
+</figure>
+<h1 id="u17">U17</h1>
+<h2 id="muse-white-image-2">MUSE White Image</h2>
+<figure>
+<img src="/muselabbook16/images/u17fov.png" />
+</figure>
+<h3 id="single-gaussian-1">Single Gaussian</h3>
+<ul>
+<li><code>./llamar.py U17_nozap_normalized.fits 6562.7 --log U17single --name single</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/single_U17_2.svg" />
+</figure>
+<h3 id="double-gaussian-1">Double Gaussian</h3>
+<figure>
+<img src="/muselabbook16/images/double_U17_2.svg" />
+</figure>
+<ul>
+<li><code>/llamar.py U17_nozap_normalized.fits 6560.4 6567.1  --log U17double --name double</code></li>
+</ul>
+<h1 id="u19">U19</h1>
+<h2 id="muse-white-image-3">MUSE White Image</h2>
+<figure>
+<img src="/muselabbook16/images/u19fov.png" />
+</figure>
+<h3 id="single-gaussian-2">Single Gaussian</h3>
+<ul>
+<li><code>./llamar.py U19_nozap_normalized.fits 6563.5 --log U19single --name single</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/single_U19_2.svg" />
+</figure>
+<h1 id="u22">U22</h1>
+<h2 id="muse-white-image-4">MUSE White Image</h2>
+<figure>
+<img src="/muselabbook16/images/u22fov.png" />
+</figure>
+<h3 id="double">Double</h3>
+<ul>
+<li><code>./llamar.py U22_nozap_normalized.fits 6553.8 6570  --log U22double --name double</code></li>
+</ul>
+<p>problem fitting fixed there</p>
+<figure>
+<img src="/muselabbook16/images/double_U22_2.svg" />
+</figure>
+<h1 id="u25">U25</h1>
+<figure>
+<img src="/muselabbook16/images/u25fov.png" />
+</figure>
+<h3 id="single-absoption">Single Absoption</h3>
+<p><code>./llamar.py U25_nozap_normalized.fits 6562.6 --log U25single --name single</code></p>
+<figure>
+<img src="/muselabbook16/images/single_U25_2.svg" />
+</figure>
+<h1 id="u10">U10</h1>
+<h2 id="muse-white-image-5">MUSE White Image</h2>
+<figure>
+<img src="/muselabbook16/images/u10fov.png" />
+</figure>
+<h3 id="single">Single</h3>
+<ul>
+<li><code>./llamar.py U10_nozap_normalized.fits 6563.45  --log U10single --name single</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/single_U10_2.svg" />
+</figure>
+<h3 id="double-1">Double</h3>
+<ul>
+<li><code>./llamar.py U10_nozap_normalized.fits 6554.6 6573.186  --log U10double --name double</code></li>
+</ul>
+<figure>
+<img src="/muselabbook16/images/double_U10_2.svg" />
+</figure>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/iraf.html'>iraf</a></li>
+
+<li><a href='/muselabbook16/tag/spectra.html'>spectra</a></li>
+
+<li><a href='/muselabbook16/tag/gaussin.html'>gaussin</a></li>
+
+<li><a href='/muselabbook16/tag/fit.html'>fit</a></li>
+
+<li><a href='/muselabbook16/tag/pyraf.html'>pyraf</a></li>
+
+<li><a href='/muselabbook16/tag/halpha.html'>halpha</a></li>
+
+<li><a href='/muselabbook16/tag/he.html'>he</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>
