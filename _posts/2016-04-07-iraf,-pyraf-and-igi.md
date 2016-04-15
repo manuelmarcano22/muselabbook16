@@ -8,7 +8,7 @@ tags: [iraf, pyraf, igi, stsdas,spectra, plot, python, splot]
 
 # Plotting Spectra with IRAF
 
-I don't like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The [Space Telescope Science Institute)(http://www.stsci.edu/institute/software_hardware) has a lot of good software for this. They have the **Space Telescope Science Data Analysis System (STSDAS)**. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi [@igiiraf]. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.
+I don't like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The [Space Telescope Science Institute](http://www.stsci.edu/institute/software_hardware) has a lot of good software for this. They have the **Space Telescope Science Data Analysis System (STSDAS)**. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi [@igiiraf]. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.
 
 ## The installation:
 
@@ -17,9 +17,11 @@ I am currently using pyraf for Python2. I installed a while ago with the [Ureka]
 
 ## wspectext
 
-Converting to text file before I can use igi for some reason. I need to convert it without the header. 
+Converting to text file before I can use igi for some reason. I need to convert it without the header. In Python importing from pyraf iraf
 
-wspectext 
+```
+iraf.onedspec.wspectext(filename, output=source+'spectra.txt', header=False)
+```
 
 ## Using igi
 
@@ -39,19 +41,16 @@ remember to be in xgterm as defined in my .bashrc
 
 http://iraf.noao.edu/iraf/ftp/iraf/docs/script.pdf
 
-the cursor script and calling from python. Generates 3 eps. 
 
-Maybe not optical. Maybe normalize and then fit. How colors and thing. Better screen shot. 
+See the post on **Semi-Auto Fitting with IRAF**.
 
-
-in iraf with the `.snap eps` and `.gflush`.
+To save images in iraf with the `.snap eps` and `.gflush`.
 
 In Python:
 
 ```python
 from pyraf import iraf
 ```
-
 
 
 

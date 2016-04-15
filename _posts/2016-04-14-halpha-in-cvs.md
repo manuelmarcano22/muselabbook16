@@ -60,7 +60,7 @@ Fig 2 in  [Casares16] shows the correlation for the sampled CVs.
 
 ## The case for NGC 6397
 
-#### Known spectra
+#### Some known spectra
 
 <figure>
 <img src="{{site.baseurl}}/images/grindlay95fig1.png" alt="Mountain View" style="width:304px;height:428px;">
@@ -68,7 +68,7 @@ Fig 2 in  [Casares16] shows the correlation for the sampled CVs.
 </figure>
 
 
-#### High resolution Spectra from [grindlay_high_1996]
+#### High resolution Spectra from [Grindlay]
 
 ![Spectra of CV in NGC 6397]({{site.baseurl}}/images/grindlayspectra96.png)
 
@@ -126,7 +126,7 @@ Below I present the spectra extracted for the source and an screen shot of the r
 
 ![U21]({{site.baseurl}}/images/u21fov.png)
 
-#### The Spectra and H$alpha$ line
+#### The Spectra and H$\alpha$ line
 
 **The Spectra**
 
