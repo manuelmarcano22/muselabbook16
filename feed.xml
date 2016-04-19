@@ -6,9 +6,175 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Apr 2016 18:26:07 +0200</pubDate>
-    <lastBuildDate>Fri, 15 Apr 2016 18:26:07 +0200</lastBuildDate>
+    <pubDate>Tue, 19 Apr 2016 09:38:39 +0200</pubDate>
+    <lastBuildDate>Tue, 19 Apr 2016 09:38:39 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>A closer look at the CVs</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;&lt;/h2&gt;
+&lt;p&gt;From &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; we get some estimate of mass and with the function from @[casares_mass_2016]&lt;/p&gt;
+&lt;h2 id=&quot;the-inner-bright-cvs&quot;&gt;The inner bright CVs&lt;/h2&gt;
+&lt;p&gt;According to &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The fairly high R-band flux indicates that the secondaries are relatively massive, &lt;span class=&quot;math&quot;&gt;\(\approx 0.5-0.7 \, M_{\odot}\)&lt;/span&gt;._&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The inferred mass range for the bright CVs (&lt;span class=&quot;math&quot;&gt;\(1.5 \pm 0.2 M_{\odot})\)&lt;/span&gt; is consistent with a system made up of a heavy WD (&lt;span class=&quot;math&quot;&gt;\(\approx 0.9 M_{\odot})i\)&lt;/span&gt; with a MS secondary of mass &lt;span class=&quot;math&quot;&gt;\(\approx 0.6 M_{\odot}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;From table 2 the inferered mass for these CVs is: &lt;span class=&quot;math&quot;&gt;\(1.46 \pm 0.22 M_{\odot}.\)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-cvs&quot;&gt;The CVs:&lt;/h3&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+CV
+&lt;/th&gt;
+    &lt;th&gt;
+FWHM Single Gaussian (&lt;span class=&quot;math&quot;&gt;\(\mathring{A}\)&lt;/span&gt;)
+&lt;/th&gt;      
+    &lt;th&gt;
+Double Peaked between Gaussians (&lt;span class=&quot;math&quot;&gt;\(\mathring{A}\)&lt;/span&gt;)
+&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U21
+&lt;/td&gt;
+    &lt;td&gt;
+20.93
+&lt;/td&gt;      
+    &lt;td&gt;
+11.821
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U23
+&lt;/td&gt;
+    &lt;td&gt;
+24.97
+&lt;/td&gt;      
+    &lt;td&gt;
+14.188
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U10
+&lt;/td&gt;
+    &lt;td&gt;
+37.27
+&lt;/td&gt;      
+    &lt;td&gt;
+20.93
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;q is the mass ratio of the companion star to the compact object.&lt;/p&gt;
+&lt;h4 id=&quot;u21&quot;&gt;U21&lt;/h4&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;cv21 = {&lt;span class=&quot;st&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;U21&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;fwhm&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;20.93&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;dp&amp;quot;&lt;/span&gt;:&lt;span class=&quot;dt&quot;&gt;str&lt;/span&gt;(&lt;span class=&quot;fl&quot;&gt;6568.749-6556.928&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;:getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U21&amp;#39;&lt;/span&gt;)}`&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;u23&quot;&gt;U23&lt;/h4&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;cv23 = {&lt;span class=&quot;st&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;U23&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;fwhm&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;24.97&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;dp&amp;quot;&lt;/span&gt;:&lt;span class=&quot;dt&quot;&gt;str&lt;/span&gt;(&lt;span class=&quot;fl&quot;&gt;6569.895-6555.707&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;:getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U23&amp;#39;&lt;/span&gt;)}&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;u10&quot;&gt;U10&lt;/h4&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;cv10 = {&lt;span class=&quot;st&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;U10&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;fwhm&amp;quot;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;quot;37.27&amp;quot;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;quot;dp&amp;quot;&lt;/span&gt;:&lt;span class=&quot;dt&quot;&gt;str&lt;/span&gt;(&lt;span class=&quot;dt&quot;&gt;abs&lt;/span&gt;(&lt;span class=&quot;fl&quot;&gt;6551.823-6572.753&lt;/span&gt;)), &lt;span class=&quot;st&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;:getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U10&amp;#39;&lt;/span&gt;)}&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;the-plot&quot;&gt;The plot:&lt;/h4&gt;
+&lt;p&gt;With the formula from &lt;span class=&quot;citation&quot; data-cites=&quot;casares_mass_2016&quot;&gt;(Casares 2016)&lt;/span&gt; and the estimation of the mass from &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def f(q):
+    return (0.49*(1+q)**(-1))/(0.6+q**(2/3.)*np.log(1+q**(-1/3.)))
+
+
+def ratiodp(q,alpha,beta):
+    return 3**(1/3.)*(1+q)**(2/3.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(0.001,0.8, 0.01)
+ydata = ratiodp(xdata,0.42, 0.83)
+plt.plot(xdata, ydata)
+plt.ylim(0.5,0.7)
+
+
+maxrat = .7/(1.5-.7)
+minrat = .5/(1.5-.5)
+ypoints = [ (float(cv21[&amp;#39;eqw&amp;#39;])/float(cv21[&amp;#39;fwhm&amp;#39;])),(float(cv23[&amp;#39;eqw&amp;#39;])/float(cv23[&amp;#39;fwhm&amp;#39;])), (float(cv10[&amp;#39;eqw&amp;#39;])/float(cv10[&amp;#39;fwhm&amp;#39;]))   ]
+xpoints=[.6/.9 for i in range(3)]
+plt.errorbar(xpoints, ypoints, xerr=(maxrat-minrat)/2., fmt=&amp;#39;o&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/casares.svg&quot; /&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;flux&quot;&gt;Flux&lt;/h2&gt;
+&lt;p&gt;To compare to &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; they say:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Photometric calibration to the VEGAMAG system from &lt;span class=&quot;citation&quot; data-cites=&quot;strickler_helium-core_2009&quot;&gt;(Strickler et al. 2009)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And in &lt;span class=&quot;citation&quot; data-cites=&quot;strickler_helium-core_2009&quot;&gt;(Strickler et al. 2009)&lt;/span&gt; they say as explain in &lt;span class=&quot;citation&quot; data-cites=&quot;sirianni_photometric_2005&quot;&gt;(Sirianni et al. 2005)&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;vegamag-system&quot;&gt;VEGAMAG system&lt;/h2&gt;
+&lt;p&gt;VEGAMAG system makes use of Vega (a Lyr) as the standard star.&lt;/p&gt;
+&lt;p&gt;There is a very cool package for python called: &lt;a href=&quot;https://pypi.python.org/pypi/pysynphot/&quot;&gt;pysynphot 0.9.7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Examples can be found &lt;a href=&quot;http://stsdas.stsci.edu/astropy_synphot/synphot/index.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Something worth mentioning is this two new units for me. The FLAM and FNU&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flam is ergs &lt;span class=&quot;math&quot;&gt;\(s^{-1} cm^{-2} \mathring{A}^{-1}\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;fnu is ergs &lt;span class=&quot;math&quot;&gt;\(s^{-1} cm^{-2} Hz^{-1}\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To import the spectra with the units:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;from&lt;/span&gt; astropy.io &lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dt&quot;&gt;ascii&lt;/span&gt;
+&lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;ch&quot;&gt;as&lt;/span&gt; plt
+&lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; pysynphot
+tab = &lt;span class=&quot;dt&quot;&gt;ascii&lt;/span&gt;.read(&lt;span class=&quot;st&quot;&gt;&amp;#39;U23spectra.txt&amp;#39;&lt;/span&gt;, names=[&lt;span class=&quot;st&quot;&gt;&amp;#39;wave&amp;#39;&lt;/span&gt;, &lt;span class=&quot;st&quot;&gt;&amp;#39;flux&amp;#39;&lt;/span&gt;]) 
+wave = tab[&lt;span class=&quot;st&quot;&gt;&amp;#39;wave&amp;#39;&lt;/span&gt;]  &lt;span class=&quot;co&quot;&gt;# First column&lt;/span&gt;
+flux = tab[&lt;span class=&quot;st&quot;&gt;&amp;#39;flux&amp;#39;&lt;/span&gt;]*&lt;span class=&quot;dv&quot;&gt;10&lt;/span&gt;**(-&lt;span class=&quot;dv&quot;&gt;20&lt;/span&gt;)  &lt;span class=&quot;co&quot;&gt;# Second column&lt;/span&gt;
+sp = pysynphot.ArraySpectrum(wave=wave, flux=flux, waveunits=&lt;span class=&quot;st&quot;&gt;&amp;#39;angstrom&amp;#39;&lt;/span&gt;, fluxunits=&lt;span class=&quot;st&quot;&gt;&amp;#39;flam&amp;#39;&lt;/span&gt;)
+&lt;span class=&quot;co&quot;&gt;#To see Vega spectrum&lt;/span&gt;
+pysynphot.Vega.flux
+pysynphot.Vega.fluxunits
+pysynphot.Vega.wave&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Had to sownload the filters fro Hubble from http://www.stsci.edu/hst/observatory/crds/throughput.html&lt;/p&gt;
+&lt;p&gt;Then do this http://ssb.stsci.edu/pysynphot/docs/&lt;/p&gt;
+&lt;p&gt;Now it is in my bashrc&lt;/p&gt;
+&lt;p&gt;For the filter &lt;code&gt;bp_acs = S.ObsBandpass(&#39;acs,wfc1,f625w&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;There is wfc 1 and 2&lt;/p&gt;
+&lt;p&gt;TO get observation do:&lt;/p&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; numpy &lt;span class=&quot;ch&quot;&gt;as&lt;/span&gt; np
+&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; find_nearest(array,value):
+    idx = (np.&lt;span class=&quot;dt&quot;&gt;abs&lt;/span&gt;(array-value)).argmin()
+    &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; idx
+&lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; pysynphot &lt;span class=&quot;ch&quot;&gt;as&lt;/span&gt; S
+bp_acs = S.ObsBandpass(&lt;span class=&quot;st&quot;&gt;&amp;#39;acs,wfc1,f625w&amp;#39;&lt;/span&gt;)
+obstar=S.Observation(sp, bp_acs, force=&lt;span class=&quot;st&quot;&gt;&amp;#39;taper&amp;#39;&lt;/span&gt;)
+obvega=S.Observation(S.Vega, bp_acs, force=&lt;span class=&quot;st&quot;&gt;&amp;#39;taper&amp;#39;&lt;/span&gt;)
+&lt;span class=&quot;co&quot;&gt;#Taper the spectrum by adding zeros to each end.&lt;/span&gt;
+plt.plot(obstar.wave, obstar.flux, color=&lt;span class=&quot;st&quot;&gt;&amp;#39;blue&amp;#39;&lt;/span&gt;)
+plt.plot(obvega.wave, obvega.flux, color=&lt;span class=&quot;st&quot;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;outer-and-faiter&quot;&gt;6 outer and faiter&lt;/h2&gt;
+&lt;p&gt;No H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; only He 1.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Casares, Jorge. 2016. “Mass Ratio Determination from Halpha Lines in Black-Hole X-Ray Transients.” &lt;em&gt;ArXiv E-Prints&lt;/em&gt; 1603 (March): arXiv:1603.08920. &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160308920C&quot;&gt;http://adsabs.harvard.edu/abs/2016arXiv160308920C&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 722 (October): 20–32. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/722/1/20&quot;&gt;10.1088/0004-637X/722/1/20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sirianni, M., M. J. Jee, N. Benítez, J. P. Blakeslee, A. R. Martel, G. Meurer, M. Clampin, et al. 2005. “The Photometric Performance and Calibration of the Hubble Space Telescope Advanced Camera for Surveys.” &lt;em&gt;Publications of the Astronomical Society of the Pacific&lt;/em&gt; 117 (October): 1049–1112. doi:&lt;a href=&quot;http://dx.doi.org/10.1086/444553&quot;&gt;10.1086/444553&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Strickler, Rachel R., Adrienne M. Cool, Jay Anderson, Haldan N. Cohn, Phyllis M. Lugger, and Aldo M. Serenelli. 2009. “Helium-Core White Dwarfs in the Globular Cluster NGC 6397.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 699 (July): 40–55. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/699/1/40&quot;&gt;10.1088/0004-637X/699/1/40&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 17 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/17/a-closer-look-at-the-cvs.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/17/a-closer-look-at-the-cvs.html</guid>
+        
+        <category>CVS</category>
+        
+        <category>spectra</category>
+        
+        <category>AMCVn</category>
+        
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>Finding the Us: U11, U5, U7, U60, U80</title>
@@ -802,74 +968,6 @@ iraf.&amp;lt;routine&amp;gt;&lt;/code&gt;&lt;/pre&gt;
         <category>Halpha</category>
         
         <category>HeI</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Better late than never</title>
-        <description>&lt;p&gt;I have been slacking a bit writing here, but hopefully I will continue to write more often.&lt;/p&gt;
-&lt;h1 id=&quot;core-radius&quot;&gt;Core Radius&lt;/h1&gt;
-&lt;p&gt;When trying to get a value for the core radius of NGC 6397 I found two values. One from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot; title=&quot;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ....112.1487H&quot;&gt;Harris&lt;/a&gt;. He gives a value of 3 arcsec, but in the section “previous analysis of NGC 6397” they cite work done with the Hubble Space Telescope they get a core collapse of around 5.5 arcsec.&lt;/p&gt;
-&lt;h1 id=&quot;proposal&quot;&gt;Proposal&lt;/h1&gt;
-&lt;p&gt;For the proposal to ask for observation time to observe the neutron star, U24. It is a LMXB. Dr. Sebastien ask me to get some pictures for the proposal.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/fov.png&quot; alt=&quot;MUSE FOV and the LMXB. The Green represents the core radio according to Martinazzi.&quot; /&gt;&lt;figcaption&gt;MUSE FOV and the LMXB. The Green represents the core radio according to &lt;strong&gt;Martinazzi&lt;/strong&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/sii.png&quot; alt=&quot;MUSE view of the LMXB.&quot; /&gt;&lt;figcaption&gt;MUSE view of the LMXB.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;aligning-x-ray-and-muse-data&quot;&gt;Aligning X-ray and MUSE data&lt;/h1&gt;
-&lt;p&gt;The astrometry of the chandra image and MUSE data are not perfect, so they don’t match exactly. With a manually created catalog of the brightest X-ray sources in the image, I try to find it in the MUSE datacube and then iterate over them to try to get the optimal rotation and the best reference star. So far I only have the CVs in the center exposure and one U10 that is in Region 5 as defined by this image:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.pn://raw.githubusercontent.com/manuelmarcano22/muse2016/master/scripts/autocombine/products/musemosaic.png&quot; alt=&quot;My number regions&quot; /&gt;.&lt;/p&gt;
-&lt;p&gt;The code is really slow and I should optimize it and try with ccmap to see if I get similar answers. The code and catalog is in the GitHub repo in the directory &lt;code&gt;scripts/misc/Xray&lt;/code&gt;. There I include the manually done catalog for MUSE and Chandra and how to call the script from bash to iterate.&lt;/p&gt;
-&lt;h1 id=&quot;all-regions-combine&quot;&gt;All regions combine&lt;/h1&gt;
-&lt;p&gt;Using the RA and DEC in the header of the white images and with the scikit learn &lt;a href=&quot;http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html&quot;&gt;K-means clusterin&lt;/a&gt; I was able to cluster all the different expsures into regions. The result is the picure above. The code is in the autocombine folder of the scripts directory of the &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016/tree/master/scripts/autocombine/executables&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For some reason the k-mean of scipy was giving me the wrong answer. I should have play more with the initial guess and number of iteration, but the scikit learn worked great.&lt;/p&gt;
-&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
-&lt;p&gt;To ignore the error messages just called the script with &lt;code&gt;-W&amp;quot;ignore&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;To-Do&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[x] &lt;del&gt;Align X-ray data with MUSE.&lt;/del&gt; Really slow since check all possibilities.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;[x] &lt;del&gt;Try to figure out weird line in supposed place of the qLMXB U24.&lt;/del&gt; Maybe noise. We calculated the flux in H &lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; and Dr. Sebastien wrote a proposal to ask for time in MUSE and study with more detail.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;[x] Forget about the line and extract H&lt;span class=&quot;math&quot;&gt;\(alpha\)&lt;/span&gt; emmision.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-&lt;p&gt;Martinazzi E, Pieres A, Kepler SO, Costa JES, Bonatto C, Bica E. Probing mass segregation in the globular cluster NGC 6397. Monthly Notices of the Royal Astronomical Society [Internet]. 2014 Aug 1 [cited 2016 Mar 29];442:3105–11. Available from: http://adsabs.harvard.edu/abs/2014MNRAS.442.3105M&lt;/p&gt;
-&lt;p&gt;Harris WE. A Catalog of Parameters for Globular Clusters in the Milky Way. The Astronomical Journal [Internet]. 1996 Oct 1 [cited 2016 Mar 31];112:1487. Available from: http://adsabs.harvard.edu/abs/1996AJ….112.1487H&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 31 Mar 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/03/31/better-late-than-never.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/03/31/better-late-than-never.html</guid>
-        
-        <category>python</category>
-        
-        <category>NGC6397</category>
-        
-        <category>ccmap</category>
-        
-        <category>iraf</category>
-        
-        <category>proposal</category>
-        
-        <category>scipy</category>
-        
-        <category>scikit</category>
-        
-        <category>pip</category>
-        
-        <category>align</category>
-        
-        <category>clustering</category>
-        
-        <category>cluster</category>
-        
-        <category>mosaic</category>
         
         
         <category>log</category>
