@@ -170,6 +170,8 @@ plt.plot(obvega.wave, obvega.flux, color='red')
 plt.show()
 ```
 
+![]({{site.baseurl}}/images/vega.svg)
+
 
 ## 6 outer and faiter
 
