@@ -6,9 +6,253 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Apr 2016 09:44:04 +0200</pubDate>
-    <lastBuildDate>Tue, 19 Apr 2016 09:44:04 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Apr 2016 03:58:51 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Apr 2016 03:58:51 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>ProposedTOC</title>
+        <description>&lt;h1 id=&quot;future-toc&quot;&gt;Future TOC ?&lt;/h1&gt;
+&lt;p&gt;Dr. Webb asked me to try to get ready a rought draft of the table of content for the report.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro:
+&lt;ul&gt;
+&lt;li&gt;Compact Objects:
+&lt;ul&gt;
+&lt;li&gt;White Dwarfs:
+&lt;ul&gt;
+&lt;li&gt;CVs&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Neutron Stars:
+&lt;ul&gt;
+&lt;li&gt;qLMXB&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Globular Clusters:
+&lt;ul&gt;
+&lt;li&gt;NGC6397
+&lt;ul&gt;
+&lt;li&gt;Compact Object Population (15 CVs candidates, 3 neutron stars (1 qLMXB))&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Spectroscopy:
+&lt;ul&gt;
+&lt;li&gt;Integral field spectrograph
+&lt;ul&gt;
+&lt;li&gt;MUSE&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Observation and Methods:
+&lt;ul&gt;
+&lt;li&gt;MUSE Science Verification and Commissioning Data:
+&lt;ul&gt;
+&lt;li&gt;Public release data and &lt;span class=&quot;citation&quot; data-cites=&quot;husser_muse_2016&quot;&gt;(Husser et al. 2016)&lt;/span&gt; work and available processed data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Data Reduction:
+&lt;ul&gt;
+&lt;li&gt;MUSE Data Reduction Software:
+&lt;ul&gt;
+&lt;li&gt;CPL&lt;/li&gt;
+&lt;li&gt;EsoRex&lt;/li&gt;
+&lt;li&gt;MUSE “dynamical libraries” or recipes&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Public GitHub Repo with all code:
+&lt;ul&gt;
+&lt;li&gt;Include README ? and wiki if I ever finish it&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Spectra Extraction and analysis ?
+&lt;ul&gt;
+&lt;li&gt;QFitsView (extraction, sum 5 pixel area)&lt;/li&gt;
+&lt;li&gt;IRAF/PYRAF (fitting, smoothing)&lt;/li&gt;
+&lt;li&gt;Python (some fitting, X-Ray astrometry matching)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Results:
+&lt;ul&gt;
+&lt;li&gt;Spectra:
+&lt;ul&gt;
+&lt;li&gt;“Brights”&lt;/li&gt;
+&lt;li&gt;“Faint”&lt;/li&gt;
+&lt;li&gt;’Intermediate&amp;quot;&lt;/li&gt;
+&lt;li&gt;Neutron Star&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Variability:
+&lt;ul&gt;
+&lt;li&gt;Magnitude now, in &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; and &lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt; range&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mass estimation:
+&lt;ul&gt;
+&lt;li&gt;DP/FWHM vs. q according to [casares_mass_2016]&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secondary Star:
+&lt;ul&gt;
+&lt;li&gt;M star spectra from &lt;span class=&quot;citation&quot; data-cites=&quot;husser_muse_2016&quot;&gt;(Husser et al. 2016)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Lack or presence&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Discussion:
+&lt;ul&gt;
+&lt;li&gt;Two population:
+&lt;ul&gt;
+&lt;li&gt;Dynamically vs. primordial?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Magnetism ?&lt;/li&gt;
+&lt;li&gt;X-Ray ?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Future Work
+&lt;ul&gt;
+&lt;li&gt;Dr. Guillot MUSE proposal for the qLMXB&lt;/li&gt;
+&lt;li&gt;Optimal spectra extraction &lt;span class=&quot;citation&quot; data-cites=&quot;horne_optimal_1986&quot;&gt;(Horne 1986)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Create a Docker container for the data reduction with necessary software.&lt;/li&gt;
+&lt;li&gt;Create an Amazon Machine Image to be able to run analysis with the Amazon Elastic Compute Cloud. An example of something like this done in academia is the work of &lt;span class=&quot;citation&quot; data-cites=&quot;ragan-kelley_collaborative_2013&quot;&gt;(Ragan-Kelley et al. 2013)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 722 (October): 20–32. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/722/1/20&quot;&gt;10.1088/0004-637X/722/1/20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Horne, K. 1986. “An Optimal Extraction Algorithm for CCD Spectroscopy.” &lt;em&gt;Publications of the Astronomical Society of the Pacific&lt;/em&gt; 98 (June): 609–17. doi:&lt;a href=&quot;http://dx.doi.org/10.1086/131801&quot;&gt;10.1086/131801&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Husser, Tim-Oliver, Sebastian Kamann, Stefan Dreizler, Martin Wendt, Nina Wulff, Roland Bacon, Lutz Wisotzki, et al. 2016. “MUSE Crowded Field 3D Spectroscopy of over 12,000 Stars in the Globular Cluster NGC 6397 - I. The First Comprehensive Spectroscopic HRD of a Globular Cluster.” &lt;em&gt;ArXiv E-Prints&lt;/em&gt; 1602 (February): arXiv:1602.01649. &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160201649H&quot;&gt;http://adsabs.harvard.edu/abs/2016arXiv160201649H&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Kaluzny, J., I. B. Thompson, W. Krzeminski, and A. Schwarzenberg-Czerny. 2006. “Photometric Study of the Variable Star Population in the Globular Cluster NGC 6397.” &lt;em&gt;Monthly Notices of the Royal Astronomical Society&lt;/em&gt; 365 (January): 548–54. doi:&lt;a href=&quot;http://dx.doi.org/10.1111/j.1365-2966.2005.09734.x&quot;&gt;10.1111/j.1365-2966.2005.09734.x&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ragan-Kelley, Benjamin, William Anton Walters, Daniel McDonald, Justin Riley, Brian E Granger, Antonio Gonzalez, Rob Knight, Fernando Perez, and J Gregory Caporaso. 2013. “Collaborative Cloud-Enabled Tools Allow Rapid, Reproducible Biological Insights.” &lt;em&gt;The ISME Journal&lt;/em&gt; 7 (3): 461–64. doi:&lt;a href=&quot;http://dx.doi.org/10.1038/ismej.2012.123&quot;&gt;10.1038/ismej.2012.123&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/20/proposedtoc.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/20/proposedtoc.html</guid>
+        
+        <category>report</category>
+        
+        <category>writing</category>
+        
+        <category>toc</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>Looking for the M Star</title>
+        <description>&lt;h2 id=&quot;m-type-stars&quot;&gt;M type stars&lt;/h2&gt;
+&lt;p&gt;According to &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The fairly high R-band flux indicates that the secondaries are relatively massive, &lt;span class=&quot;math&quot;&gt;\(\approx 0.5-0.7 \, M_{\odot}\)&lt;/span&gt;._&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This would mean that the companion star is either an M or K type star. If it is an M type star we should be able to see some Titanium lines. To see what magnitude they have I searched in the public MUSE data release of the Globular Cluster (http://muse-vlt.eu/science/globular-cluster-ngc-6397/). The stars have the id from the ACS Survey if Globular Clusters &lt;span class=&quot;citation&quot; data-cites=&quot;anderson_acs_2008&quot;&gt;(Anderson et al. 2008)&lt;/span&gt;. I searched in this catalog for the right V-I in the VEGA System magnitude. I found some values in the website &lt;a href=&quot;http://www.pas.rochester.edu/~emamajek/memo_M.html&quot;&gt;Intrinsic Johnson-Cousins UBVI Colors of M Dwarf Standard Stars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In there data I was able to find 8 M stars in the data. The code to find the M stars is the folder &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/Mstars&quot;&gt;scripts/misc/Spectra/Mstars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The 8 found M stars are:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python [&#39;./pointing32_2014-07-27/ngc6397id000005965jd2456866p5198f002.fits&#39;,  &#39;./pointing24_2014-07-26/ngc6397id000013685jd2456865p6268f000.fits&#39;,  &#39;./pointing23_2014-07-27/ngc6397id000009200jd2456866p5029f002.fits&#39;,  &#39;./pointing22_2014-07-26/ngc6397id000003913jd2456865p6209f002.fits&#39;,  &#39;./pointing12_2014-07-29/ngc6397id000008220jd2456868p6022f002.fits&#39;,  &#39;./pointing34_2014-07-26/ngc6397id000014834jd2456865p6115f000.fits&#39;,  &#39;./pointing51_2014-08-01/ngc6397id000000308jd2456871p6149f000.fits&#39;,  &#39;./pointing31_2014-08-01/ngc6397id000000963jd2456871p6333f002.fits&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The third one is a bit weird so we get the fluxes for the other 7 in the same filters R and H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; for Hubble.&lt;/p&gt;
+&lt;h2 id=&quot;variability-and-magnitudes-in-the-cvs&quot;&gt;Variability and Magnitudes in the CVs&lt;/h2&gt;
+&lt;p&gt;The basecode is called flux.py and it is in the &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/fitting&quot;&gt;/scripts/misc/Spectra/fitting&lt;/a&gt; folder.&lt;/p&gt;
+&lt;p&gt;These are the results along in the numbers from &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; and &lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;h2&gt;
+Table
+&lt;/h2&gt;
+  &lt;p&gt; 
+Fluxes of tis:
+&lt;/p&gt; 
+
+&lt;div class=&quot;table-responsive&quot;&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+CV
+&lt;/th&gt;
+    &lt;th&gt;
+R
+&lt;/th&gt;      
+    &lt;th&gt;
+&lt;span class=&quot;math&quot;&gt;\(H\alpha\)&lt;/span&gt;
+&lt;/th&gt;
+    &lt;th&gt;
+&lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; R
+&lt;/th&gt;
+    &lt;th&gt;
+&lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; &lt;span class=&quot;math&quot;&gt;\(H\alpha\)&lt;/span&gt;
+&lt;/th&gt;
+    &lt;th&gt;
+&lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt; V Range
+&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U17
+&lt;/td&gt;
+    &lt;td&gt;
+20.12
+&lt;/td&gt;      
+    &lt;td&gt;
+19.68
+&lt;/td&gt;
+     &lt;td&gt;
+18.52
+&lt;/td&gt;
+     &lt;td&gt;
+20.67
+&lt;/td&gt;
+     &lt;td&gt;
+18.3-22.5
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;the-data&quot;&gt;The data&lt;/h2&gt;
+&lt;h3 id=&quot;m-stars&quot;&gt;M stars&lt;/h3&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;kw&quot;&gt;for&lt;/span&gt; i in a:
+iraf.wspectext(i, &lt;span class=&quot;st&quot;&gt;&amp;#39;M&amp;#39;&lt;/span&gt;+i.split(&lt;span class=&quot;st&quot;&gt;&amp;#39;d&amp;#39;&lt;/span&gt;)[&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;].replace(&lt;span class=&quot;st&quot;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;)+&lt;span class=&quot;st&quot;&gt;&amp;#39;spectra.txt&amp;#39;&lt;/span&gt;, header=&lt;span class=&quot;ot&quot;&gt;False&lt;/span&gt;)`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; flux
+Again the ID is &lt;span class=&quot;ch&quot;&gt;from&lt;/span&gt; the [@anderson_acs_2008]
+cvU17={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U17&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U17&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U17&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+cvU23={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U23&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U23&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U23&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+cvU19={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U19&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U19&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U19&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+cvU10={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U10&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U10&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U10&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+cvU21={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U21&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U21&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U21&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+cvU25={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;U25&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U25&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;U25&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M13685j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M13685j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M13685j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M13685j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M14834j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M14834j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M14834j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M14834j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M38j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M38j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M38j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M38j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M3913j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M3913j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M3913j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M3913j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M5965j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M5965j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M5965j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M5965j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M822j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M822j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M822j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M822j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}
+M963j={&lt;span class=&quot;st&quot;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;:&lt;span class=&quot;st&quot;&gt;&amp;#39;M963j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;R&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M963j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f625w&amp;#39;&lt;/span&gt;), &lt;span class=&quot;st&quot;&gt;&amp;#39;Halpha&amp;#39;&lt;/span&gt;:flux.getflux(&lt;span class=&quot;st&quot;&gt;&amp;#39;M963j&amp;#39;&lt;/span&gt;,&lt;span class=&quot;st&quot;&gt;&amp;#39;f658n&amp;#39;&lt;/span&gt;)}&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;problems&quot;&gt;Problems&lt;/h1&gt;
+&lt;p&gt;Maybe I need to cut VEGa to fit my observation. I dont know. I am getting a Halpha flux bigger than the R flux and it should be like that. Ti is a narrow vs wide field&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Anderson, Jay, Ata Sarajedini, Luigi R. Bedin, Ivan R. King, Giampaolo Piotto, I. Neill Reid, Michael Siegel, et al. 2008. “An ACS Survey of Globular Clusters. V. Generating a Comprehensive Star Catalog for Each Cluster.” &lt;em&gt;The Astronomical Journal&lt;/em&gt; 135 (6): 2055. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-6256/135/6/2055&quot;&gt;10.1088/0004-6256/135/6/2055&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 722 (October): 20–32. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/722/1/20&quot;&gt;10.1088/0004-637X/722/1/20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Kaluzny, J., I. B. Thompson, W. Krzeminski, and A. Schwarzenberg-Czerny. 2006. “Photometric Study of the Variable Star Population in the Globular Cluster NGC 6397.” &lt;em&gt;Monthly Notices of the Royal Astronomical Society&lt;/em&gt; 365 (January): 548–54. doi:&lt;a href=&quot;http://dx.doi.org/10.1111/j.1365-2966.2005.09734.x&quot;&gt;10.1111/j.1365-2966.2005.09734.x&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/19/looking-for-the-m-star.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/19/looking-for-the-m-star.html</guid>
+        
+        <category>M</category>
+        
+        <category>spectra</category>
+        
+        <category>data</category>
+        
+        <category>pyraf</category>
+        
+        <category>python</category>
+        
+        <category>M-type</category>
+        
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>A closer look at the CVs</title>
@@ -895,82 +1139,6 @@ iraf.&amp;lt;routine&amp;gt;&lt;/code&gt;&lt;/pre&gt;
         <category>pyraf</category>
         
         <category>stsdas</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Stellar Remnants at the Junction</title>
-        <description>&lt;h1 id=&quot;stellar-remnants-at-the-junction&quot;&gt;&lt;a href=&quot;https://sites.google.com/site/junction2016/&quot;&gt;Stellar Remnants at the Junction&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;There is a meeting on Comparing Accreating White Dwarfs, Neutron Stars, and Black Holes in the Junction, Texas, USA. Dr. Natalie Webb ask me to write a short abstract for the meeting.&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;Globular clusters are compact group of stars, probably remnants of early star formation from when our own galaxy was forming. Due to their age and the nature of the gravitational interaction dominating the dynamics of the members, they are predicted to have a significant fraction of binaries in them. Many of these binaries are known to be formed from compact objects, hosts of strong accretion disks. The formation and evolution of these kind of binaries is still not completely understood, but globular clusters constitute perfect nearby laboratories to try to better understand their nature.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;Of special interest is the globular cluster NGC 6397. It constitutes the seconds closest globular cluster from Earth. This cluster have been extensively studied in different wavelengths with instruments like XMM, Chandra, Hubble Space telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE). Integral field spectrographs, like MUSE, has some advantages compare to traditional long slit spectroscopy. MUSE field of view allow us to acquire longer wavelength range of complete stellar populations within the cluster.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;This work explores the possibility to analyze the obtained spectra by MUSE of the cataclysmic variables population in NGC 6397. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic in the cluster. We are particularly interest in studying in detail the signs of accretion in these spectra, e.g. H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; and He lines, to get further insight into the nature of the accretion disks present in this binary population. This way we hope to extent to CVs in globular cluster the know relation for fields CVs of the double peak H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; emission to mass ratio.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;After a word with Dr. Webb:&lt;/p&gt;
-&lt;p&gt;Globular clusters are very old groups of stars. Due to their age and the gravitational interactions dominating the dynamics of the clusters, they are home to a significant fraction of compact binaries. The formation and evolution of these kinds of binaries is still not completely understood.&lt;/p&gt;
-&lt;p&gt;Of special interest is the globular cluster NGC 6397 as it is the closest core collapsed cluster and has therefore been extensively studied with instruments like XMM, Chandra, Hubble Space Telescope, and more recently in the optical with the Multi Unit Spectroscopic Explorer (MUSE), installed on the Very Large Telescope (VLT). Integral field spectrographs, like MUSE, have many advantages compared to traditional long slit spectroscopy, as spectra are obtained for every pixel and thus every object in the large field of view (1’ x 1’).&lt;/p&gt;
-&lt;p&gt;Here we present analysis of the compact binary population in NGC 6397 taken with MUSE. The goal is to further understand the characteristics of the proposed bimodal population of cataclysmic variables in the cluster, which have been suggested to be of primordial and dynamically formed origin. Spectral analysis will allow us to examine the origin of these two populations.&lt;/p&gt;
-&lt;h1 id=&quot;the-flight&quot;&gt;The flight&lt;/h1&gt;
-&lt;p&gt;Proposed flight:&lt;/p&gt;
-&lt;p&gt;https://www.kayak.fr/flights/PAR-SAT/2016-05-01/2016-05-07/f7d1a7597212dca19f0759f70e5056620&lt;/p&gt;
-&lt;p&gt;To arrive like Dr. Webb at San Antonio on Sunday and leave Saturday. 09h40 CDG 16h38 SAT 13h58 1 escale (ORD) 14h32 SAT 09h35 CDG 12h03 1 escale (DFW)&lt;/p&gt;
-&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
-&lt;p&gt;I installed the plugin for chrome &lt;a href=&quot;https://github.com/volca/markdown-preview&quot;&gt;Markdown-preview&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/stellar-remnants-at-the-junction.html</guid>
-        
-        <category>travel</category>
-        
-        <category>conference</category>
-        
-        <category>abstract</category>
-        
-        <category>poster</category>
-        
-        <category>markdown</category>
-        
-        <category>chrome</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Line Splitting and U31</title>
-        <description>&lt;h1 id=&quot;u13cv8&quot;&gt;U13(CV8)&lt;/h1&gt;
-&lt;p&gt;U13 is a very faint source. It is magnotude 24 in the red according to [Cool10]&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/tryU31.png&quot; alt=&quot;Attend to find U31 in MUSE data cube Region 4.&quot; /&gt;&lt;figcaption&gt;Attend to find U31 in MUSE data cube Region 4.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;halpha&quot;&gt;H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;Maybe split due to close by star, that is why for example U22 with a very sharp decrease and maybe cause the assymetry in many CVs.&lt;/p&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 05 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/05/line-splitting-and-u31.html</guid>
-        
-        <category>He</category>
-        
-        <category>spectra</category>
-        
-        <category>CVs</category>
-        
-        <category>U31</category>
-        
-        <category>Halpha</category>
-        
-        <category>HeI</category>
         
         
         <category>log</category>

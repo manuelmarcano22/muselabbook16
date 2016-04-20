@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Looking for the M Star</title>
+  <meta name="description" content="M type stars">
+  <link rel="stylesheet" href="/muselabbook16/css/main.css">
+  <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
+  <link rel="canonical" href="/muselabbook16/log/2016/04/19/looking-for-the-m-star.html">
+  <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
+  <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/muselabbook16/">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/muselabbook16/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Looking for the M Star</h1>
+    <p class="post-meta"><time datetime="2016-04-19T00:00:00+02:00" itemprop="datePublished">Apr 19, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="m-type-stars">M type stars</h2>
+<p>According to <span class="citation" data-cites="cohn_identification_2010">(Cohn et al. 2010)</span>:</p>
+<blockquote>
+<p>The fairly high R-band flux indicates that the secondaries are relatively massive, <span class="math">\(\approx 0.5-0.7 \, M_{\odot}\)</span>._</p>
+</blockquote>
+<p>This would mean that the companion star is either an M or K type star. If it is an M type star we should be able to see some Titanium lines. To see what magnitude they have I searched in the public MUSE data release of the Globular Cluster (http://muse-vlt.eu/science/globular-cluster-ngc-6397/). The stars have the id from the ACS Survey if Globular Clusters <span class="citation" data-cites="anderson_acs_2008">(Anderson et al. 2008)</span>. I searched in this catalog for the right V-I in the VEGA System magnitude. I found some values in the website <a href="http://www.pas.rochester.edu/~emamajek/memo_M.html">Intrinsic Johnson-Cousins UBVI Colors of M Dwarf Standard Stars</a>.</p>
+<p>In there data I was able to find 8 M stars in the data. The code to find the M stars is the folder <a href="https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/Mstars">scripts/misc/Spectra/Mstars</a>.</p>
+<p>The 8 found M stars are:</p>
+<p><code>python ['./pointing32_2014-07-27/ngc6397id000005965jd2456866p5198f002.fits',  './pointing24_2014-07-26/ngc6397id000013685jd2456865p6268f000.fits',  './pointing23_2014-07-27/ngc6397id000009200jd2456866p5029f002.fits',  './pointing22_2014-07-26/ngc6397id000003913jd2456865p6209f002.fits',  './pointing12_2014-07-29/ngc6397id000008220jd2456868p6022f002.fits',  './pointing34_2014-07-26/ngc6397id000014834jd2456865p6115f000.fits',  './pointing51_2014-08-01/ngc6397id000000308jd2456871p6149f000.fits',  './pointing31_2014-08-01/ngc6397id000000963jd2456871p6333f002.fits']</code></p>
+<p>The third one is a bit weird so we get the fluxes for the other 7 in the same filters R and H<span class="math">\(\alpha\)</span> for Hubble.</p>
+<h2 id="variability-and-magnitudes-in-the-cvs">Variability and Magnitudes in the CVs</h2>
+<p>The basecode is called flux.py and it is in the <a href="https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/fitting">/scripts/misc/Spectra/fitting</a> folder.</p>
+<p>These are the results along in the numbers from <span class="citation" data-cites="cohn_identification_2010">(Cohn et al. 2010)</span> and <span class="citation" data-cites="kaluzny_photometric_2006">(Kaluzny et al. 2006)</span>.</p>
+<div class="container">
+<h2>
+Table
+</h2>
+  <p> 
+Fluxes of tis:
+</p> 
+
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>
+CV
+</th>
+    <th>
+R
+</th>      
+    <th>
+<span class="math">\(H\alpha\)</span>
+</th>
+    <th>
+<span class="citation" data-cites="cohn_identification_2010">(Cohn et al. 2010)</span> R
+</th>
+    <th>
+<span class="citation" data-cites="cohn_identification_2010">(Cohn et al. 2010)</span> <span class="math">\(H\alpha\)</span>
+</th>
+    <th>
+<span class="citation" data-cites="kaluzny_photometric_2006">(Kaluzny et al. 2006)</span> V Range
+</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+U17
+</td>
+    <td>
+20.12
+</td>      
+    <td>
+19.68
+</td>
+     <td>
+18.52
+</td>
+     <td>
+20.67
+</td>
+     <td>
+18.3-22.5
+</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<h2 id="the-data">The data</h2>
+<h3 id="m-stars">M stars</h3>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> i in a:
+iraf.wspectext(i, <span class="st">&#39;M&#39;</span>+i.split(<span class="st">&#39;d&#39;</span>)[<span class="dv">1</span>].replace(<span class="st">&#39;0&#39;</span>,<span class="st">&#39;&#39;</span>)+<span class="st">&#39;spectra.txt&#39;</span>, header=<span class="ot">False</span>)`</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> flux
+Again the ID is <span class="ch">from</span> the [@anderson_acs_2008]
+cvU17={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U17&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U17&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U17&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+cvU23={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U23&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U23&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U23&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+cvU19={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U19&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U19&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U19&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+cvU10={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U10&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U10&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U10&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+cvU21={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U21&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U21&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U21&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+cvU25={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;U25&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;U25&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;U25&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M13685j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M13685j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M13685j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M13685j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M14834j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M14834j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M14834j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M14834j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M38j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M38j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M38j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M38j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M3913j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M3913j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M3913j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M3913j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M5965j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M5965j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M5965j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M5965j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M822j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M822j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M822j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M822j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}
+M963j={<span class="st">&#39;name&#39;</span>:<span class="st">&#39;M963j&#39;</span>,<span class="st">&#39;R&#39;</span>:flux.getflux(<span class="st">&#39;M963j&#39;</span>,<span class="st">&#39;f625w&#39;</span>), <span class="st">&#39;Halpha&#39;</span>:flux.getflux(<span class="st">&#39;M963j&#39;</span>,<span class="st">&#39;f658n&#39;</span>)}</code></pre>
+<h1 id="problems">Problems</h1>
+<p>Maybe I need to cut VEGa to fit my observation. I dont know. I am getting a Halpha flux bigger than the R flux and it should be like that. Ti is a narrow vs wide field</p>
+<div class="references">
+<h1>References</h1>
+<p>Anderson, Jay, Ata Sarajedini, Luigi R. Bedin, Ivan R. King, Giampaolo Piotto, I. Neill Reid, Michael Siegel, et al. 2008. “An ACS Survey of Globular Clusters. V. Generating a Comprehensive Star Catalog for Each Cluster.” <em>The Astronomical Journal</em> 135 (6): 2055. doi:<a href="http://dx.doi.org/10.1088/0004-6256/135/6/2055">10.1088/0004-6256/135/6/2055</a>.</p>
+<p>Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” <em>The Astrophysical Journal</em> 722 (October): 20–32. doi:<a href="http://dx.doi.org/10.1088/0004-637X/722/1/20">10.1088/0004-637X/722/1/20</a>.</p>
+<p>Kaluzny, J., I. B. Thompson, W. Krzeminski, and A. Schwarzenberg-Czerny. 2006. “Photometric Study of the Variable Star Population in the Globular Cluster NGC 6397.” <em>Monthly Notices of the Royal Astronomical Society</em> 365 (January): 548–54. doi:<a href="http://dx.doi.org/10.1111/j.1365-2966.2005.09734.x">10.1111/j.1365-2966.2005.09734.x</a>.</p>
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/m.html'>M</a></li>
+
+<li><a href='/muselabbook16/tag/spectra.html'>spectra</a></li>
+
+<li><a href='/muselabbook16/tag/data.html'>data</a></li>
+
+<li><a href='/muselabbook16/tag/pyraf.html'>pyraf</a></li>
+
+<li><a href='/muselabbook16/tag/python.html'>python</a></li>
+
+<li><a href='/muselabbook16/tag/m-type.html'>M-type</a></li>
+
+</ul>
+</div>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Lab Notebook for MUSE Data Reduction Spring 2016 IRAP</li>
+          <li><a href="mailto:manuelpichardom@gmail.com">manuelpichardom@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/muselabbook16/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+
+</footer>
+
+
+  </body>
+
+</html>
