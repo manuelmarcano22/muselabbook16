@@ -41,34 +41,91 @@ These are the results along in the numbers from [@cohn_identification_2010] and 
 
 
 <div class="container">
-  <h2>Table</h2>
-  <p> Fluxes of tis:</p> 
-
+  <h2>R Magnitudes</h2>
 <div class="table-responsive">
 <table class="table table-bordered">
 <thead>
   <tr>
     <th>CV</th>
-    <th>R</th>		
-    <th>$H\alpha$</th>
+    <th>R Magnitude</th>		
     <th>[@cohn_identification_2010] R</th>
-    <th>[@cohn_identification_2010] $H\alpha$</th>
-    <th>[@kaluzny_photometric_2006] V Range</th>
+  <!--  <th>[@kaluzny_photometric_2006] V Range</th> -->
   </tr>
   </thead>
   <tbody>
   <tr>
     <td>U17</td>
     <td>20.12</td>		
-    <td>19.68</td>
      <td>18.52</td>
-     <td>20.67</td>
-     <td>18.3-22.5</td>
+  </tr>
+  <tr>
+    <td>U23</td>
+    <td>19.15</td>		
+     <td>17.88</td>
+  </tr>
+  <tr>
+    <td>U10</td>
+    <td>20.7</td>		
+     <td>19.14</td>
+  </tr>
+  <tr>
+    <td>U21</td>
+    <td>19.79</td>		
+     <td>19.82</td>
+  </tr>
+  <tr>
+    <td>U22</td>
+    <td>18.54</td>		
+     <td>20.15</td>
   </tr>
   </tbody>
 </table>
 </div>
 </div>
+
+
+<div class="container">
+  <h2>Equivalent Width of H$\beta$ line</h2>
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>CV</th>
+    <th>EW H$\beta$ ($\mathring{A}$)</th>		
+  <!--  <th>[@kaluzny_photometric_2006] V Range</th> -->
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>U17</td>
+    <td>$11.65 \pm 0.17$</td>		
+  </tr>
+  <tr>
+    <td>U23</td>
+     <td>$15.13 \pm 0.7$ </td>
+  </tr>
+  <tr>
+    <td>U10</td>
+     <td>$15.44 \pm 0.2$</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## The data
 

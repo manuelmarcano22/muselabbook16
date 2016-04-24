@@ -103,6 +103,30 @@ plt.errorbar(xpoints, ypoints, xerr=(maxrat-minrat)/2., fmt='o')
 ![]({{site.baseurl}}/images/casares.svg)
 
 
+## Second try. Getting mass from relation:
+
+
+```python
+def find_nearest(array,value):                                                 
+        idx = (np.abs(array-value)).argmin()
+        return idx
+def f(q):
+    return (0.49*(1+q)**(-1))/(0.6+q**(2/3.)*np.log(1+q**(-1/3.)))
+
+
+def ratiodp(q,alpha,beta):
+    return 3**(1/3.)*(1+q)**(2/3.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(0.001,0.8, 0.01)
+ydata = ratiodp(xdata,0.42, 0.83)
+xpoints=[xdata[find_nearest(ydata,i)] for i in ypoints] 
+
+```
+![]({{site.baseurl}}/images/casares.svg)
+
+
+
+
 ## Flux
 
 To compare to [@cohn_identification_2010] they say:
