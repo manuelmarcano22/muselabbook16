@@ -6,8 +6,8 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Apr 2016 03:58:51 +0200</pubDate>
-    <lastBuildDate>Wed, 20 Apr 2016 03:58:51 +0200</lastBuildDate>
+    <pubDate>Sun, 24 Apr 2016 14:27:45 +0200</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2016 14:27:45 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -150,12 +150,8 @@
 &lt;p&gt;These are the results along in the numbers from &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; and &lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt;.&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;h2&gt;
-Table
+R Magnitudes
 &lt;/h2&gt;
-  &lt;p&gt; 
-Fluxes of tis:
-&lt;/p&gt; 
-
 &lt;div class=&quot;table-responsive&quot;&gt;
 &lt;table class=&quot;table table-bordered&quot;&gt;
 &lt;thead&gt;
@@ -164,20 +160,12 @@ Fluxes of tis:
 CV
 &lt;/th&gt;
     &lt;th&gt;
-R
-&lt;/th&gt;      
-    &lt;th&gt;
-&lt;span class=&quot;math&quot;&gt;\(H\alpha\)&lt;/span&gt;
-&lt;/th&gt;
+R Magnitude
+&lt;/th&gt;        
     &lt;th&gt;
 &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; R
 &lt;/th&gt;
-    &lt;th&gt;
-&lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; &lt;span class=&quot;math&quot;&gt;\(H\alpha\)&lt;/span&gt;
-&lt;/th&gt;
-    &lt;th&gt;
-&lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt; V Range
-&lt;/th&gt;
+  &lt;!--  &lt;th&gt;[@kaluzny_photometric_2006] V Range&lt;/th&gt; --&gt;
   &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -188,17 +176,98 @@ U17
     &lt;td&gt;
 20.12
 &lt;/td&gt;      
-    &lt;td&gt;
-19.68
-&lt;/td&gt;
      &lt;td&gt;
 18.52
 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U23
+&lt;/td&gt;
+    &lt;td&gt;
+19.15
+&lt;/td&gt;      
      &lt;td&gt;
-20.67
+17.88
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U10
+&lt;/td&gt;
+    &lt;td&gt;
+20.7
+&lt;/td&gt;       
+     &lt;td&gt;
+19.14
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U21
+&lt;/td&gt;
+    &lt;td&gt;
+19.79
+&lt;/td&gt;      
+     &lt;td&gt;
+19.82
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U22
+&lt;/td&gt;
+    &lt;td&gt;
+18.54
+&lt;/td&gt;      
+     &lt;td&gt;
+20.15
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;h2&gt;
+Equivalent Width of H&lt;span class=&quot;math&quot;&gt;\(\beta\)&lt;/span&gt; line
+&lt;/h2&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+CV
+&lt;/th&gt;
+    &lt;th&gt;
+EW H&lt;span class=&quot;math&quot;&gt;\(\beta\)&lt;/span&gt; (&lt;span class=&quot;math&quot;&gt;\(\mathring{A}\)&lt;/span&gt;)
+&lt;/th&gt;       
+  &lt;!--  &lt;th&gt;[@kaluzny_photometric_2006] V Range&lt;/th&gt; --&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U17
+&lt;/td&gt;
+    &lt;td&gt;
+&lt;span class=&quot;math&quot;&gt;\(11.65 \pm 0.17\)&lt;/span&gt;
+&lt;/td&gt;       
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U23
 &lt;/td&gt;
      &lt;td&gt;
-18.3-22.5
+&lt;span class=&quot;math&quot;&gt;\(15.13 \pm 0.7\)&lt;/span&gt;
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+U10
+&lt;/td&gt;
+     &lt;td&gt;
+&lt;span class=&quot;math&quot;&gt;\(15.44 \pm 0.2\)&lt;/span&gt;
 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -347,6 +416,23 @@ minrat = .5/(1.5-.5)
 ypoints = [ (float(cv21[&amp;#39;eqw&amp;#39;])/float(cv21[&amp;#39;fwhm&amp;#39;])),(float(cv23[&amp;#39;eqw&amp;#39;])/float(cv23[&amp;#39;fwhm&amp;#39;])), (float(cv10[&amp;#39;eqw&amp;#39;])/float(cv10[&amp;#39;fwhm&amp;#39;]))   ]
 xpoints=[.6/.9 for i in range(3)]
 plt.errorbar(xpoints, ypoints, xerr=(maxrat-minrat)/2., fmt=&amp;#39;o&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/muselabbook16/images/casares.svg&quot; /&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;second-try.-getting-mass-from-relation&quot;&gt;Second try. Getting mass from relation:&lt;/h2&gt;
+&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; find_nearest(array,value):                                                 
+        idx = (np.&lt;span class=&quot;dt&quot;&gt;abs&lt;/span&gt;(array-value)).argmin()
+        &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; idx
+&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; f(q):
+    &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; (&lt;span class=&quot;fl&quot;&gt;0.49&lt;/span&gt;*(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q)**(-&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;))/(&lt;span class=&quot;fl&quot;&gt;0.6&lt;/span&gt;+q**(&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*np.log(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q**(-&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)))
+
+
+&lt;span class=&quot;kw&quot;&gt;def&lt;/span&gt; ratiodp(q,alpha,beta):
+    &lt;span class=&quot;kw&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;**(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*(&lt;span class=&quot;dv&quot;&gt;1&lt;/span&gt;+q)**(&lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;/&lt;span class=&quot;dv&quot;&gt;3&lt;/span&gt;.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(&lt;span class=&quot;fl&quot;&gt;0.001&lt;/span&gt;,&lt;span class=&quot;fl&quot;&gt;0.8&lt;/span&gt;, &lt;span class=&quot;fl&quot;&gt;0.01&lt;/span&gt;)
+ydata = ratiodp(xdata,&lt;span class=&quot;fl&quot;&gt;0.42&lt;/span&gt;, &lt;span class=&quot;fl&quot;&gt;0.83&lt;/span&gt;)
+xpoints=[xdata[find_nearest(ydata,i)] &lt;span class=&quot;kw&quot;&gt;for&lt;/span&gt; i in ypoints] &lt;/code&gt;&lt;/pre&gt;
 &lt;figure&gt;
 &lt;img src=&quot;/muselabbook16/images/casares.svg&quot; /&gt;
 &lt;/figure&gt;

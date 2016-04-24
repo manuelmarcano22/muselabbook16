@@ -163,6 +163,23 @@ plt.errorbar(xpoints, ypoints, xerr=(maxrat-minrat)/2., fmt=&#39;o&#39;)</code><
 <figure>
 <img src="/muselabbook16/images/casares.svg" />
 </figure>
+<h2 id="second-try.-getting-mass-from-relation">Second try. Getting mass from relation:</h2>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> find_nearest(array,value):                                                 
+        idx = (np.<span class="dt">abs</span>(array-value)).argmin()
+        <span class="kw">return</span> idx
+<span class="kw">def</span> f(q):
+    <span class="kw">return</span> (<span class="fl">0.49</span>*(<span class="dv">1</span>+q)**(-<span class="dv">1</span>))/(<span class="fl">0.6</span>+q**(<span class="dv">2</span>/<span class="dv">3</span>.)*np.log(<span class="dv">1</span>+q**(-<span class="dv">1</span>/<span class="dv">3</span>.)))
+
+
+<span class="kw">def</span> ratiodp(q,alpha,beta):
+    <span class="kw">return</span> <span class="dv">3</span>**(<span class="dv">1</span>/<span class="dv">3</span>.)*(<span class="dv">1</span>+q)**(<span class="dv">2</span>/<span class="dv">3</span>.)*beta*np.sqrt(alpha*f(q))
+
+xdata = np.arange(<span class="fl">0.001</span>,<span class="fl">0.8</span>, <span class="fl">0.01</span>)
+ydata = ratiodp(xdata,<span class="fl">0.42</span>, <span class="fl">0.83</span>)
+xpoints=[xdata[find_nearest(ydata,i)] <span class="kw">for</span> i in ypoints] </code></pre>
+<figure>
+<img src="/muselabbook16/images/casares.svg" />
+</figure>
 <h2 id="flux">Flux</h2>
 <p>To compare to <span class="citation" data-cites="cohn_identification_2010">(Cohn et al. 2010)</span> they say:</p>
 <blockquote>
