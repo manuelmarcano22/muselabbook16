@@ -6,8 +6,8 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Apr 2016 16:38:53 +0200</pubDate>
-    <lastBuildDate>Wed, 27 Apr 2016 16:38:53 +0200</lastBuildDate>
+    <pubDate>Wed, 27 Apr 2016 16:43:13 +0200</pubDate>
+    <lastBuildDate>Wed, 27 Apr 2016 16:43:13 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -45,6 +45,8 @@
 &lt;ul&gt;
 &lt;li&gt;NGC6397
 &lt;ul&gt;
+&lt;li&gt;The Motivation for NGC 6397&lt;/li&gt;
+&lt;li&gt;Harris Info&lt;/li&gt;
 &lt;li&gt;Compact Object Population (15 CVs candidates, 3 neutron stars (1 qLMXB))&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -70,7 +72,7 @@
 &lt;li&gt;EsoRex&lt;/li&gt;
 &lt;li&gt;MUSE “dynamical libraries” or recipes&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Public GitHub Repo with all code:
+&lt;li&gt;Public GitHub Repo with all code to reduce the data:
 &lt;ul&gt;
 &lt;li&gt;Include README ? and wiki if I ever finish it&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
