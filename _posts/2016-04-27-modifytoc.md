@@ -23,6 +23,8 @@ Proposed TOC for the Report
             - K type
     - Globular Clusters:
         - NGC6397
+            - The Motivation for NGC 6397 
+            - Harris Info
             - Compact Object Population (15 CVs candidates, 3 neutron stars (1 qLMXB))
     - Spectroscopy:
         - Integral field spectrograph
@@ -35,7 +37,7 @@ Proposed TOC for the Report
             - CPL
             - EsoRex
             - MUSE "dynamical libraries" or recipes
-        - Public GitHub Repo with all code:
+        - Public GitHub Repo with all code to reduce the data:
                - Include README ? and wiki if I ever finish it
     - Spectra Extraction and analysis ?
         - QFitsView (extraction, sum 5 pixel area)
