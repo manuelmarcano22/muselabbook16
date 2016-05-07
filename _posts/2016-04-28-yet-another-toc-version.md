@@ -1,22 +1,36 @@
 ---
 layout: post
-title: "ProposedTOC"
+title: "Yet another TOC version"
 categories: [log]
-tags: [report, writing, toc]
+tags: [toc, report, thesis, plan]
 ---
 
-# Future TOC ?
+After talking with Dr. Webb here are the modifications for the TOC of the thesis. 
 
-Dr. Webb asked me to try to get ready a rought draft of the table of content for the report. 
+Proposed TOC for the Report
 
 - Intro:
+    - Motivation of the work:
+        - Are they all magnetic?
+        - Which are primordial and what their signatures might be? (lack of H$\alpha$ might be one acause they are old. and near period min (80 min). 
+        - Where are the DNe outburst? Predicted but where?
     - Compact Objects:
         - White Dwarfs:
             - CVs
+                - Types:
+                    - Magnetic
+                    - Intermediate
+                    - Double Degenerates
+                    - Other relevant types
         - Neutron Stars:
             - qLMXB
+        - The Secondaries
+            - M type
+            - K type
     - Globular Clusters:
         - NGC6397
+            - The Motivation for NGC 6397 
+            - Harris Info
             - Compact Object Population (15 CVs candidates, 3 neutron stars (1 qLMXB))
     - Spectroscopy:
         - Integral field spectrograph
@@ -29,12 +43,12 @@ Dr. Webb asked me to try to get ready a rought draft of the table of content for
             - CPL
             - EsoRex
             - MUSE "dynamical libraries" or recipes
-        - Public GitHub Repo with all code:
+        - Public GitHub Repo with all code to reduce the data:
                - Include README ? and wiki if I ever finish it
     - Spectra Extraction and analysis ?
         - QFitsView (extraction, sum 5 pixel area)
-        - IRAF/PYRAF (fitting, smoothing)
-        - Python (some fitting, X-Ray astrometry matching)
+        - IRAF/PYRAF (fitting, smoothing, hopefully cross correlation)
+        - Python (Clustering Exposures, Plotting)
 - Results:
     - Spectra:
         - "Brights"
