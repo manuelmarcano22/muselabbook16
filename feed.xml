@@ -6,9 +6,195 @@
 </description>
     <link>/muselabbook16/</link>
     <atom:link href="/muselabbook16/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Apr 2016 16:43:13 +0200</pubDate>
-    <lastBuildDate>Wed, 27 Apr 2016 16:43:13 +0200</lastBuildDate>
+    <pubDate>Sat, 07 May 2016 19:57:01 +0200</pubDate>
+    <lastBuildDate>Sat, 07 May 2016 19:57:01 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Yet another TOC version</title>
+        <description>&lt;p&gt;After talking with Dr. Webb here are the modifications for the TOC of the thesis.&lt;/p&gt;
+&lt;p&gt;Proposed TOC for the Report&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intro:
+&lt;ul&gt;
+&lt;li&gt;Motivation of the work:
+&lt;ul&gt;
+&lt;li&gt;Are they all magnetic?&lt;/li&gt;
+&lt;li&gt;Which are primordial and what their signatures might be? (lack of H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; might be one acause they are old. and near period min (80 min).&lt;/li&gt;
+&lt;li&gt;Where are the DNe outburst? Predicted but where?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Compact Objects:
+&lt;ul&gt;
+&lt;li&gt;White Dwarfs:
+&lt;ul&gt;
+&lt;li&gt;CVs
+&lt;ul&gt;
+&lt;li&gt;Types:
+&lt;ul&gt;
+&lt;li&gt;Magnetic&lt;/li&gt;
+&lt;li&gt;Intermediate&lt;/li&gt;
+&lt;li&gt;Double Degenerates&lt;/li&gt;
+&lt;li&gt;Other relevant types&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Neutron Stars:
+&lt;ul&gt;
+&lt;li&gt;qLMXB&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The Secondaries
+&lt;ul&gt;
+&lt;li&gt;M type&lt;/li&gt;
+&lt;li&gt;K type&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Globular Clusters:
+&lt;ul&gt;
+&lt;li&gt;NGC6397
+&lt;ul&gt;
+&lt;li&gt;The Motivation for NGC 6397&lt;/li&gt;
+&lt;li&gt;Harris Info&lt;/li&gt;
+&lt;li&gt;Compact Object Population (15 CVs candidates, 3 neutron stars (1 qLMXB))&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Spectroscopy:
+&lt;ul&gt;
+&lt;li&gt;Integral field spectrograph
+&lt;ul&gt;
+&lt;li&gt;MUSE&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Observation and Methods:
+&lt;ul&gt;
+&lt;li&gt;MUSE Science Verification and Commissioning Data:
+&lt;ul&gt;
+&lt;li&gt;Public release data and &lt;span class=&quot;citation&quot; data-cites=&quot;husser_muse_2016&quot;&gt;(Husser et al. 2016)&lt;/span&gt; work and available processed data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Data Reduction:
+&lt;ul&gt;
+&lt;li&gt;MUSE Data Reduction Software:
+&lt;ul&gt;
+&lt;li&gt;CPL&lt;/li&gt;
+&lt;li&gt;EsoRex&lt;/li&gt;
+&lt;li&gt;MUSE “dynamical libraries” or recipes&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Public GitHub Repo with all code to reduce the data:
+&lt;ul&gt;
+&lt;li&gt;Include README ? and wiki if I ever finish it&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Spectra Extraction and analysis ?
+&lt;ul&gt;
+&lt;li&gt;QFitsView (extraction, sum 5 pixel area)&lt;/li&gt;
+&lt;li&gt;IRAF/PYRAF (fitting, smoothing, hopefully cross correlation)&lt;/li&gt;
+&lt;li&gt;Python (Clustering Exposures, Plotting)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Results:
+&lt;ul&gt;
+&lt;li&gt;Spectra:
+&lt;ul&gt;
+&lt;li&gt;“Brights”&lt;/li&gt;
+&lt;li&gt;“Faint”&lt;/li&gt;
+&lt;li&gt;’Intermediate&amp;quot;&lt;/li&gt;
+&lt;li&gt;Neutron Star&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Variability:
+&lt;ul&gt;
+&lt;li&gt;Magnitude now, in &lt;span class=&quot;citation&quot; data-cites=&quot;cohn_identification_2010&quot;&gt;(Cohn et al. 2010)&lt;/span&gt; and &lt;span class=&quot;citation&quot; data-cites=&quot;kaluzny_photometric_2006&quot;&gt;(Kaluzny et al. 2006)&lt;/span&gt; range&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mass estimation:
+&lt;ul&gt;
+&lt;li&gt;DP/FWHM vs. q according to [casares_mass_2016]&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secondary Star:
+&lt;ul&gt;
+&lt;li&gt;M star spectra from &lt;span class=&quot;citation&quot; data-cites=&quot;husser_muse_2016&quot;&gt;(Husser et al. 2016)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Lack or presence&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Discussion:
+&lt;ul&gt;
+&lt;li&gt;Two population:
+&lt;ul&gt;
+&lt;li&gt;Dynamically vs. primordial?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Magnetism ?&lt;/li&gt;
+&lt;li&gt;X-Ray ?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Future Work
+&lt;ul&gt;
+&lt;li&gt;Dr. Guillot MUSE proposal for the qLMXB&lt;/li&gt;
+&lt;li&gt;Optimal spectra extraction &lt;span class=&quot;citation&quot; data-cites=&quot;horne_optimal_1986&quot;&gt;(Horne 1986)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Create a Docker container for the data reduction with necessary software.&lt;/li&gt;
+&lt;li&gt;Create an Amazon Machine Image to be able to run analysis with the Amazon Elastic Compute Cloud. An example of something like this done in academia is the work of &lt;span class=&quot;citation&quot; data-cites=&quot;ragan-kelley_collaborative_2013&quot;&gt;(Ragan-Kelley et al. 2013)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;Cohn, Haldan N., Phyllis M. Lugger, Sean M. Couch, Jay Anderson, Adrienne M. Cool, Maureen van den Berg, Slavko Bogdanov, Craig O. Heinke, and Jonathan E. Grindlay. 2010. “Identification of Faint Chandra X-Ray Sources in the Core-Collapsed Globular Cluster NGC 6397: Evidence for a Bimodal Cataclysmic Variable Population.” &lt;em&gt;The Astrophysical Journal&lt;/em&gt; 722 (October): 20–32. doi:&lt;a href=&quot;http://dx.doi.org/10.1088/0004-637X/722/1/20&quot;&gt;10.1088/0004-637X/722/1/20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Horne, K. 1986. “An Optimal Extraction Algorithm for CCD Spectroscopy.” &lt;em&gt;Publications of the Astronomical Society of the Pacific&lt;/em&gt; 98 (June): 609–17. doi:&lt;a href=&quot;http://dx.doi.org/10.1086/131801&quot;&gt;10.1086/131801&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Husser, Tim-Oliver, Sebastian Kamann, Stefan Dreizler, Martin Wendt, Nina Wulff, Roland Bacon, Lutz Wisotzki, et al. 2016. “MUSE Crowded Field 3D Spectroscopy of over 12,000 Stars in the Globular Cluster NGC 6397 - I. The First Comprehensive Spectroscopic HRD of a Globular Cluster.” &lt;em&gt;ArXiv E-Prints&lt;/em&gt; 1602 (February): arXiv:1602.01649. &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160201649H&quot;&gt;http://adsabs.harvard.edu/abs/2016arXiv160201649H&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Kaluzny, J., I. B. Thompson, W. Krzeminski, and A. Schwarzenberg-Czerny. 2006. “Photometric Study of the Variable Star Population in the Globular Cluster NGC 6397.” &lt;em&gt;Monthly Notices of the Royal Astronomical Society&lt;/em&gt; 365 (January): 548–54. doi:&lt;a href=&quot;http://dx.doi.org/10.1111/j.1365-2966.2005.09734.x&quot;&gt;10.1111/j.1365-2966.2005.09734.x&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ragan-Kelley, Benjamin, William Anton Walters, Daniel McDonald, Justin Riley, Brian E Granger, Antonio Gonzalez, Rob Knight, Fernando Perez, and J Gregory Caporaso. 2013. “Collaborative Cloud-Enabled Tools Allow Rapid, Reproducible Biological Insights.” &lt;em&gt;The ISME Journal&lt;/em&gt; 7 (3): 461–64. doi:&lt;a href=&quot;http://dx.doi.org/10.1038/ismej.2012.123&quot;&gt;10.1038/ismej.2012.123&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 28 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/28/yet-another-toc-version.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/28/yet-another-toc-version.html</guid>
+        
+        <category>toc</category>
+        
+        <category>report</category>
+        
+        <category>thesis</category>
+        
+        <category>plan</category>
+        
+        
+        <category>log</category>
+        
+      </item>
+    
+      <item>
+        <title>What I learned from C. Knigge&#39;s Paper</title>
+        <description>&lt;p&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;knigge_cataclysmic_2012&quot;&gt;(Knigge 2012)&lt;/span&gt; shows a good summary of Cataclysmic Variables in Globular Clusters. Here are a few points I thought were interesting.&lt;/p&gt;
+&lt;h2 id=&quot;location-location-location-or-cvs-in-a-crowded-environment&quot;&gt;Location, Location, Location or CVs in a crowded environment&lt;/h2&gt;
+&lt;p&gt;It matters in real estate and it also seems to play a factor in the formation and evolution of compact objects such as the Cataclysmic Variables.&lt;/p&gt;
+&lt;h3 id=&quot;time-is-gold-or-the-period-gap-in-the-cvs&quot;&gt;Time is Gold or the Period Gap in the CVs&lt;/h3&gt;
+&lt;p&gt;Period is an important factor that can help us constraint some models of WDs binary systems. The minimum period of 80 min is set roughly by the size size of the companion star. We have a good and the most significant features is what is refer to as the “period gap”. For CVs evolution see paper (). But this is not for the CVs in the Globular Clusters. This is not True for the few (only 15) samples of the CVs for which we know the period. We only know for two in NGC 6397 (reference for that). U23 and U17.&lt;/p&gt;
+&lt;p&gt;With cross correlation the idea would be to get the period. I can check with U23 that we have the period and the hope is to get the period for U17. The period of U10 is also know.&lt;/p&gt;
+&lt;h3 id=&quot;he-ii&quot;&gt;He II&lt;/h3&gt;
+&lt;p&gt;Is due to EUV but also seen in&lt;/p&gt;
+&lt;h3 id=&quot;the-sleeping-beauties&quot;&gt;The sleeping beauties&lt;/h3&gt;
+&lt;h3 id=&quot;wz-sge-vs.dq-magnetism-vs-explotion&quot;&gt;WZ Sge vs. DQ (Magnetism vs Explotion)&lt;/h3&gt;
+&lt;p&gt;We want to see explotion. DNe have been confirmed for two CVs. Magnetic dont tend to explote since this is duw to accumulation in the accretion disk, but there are exception. Two have seen exploted (U19 and U17). See Shara and Knigge paper. So maybe they are not DQ systems of also called intermediate polars.&lt;/p&gt;
+&lt;p&gt;Also they could be WZ Seg that wait a long time to explote. Cohn suggest the faint ones are this. (Are this the sleeping beauties)? I dont think so, but they show emmission within absroption as show in this spectra (ref to WZ).&lt;/p&gt;
+&lt;p&gt;The He II line is also not complusive evidence for IP since some DNe also have this lines.&lt;/p&gt;
+&lt;p&gt;DNe and Nova and sleeping beauties&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+&lt;p&gt;Knigge, C. 2012. “Cataclysmic Variables in Globular Clusters.” &lt;em&gt;Memorie Della Societa Astronomica Italiana&lt;/em&gt; 83 (January). &lt;a href=&quot;https://ui.adsabs.harvard.edu/#abs/2012MmSAI..83..549K/abstract&quot;&gt;https://ui.adsabs.harvard.edu/#abs/2012MmSAI..83..549K/abstract&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 28 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/muselabbook16/log/2016/04/28/what-i-learned-from-c.-knigge's-paper.html</link>
+        <guid isPermaLink="true">/muselabbook16/log/2016/04/28/what-i-learned-from-c.-knigge's-paper.html</guid>
+        
+        <category>CVs</category>
+        
+        <category>GC</category>
+        
+        <category>DNe</category>
+        
+        <category>DN</category>
+        
+        <category>WZ Sge</category>
+        
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>ModifyTOC</title>
@@ -1092,222 +1278,6 @@ Figure 1 from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1995ApJ...455L..47G
         <category>pyraf</category>
         
         <category>spectra</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>Semi-Auto Fitting with IRAF</title>
-        <description>&lt;h2 id=&quot;the-method&quot;&gt;The Method&lt;/h2&gt;
-&lt;p&gt;First, we normalize with the &lt;a href=&quot;http://stsdas.stsci.edu/cgi-bin/gethelp.cgi?continuum&quot;&gt;Continuum&lt;/a&gt; task from the stsdas package.&lt;/p&gt;
-&lt;p&gt;Then we select the points where to fit the gaussian.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;continuum ../*_* @norm.txt&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then I call a Python script and do the fit using pyraf. The script can be found in the GitHub Repo &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016&quot;&gt;MUSE Data Reduction 2016&lt;/a&gt;. In the folder &lt;a href=&quot;https://github.com/manuelmarcano22/muse2016/tree/master/scripts/misc/Spectra/fitting&quot;&gt;misc/Spectra/fitting&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;the-spectra-and-halpha-line&quot;&gt;The Spectra and H&lt;span class=&quot;math&quot;&gt;\(\alpha\)&lt;/span&gt; line&lt;/h2&gt;
-&lt;h2 id=&quot;all-of-them&quot;&gt;All of them:&lt;/h2&gt;
-&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;specplot&lt;/span&gt; U*.fits xmin=6000 xmax=7000  label=imname graphics=&lt;span class=&quot;st&quot;&gt;&amp;#39;eps&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is converted to svg with:&lt;/p&gt;
-&lt;pre class=&quot;sourceCode bash&quot;&gt;&lt;code class=&quot;sourceCode bash&quot;&gt;&lt;span class=&quot;kw&quot;&gt;epstopdf&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;file.eps&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kw&quot;&gt;pdf2svg&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;file.pdf&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kw&quot;&gt;&amp;lt;&lt;/span&gt;out.svg&lt;span class=&quot;kw&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;From (http://superuser.com/questions/198460/converting-from-eps-to-svg-format)&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/stackspectra.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;individual-spectra&quot;&gt;Individual Spectra&lt;/h1&gt;
-&lt;p&gt;ID RA (J2000) DEC (J2000) Xpixel Ypixel Mag in R&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U21 17:40:42.006 -53:40:22.07 219 247 19.82&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U23 17:40:41.781 -53:40:19.87 229 258 17.88&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U17 17:40:42.839 -53:40:20.27 182 256 18.52&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U19 17:40:42.456 -53:40:29.87 196 211 18.87&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U22 17:40:41.871 -53:40:29.67 225 209 20.15&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U25 17:40:41.398 -53:40:26.67 246 224 23.48&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;U13 17:40:44.235 -53:40:40.07 120 157 24.0&lt;/p&gt;
-&lt;p&gt;U61 17:40:45.360 -53:40:29.07 70 212 22.08&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;U10 17:40:49.171 -53:39:49.43 134 247 19.14&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&quot;u21-cv4&quot;&gt;U21 (CV4)&lt;/h2&gt;
-&lt;h3 id=&quot;muse-white-image&quot;&gt;MUSE White Image&lt;/h3&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u21fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h4 id=&quot;single-fit&quot;&gt;Single Fit&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U21_nozap_normalized.fits 6563.7 --log U21single --name single&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U21_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h4 id=&quot;double-fit&quot;&gt;Double Fit&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U21_nozap_normalized.fits 6558.34 6568.731 --log u21double --name double&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/double_U21_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;u23&quot;&gt;U23&lt;/h1&gt;
-&lt;h3 id=&quot;muse-white-image-1&quot;&gt;MUSE white image&lt;/h3&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u23fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;single-gaussian&quot;&gt;Single Gaussian&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U23_nozap_normalized.fits 6563.4 --log U23single --name single&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U23_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;double-gaussian&quot;&gt;Double Gaussian&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U23_nozap_normalized.fits 6556.2 6569.683  --log U23double --name doub le&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/double_U23_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;u17&quot;&gt;U17&lt;/h1&gt;
-&lt;h2 id=&quot;muse-white-image-2&quot;&gt;MUSE White Image&lt;/h2&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u17fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;single-gaussian-1&quot;&gt;Single Gaussian&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U17_nozap_normalized.fits 6562.7 --log U17single --name single&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U17_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;double-gaussian-1&quot;&gt;Double Gaussian&lt;/h3&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/double_U17_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/llamar.py U17_nozap_normalized.fits 6560.4 6567.1  --log U17double --name double&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;u19&quot;&gt;U19&lt;/h1&gt;
-&lt;h2 id=&quot;muse-white-image-3&quot;&gt;MUSE White Image&lt;/h2&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u19fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;single-gaussian-2&quot;&gt;Single Gaussian&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U19_nozap_normalized.fits 6563.5 --log U19single --name single&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U19_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;u22&quot;&gt;U22&lt;/h1&gt;
-&lt;h2 id=&quot;muse-white-image-4&quot;&gt;MUSE White Image&lt;/h2&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u22fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;double&quot;&gt;Double&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U22_nozap_normalized.fits 6553.8 6570  --log U22double --name double&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;problem fitting fixed there&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/double_U22_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;u25&quot;&gt;U25&lt;/h1&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u25fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;single-absoption&quot;&gt;Single Absoption&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;./llamar.py U25_nozap_normalized.fits 6562.6 --log U25single --name single&lt;/code&gt;&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U25_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h1 id=&quot;u10&quot;&gt;U10&lt;/h1&gt;
-&lt;h2 id=&quot;muse-white-image-5&quot;&gt;MUSE White Image&lt;/h2&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/u10fov.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;single&quot;&gt;Single&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U10_nozap_normalized.fits 6563.45  --log U10single --name single&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/single_U10_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;h3 id=&quot;double-1&quot;&gt;Double&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;./llamar.py U10_nozap_normalized.fits 6554.6 6573.186  --log U10double --name double&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&quot;/muselabbook16/images/double_U10_2.svg&quot; /&gt;
-&lt;/figure&gt;
-&lt;div class=&quot;references&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 13 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/13/semi-auto-fitting-with-iraf.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/13/semi-auto-fitting-with-iraf.html</guid>
-        
-        <category>iraf</category>
-        
-        <category>spectra</category>
-        
-        <category>gaussin</category>
-        
-        <category>fit</category>
-        
-        <category>pyraf</category>
-        
-        <category>halpha</category>
-        
-        <category>he</category>
-        
-        
-        <category>log</category>
-        
-      </item>
-    
-      <item>
-        <title>IRAF, Pyraf and igi</title>
-        <description>&lt;h1 id=&quot;plotting-spectra-with-iraf&quot;&gt;Plotting Spectra with IRAF&lt;/h1&gt;
-&lt;p&gt;I don’t like IRAF, but it seems to have a lot of functionalities to plot and fit spectra. The &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware&quot;&gt;Space Telescope Science Institute&lt;/a&gt; has a lot of good software for this. They have the &lt;strong&gt;Space Telescope Science Data Analysis System (STSDAS)&lt;/strong&gt;. This is a software package to reduce and analyze astronomical data. This includes the Interactive Graphics Interpreter: igi &lt;span class=&quot;citation&quot; data-cites=&quot;igiiraf&quot;&gt;(&lt;span&gt;Levay&lt;/span&gt; 1992)&lt;/span&gt;. Below I describe the process that I had to do to be able to produce a figure with the STSDAS task igi with pyraf.&lt;/p&gt;
-&lt;h2 id=&quot;the-installation&quot;&gt;The installation:&lt;/h2&gt;
-&lt;p&gt;I am currently using pyraf for Python2. I installed a while ago with the &lt;a href=&quot;http://ssb.stsci.edu/ureka/&quot;&gt;Ureka&lt;/a&gt; also from the Space Telescope Science Institute. I don’t know if Ureka dies come with the STSDAS packages but this was actually surprisingly easy to install following &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware/stsdas/download-stsdas&quot;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;wspectext&quot;&gt;wspectext&lt;/h2&gt;
-&lt;p&gt;Converting to text file before I can use igi for some reason. I need to convert it without the header. In Python importing from pyraf iraf&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;iraf.onedspec.wspectext(filename, output=source+&amp;#39;spectra.txt&amp;#39;, header=False)&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;using-igi&quot;&gt;Using igi&lt;/h2&gt;
-&lt;p&gt;Work on progress …&lt;/p&gt;
-&lt;p&gt;Manual is good here: http://stsdas.stsci.edu/download/docs/IGIManual.pdf&lt;/p&gt;
-&lt;p&gt;I want to try something like explain in the FAQ Can I automate igi graphics using a native python script? &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware/pyraf/pyraf_faq&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It is in stsdas.graphics.stplot&lt;/p&gt;
-&lt;p&gt;remember to be in xgterm as defined in my .bashrc&lt;/p&gt;
-&lt;h2 id=&quot;splot-fitting&quot;&gt;splot fitting&lt;/h2&gt;
-&lt;p&gt;http://iraf.noao.edu/iraf/ftp/iraf/docs/script.pdf&lt;/p&gt;
-&lt;p&gt;See the post on &lt;strong&gt;Semi-Auto Fitting with IRAF&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To save images in iraf with the &lt;code&gt;.snap eps&lt;/code&gt; and &lt;code&gt;.gflush&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In Python:&lt;/p&gt;
-&lt;pre class=&quot;sourceCode python&quot;&gt;&lt;code class=&quot;sourceCode python&quot;&gt;&lt;span class=&quot;ch&quot;&gt;from&lt;/span&gt; pyraf &lt;span class=&quot;ch&quot;&gt;import&lt;/span&gt; iraf&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&quot;references&quot;&gt;
-&lt;h1&gt;References&lt;/h1&gt;
-&lt;p&gt;&lt;span&gt;Levay&lt;/span&gt;, Z. G. 1992. “Interactive Graphics Interpreter: igi.” In &lt;em&gt;Astronomical Data Analysis Software and Systems I&lt;/em&gt;, edited by D. M. &lt;span&gt;Worrall&lt;/span&gt;, C. &lt;span&gt;Biemesderfer&lt;/span&gt;, and J. &lt;span&gt;Barnes&lt;/span&gt;, 25:337. Astronomical Society of the Pacific Conference Series.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 07 Apr 2016 00:00:00 +0200</pubDate>
-        <link>/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html</link>
-        <guid isPermaLink="true">/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html</guid>
-        
-        <category>iraf</category>
-        
-        <category>pyraf</category>
-        
-        <category>igi</category>
-        
-        <category>stsdas</category>
-        
-        <category>spectra</category>
-        
-        <category>plot</category>
-        
-        <category>python</category>
-        
-        <category>splot</category>
         
         
         <category>log</category>
