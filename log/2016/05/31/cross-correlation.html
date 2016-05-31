@@ -5,12 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>iraf</title>
-  <meta name="description" content="This is the repository for the created code and documents as part of a research project done in Spring 2016 at IRAP under the supervisionn of Dr. Natalie Webb.
-">
+  <title>Cross Correlation</title>
+  <meta name="description" content="The paper to read is (Tonry and Davis, 1979) and of course the fxcor help page: http://stsdas.stsci.edu/cgi-bin/gethelp.cgi?fxcor">
   <link rel="stylesheet" href="/muselabbook16/css/main.css">
   <link rel="stylesheet" href="/muselabbook16/css/site.css"> 
-  <link rel="canonical" href="/muselabbook16/tag/iraf.html">
+  <link rel="canonical" href="/muselabbook16/log/2016/05/31/cross-correlation.html">
   <link rel="alternate" type="application/rss+xml" title="Lab Notebook for MUSE Data Reduction Spring 2016 IRAP" href="/muselabbook16/feed.xml">
   <!--<link rel="icon" type="image/png" href="/muselabbook16/images/ico/favicon.png"> -->
   <link rel="icon" type="image/x-icon" href="/muselabbook16/images/ico/favicon2.ico">
@@ -58,43 +57,49 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1>Archive of posts with tag 'iraf'</h1>
-<ul class="posts">
-  
-    <li>
-      <span class="post-date">May 31, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/05/31/cross-correlation.html">Cross Correlation</a>
-    </li>
-  
-    <li>
-      <span class="post-date">Apr 14, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/04/14/halpha-in-cvs.html">Halpha in CVs</a>
-    </li>
-  
-    <li>
-      <span class="post-date">Apr 13, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/04/13/semi-auto-fitting-with-iraf.html">Semi-Auto Fitting with IRAF</a>
-    </li>
-  
-    <li>
-      <span class="post-date">Apr 7, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/04/07/iraf,-pyraf-and-igi.html">IRAF, Pyraf and igi</a>
-    </li>
-  
-    <li>
-      <span class="post-date">Mar 31, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/03/31/better-late-than-never.html">Better late than never</a>
-    </li>
-  
-    <li>
-      <span class="post-date">Mar 8, 2016</span>
-      <a class="post-link" href="/muselabbook16/log/2016/03/08/mistake.html">Mistake</a>
-    </li>
-  
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Cross Correlation</h1>
+    <p class="post-meta"><time datetime="2016-05-31T00:00:00+02:00" itemprop="datePublished">May 31, 2016</time></p>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </header>
+
+
+  <div class="post-content" itemprop="articleBody">
+    <p>The paper to read is (Tonry and Davis, 1979) and of course the fxcor help page: http://stsdas.stsci.edu/cgi-bin/gethelp.cgi?fxcor</p>
+<p>The help page is not useful for the error estimation. It is just saying that it follows the paper. It would be useful to remember the following.</p>
+<h1 id="the-r-statistic">The R statistic</h1>
+<p>It is using the porperties of the cross-correlation funtion:</p>
+<p><span class="math">\[\epsilion = \frac{k}{1+r}\]</span></p>
+<p><span class="math">\[r = \frac{h}{\sqrt{2}\sigma_a}\]</span></p>
+<p>Where h is the peak height of the normalized cross-correlation function c(n), <span class="math">\(\sigma_a\)</span> is the rms of its antisymmetric component and l a proportionailty. k empirically was found to be <span class="math">\(k = 0.5 w\)</span>. Where <span class="math">\(w\)</span> is the FWHM of the cross-correlation peak. <span class="math">\(\epsilion\)</span> is given in pixels. This is then multuply by the Velocity Dispersion given in Km/sec/pixel</p>
+<div class="references">
+
+</div>
+
+  </div>
+
+
+<div class="well well-small">
+<p class="text-info"><span class="glyphicons glyphicon-tags"></span>&nbsp;Tags</p>
+<ul>
+
+<li><a href='/muselabbook16/tag/tonry.html'>Tonry</a></li>
+
+<li><a href='/muselabbook16/tag/fxcor.html'>fxcor</a></li>
+
+<li><a href='/muselabbook16/tag/iraf.html'>iraf</a></li>
+
+<li><a href='/muselabbook16/tag/cross+correlation.html'>cross correlation</a></li>
+
 </ul>
+</div>
 
 
-
+</article>
 
       </div>
     </div>
